@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dnbibaetklfdn"]
+
+[ext_resource type="Script" uid="uid://b1au8xu3v2744" path="res://02_Scripts/01_UI/button_menu.gd" id="1_vwvgb"]
+
+[node name="Back" type="Button" unique_id=736208372]
+custom_minimum_size = Vector2(300, 100)
+size_flags_horizontal = 4
+size_flags_vertical = 6
+script = ExtResource("1_vwvgb")

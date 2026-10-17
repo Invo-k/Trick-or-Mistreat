@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b6mrxmn7vc8tx"]
+
+[ext_resource type="PackedScene" uid="uid://dkqsh8chdffwe" path="res://01_Scenes/99_Testing/drop.tscn" id="1_wt0nd"]
+[ext_resource type="PackedScene" uid="uid://b4quw2vnagf60" path="res://01_Scenes/99_Testing/pick_item.tscn" id="2_mwvxh"]
+
+[node name="Game_Scene" type="Node2D" unique_id=2096583920]
+
+[node name="Drop" parent="." unique_id=1554410279 instance=ExtResource("1_wt0nd")]
+position = Vector2(1448, 413)
+
+[node name="Drop2" parent="." unique_id=631348294 instance=ExtResource("1_wt0nd")]
+position = Vector2(354, 300)
+
+[node name="Drop3" parent="." unique_id=50268242 instance=ExtResource("1_wt0nd")]
+position = Vector2(736, 618)
+
+[node name="Pick_Item" parent="." unique_id=783058067 instance=ExtResource("2_mwvxh")]
+position = Vector2(1012, 203)
+
+[node name="Pick_Item2" parent="." unique_id=1120557102 instance=ExtResource("2_mwvxh")]
+position = Vector2(627, 337)
+
+[node name="Pick_Item3" parent="." unique_id=2009880135 instance=ExtResource("2_mwvxh")]
+position = Vector2(1252, 622)

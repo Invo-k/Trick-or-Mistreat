@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dkqsh8chdffwe"]
+
+[ext_resource type="Script" uid="uid://bkq8210v6ueqc" path="res://01_Scenes/99_Testing/drop.gd" id="1_5f0pn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(128, 128)
+
+[node name="Drop" type="StaticBody2D" unique_id=1554410279 groups=["dropable"]]
+script = ExtResource("1_5f0pn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2095026347]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1195708223]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.46666667)

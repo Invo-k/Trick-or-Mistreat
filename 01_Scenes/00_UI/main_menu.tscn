@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dmi8jbt43sl7x"]
+
+[ext_resource type="Script" uid="uid://d1urnxxu1l7ts" path="res://02_Scripts/01_UI/main_menu.gd" id="1_m4jor"]
+[ext_resource type="Script" uid="uid://b1au8xu3v2744" path="res://02_Scripts/01_UI/button_menu.gd" id="2_njjq1"]
+
+[node name="Main_Menu" type="Control" unique_id=1909116580]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m4jor")
+
+[node name="Background" type="TextureRect" parent="." unique_id=157208924]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2073730013]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 500
+theme_override_constants/margin_top = 400
+theme_override_constants/margin_right = 500
+theme_override_constants/margin_bottom = 200
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=149234403]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1941957871]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Comenzar"
+script = ExtResource("2_njjq1")
+metadata/_custom_type_script = "uid://b1au8xu3v2744"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1261112139]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Opciones"
+script = ExtResource("2_njjq1")
+metadata/_custom_type_script = "uid://b1au8xu3v2744"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=689752618]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Salir"
+script = ExtResource("2_njjq1")
+metadata/_custom_type_script = "uid://b1au8xu3v2744"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
