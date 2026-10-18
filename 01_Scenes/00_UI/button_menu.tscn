@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://dnbibaetklfdn"]
 
+[ext_resource type="Texture2D" uid="uid://b1qyx7uj45bm" path="res://00_Assets/00_Sprites/03_Buttons/TOM_StartIdle.png" id="1_amp7b"]
 [ext_resource type="Script" uid="uid://b1au8xu3v2744" path="res://02_Scripts/01_UI/button_menu.gd" id="1_vwvgb"]
+[ext_resource type="Texture2D" uid="uid://c71in61272w0l" path="res://00_Assets/00_Sprites/03_Buttons/TOM_StartHover.png" id="2_pieuq"]
+[ext_resource type="BitMap" uid="uid://dq70vnreg0m7i" path="res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/TOM_StartIdle_bitmap.png" id="3_pieuq"]
 
-[node name="Back" type="Button" unique_id=736208372]
-custom_minimum_size = Vector2(300, 100)
+[node name="Back" type="TextureButton" unique_id=596550208]
+offset_right = 3840.0
+offset_bottom = 2160.0
 size_flags_horizontal = 4
 size_flags_vertical = 6
-theme_override_font_sizes/font_size = 40
-text = "TEST"
+texture_normal = ExtResource("1_amp7b")
+texture_hover = ExtResource("2_pieuq")
+texture_click_mask = ExtResource("3_pieuq")
+stretch_mode = 5
 script = ExtResource("1_vwvgb")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://3s1miv20j0ry"]
+
+[ext_resource type="Texture2D" uid="uid://b68ooxwky0r7v" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Biblia_Idle.png" id="1_8rwjl"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_l0pf7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd20i"]
+atlas = ExtResource("1_8rwjl")
+region = Rect2(2970, 283, 478, 432)
+
+[resource]
+script = ExtResource("2_l0pf7")
+item_name = "Biblia"
+item_sprite = SubResource("AtlasTexture_hd20i")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

@@ -48,12 +48,13 @@ func play_music(ost : String, pitch : float):
 ##Carga y ejecuta el sfx que tenga como ruta.
 func play_sfx(sound : String):
 	if sound != "":
-		var sfx = load(sound)
-		_select_sfx(sfx)
+		_select_sfx(sound)
 		_play_sfx_level()
 	if sound == "":
 		printerr("NO HAS PUESTO LA RUTA DE AUDIO O NO ESTÁ RECIBIENDO NINGUNA RUTA")
 
+func await_for_sfx():
+	await AudioManager.ui_sfx.finished
 
 ##Esta función se emplea para almacenar una nueva ruta de Audio. Cambia el valor de la variable [level_music] por la nueva ruta de audio. [br][br]Se emplea siempre antes de la función [play_music()]
 func _select_music(musica, pitch : float):

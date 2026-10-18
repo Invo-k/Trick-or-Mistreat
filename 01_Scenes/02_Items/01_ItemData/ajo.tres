@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://88ntnunib5do"]
+
+[ext_resource type="Texture2D" uid="uid://d052fmya0m001" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ajos_Idle.png" id="1_3kvgq"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_d3mhd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kgsj"]
+atlas = ExtResource("1_3kvgq")
+region = Rect2(1738, 263, 283, 865)
+
+[resource]
+script = ExtResource("2_d3mhd")
+item_name = "Ajo"
+item_sprite = SubResource("AtlasTexture_0kgsj")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

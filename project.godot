@@ -12,11 +12,13 @@ config_version=5
 
 config/name="Trick_or_Mistreat"
 run/main_scene="uid://dmi8jbt43sl7x"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="TrickOrMistreat"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 boot_splash/use_filter=false
-config/icon="res://icon.svg"
+config/icon="uid://cr5hmx0qqrfk0"
 
 [audio]
 
@@ -28,6 +30,7 @@ AudioManager="*uid://brgdm6leuyt0y"
 ConfigManager="*uid://c0gkyjei0bwes"
 DialogueManager="*uid://c3rodes2l3gxb"
 TransitionManager="*uid://cltmrmjuyihcp"
+GameValues="*uid://o16qypsvopuq"
 
 [dialogue_manager]
 
@@ -49,6 +52,8 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/": "red",
+"res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/": "pink",
 "res://02_Scripts/": "green"
 }
 
@@ -63,10 +68,15 @@ left_click={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(258, 17),"global_position":Vector2(267, 65),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+right_click={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(246, 5),"global_position":Vector2(255, 53),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://05_Dialogue/test.dialogue")
+locale/translations_pot_files=PackedStringArray("res://05_Dialogue/test.dialogue", "res://05_Dialogue/R_Dialogue.dialogue", "res://05_Dialogue/Frankenstein.dialogue", "res://05_Dialogue/Galletas.dialogue")
 
 [physics]
 

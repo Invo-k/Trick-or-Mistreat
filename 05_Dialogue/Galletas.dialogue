@@ -1,0 +1,80 @@
+~ start
+set ConfigManager.item_save = ""
+do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
+do animator.play("door_open_cookie")
+do AudioManager.await_for_sfx()
+Uy
+Parece que esta chica se ha pegado un atracón de dulces.
+Hay algo en ella que te da mala espina.
+MonstruoDeLasGalletas: …
+Tú: …
+Bueno, si no dice truco o maltrato será mejor cerrar la puerta... 
+do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
+do animator.play_backwards("door_open_cookie")
+do AudioManager.await_for_sfx()
+mmm?
+do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
+do animator.play("door_open_cookie")
+do AudioManager.await_for_sfx()
+¡Ha trancado la puerta con el pie para evitar que cierre!
+MonstruoDeLasGalletas: Grrr
+Nunca he escuchado un estómago gruñir tanto.
+Algo en la forma en la que me mira...
+Aunque no haya hecho el truco o maltrato, más vale que le pille algo de comer.
+do GameValues.candy_time_animation.emit()
+=> END
+~ negociation
+¿Darle la cesta?
+- SÍ: 
+	do GameValues.candy_time_animation.emit()
+	Tú: Toma
+	if ConfigManager.item_save == "":
+		Le das la bolsa vacía, pero al ver que no tiene nada dentro te la devuelve.
+		do GameValues.candy_time_animation.emit()
+	elif ConfigManager.item_save == "Tornillos" or ConfigManager.item_save == "Lámpara de Araña" or ConfigManager.item_save == "Biblia" or ConfigManager.item_save == "Café" or ConfigManager.item_save == "Copa de Vino":
+		=> jumpscare
+	else:
+		=> candy_time
+- AUN NO:
+	MonstruoDeLasGalletas: …
+=> END
+
+~ candy_time
+Su boca se desencaja de forma inhumana mostrando un túnel en su garganta con hileras e hileras de dientes que no parecen terminar.
+Engulle tu ofrecimiento de un solo bocado, provocando que su cuello se expanda temporalmente por el volumen.
+Tras unas cuantas contracciones, logra al fin tragar la comida.
+Se relame los dientes y los dedos de forma casi compulsiva.
+Su expresión comunica satisfacción.
+Se sacude las migas de la sudadera, y sin mediar palabra se dirige a la casa vecina.
+
+do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
+do animator.play_backwards("door_open_r")
+do AudioManager.await_for_sfx()
+
+¡Pero qué rayos era esa cosa!
+Por poco no lo cuentas... menos mal...
+Con todo el miedo, casi habías perdido de vista el reloj.
+Pero la luz de la madrugada por la ventana te comunica que ya ha llegado la mañana.
+¡SI! ¡SI! ¡Vecindario de locos!
+¡Has sobrevivido!
+¡Y no has perdido ninguna extremidad!
+Ahora solo queda esperar que se repita el año que viene.
+Hasta entonces, ahora es tu turno de disfrutar del Halloween durmiendo una siesta en el sofá.
+do GameValues.change_scene_dialogue()
+=> END
+
+~ jumpscare
+Tú: ¿Toma?
+Ella examina brevemente lo que le has dado.
+Lo huele y le da una lengüetada.
+Lo deja en el suelo, con desinterés.
+Ya erguida, vuelve a mirarte inquieta.
+Sus tripas gruñen tan sonoramente que sientes el impulso de taparte los oídos.
+Ella se estruja la barriga y saliva profusamente.
+Sus ojos parecen desorbitados y huele el aire como si hubiera algo cocinándose.
+Oh no.
+Te está mirando como si fueras el último trozo de tortilla.
+do animator.play("cookie_jumpscare")
+Corres a cerrar la puerta pero antes de que puedas hacerlo, su boca se abre monstruosamente, dejando ver un túnel interminable de hileras de dientes afilados.
+Antes de que puedas gritar, se lanza sobre ti.
+do GameValues.change_scene_dialogue()

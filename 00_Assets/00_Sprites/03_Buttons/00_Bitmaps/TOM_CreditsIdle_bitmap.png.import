@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ncwqse56bkrr"
+path="res://.godot/imported/TOM_CreditsIdle_bitmap.png-5eaa9fc9cb133db7b9678170c2ca5306.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/TOM_CreditsIdle_bitmap.png"
+dest_files=["res://.godot/imported/TOM_CreditsIdle_bitmap.png-5eaa9fc9cb133db7b9678170c2ca5306.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

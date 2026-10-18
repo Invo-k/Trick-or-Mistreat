@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://cw5564oy40ya6"]
+
+[ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="1_pycjl"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="1_wtv75"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0cn4"]
+atlas = ExtResource("1_pycjl")
+
+[resource]
+script = ExtResource("1_wtv75")
+item_name = "Lámpara de Araña"
+item_sprite = SubResource("AtlasTexture_c0cn4")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

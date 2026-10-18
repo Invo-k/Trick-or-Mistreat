@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dvn6ctgman4v8"
+path="res://.godot/imported/TOM_pov_bitmap.png-e59bccf5e106931f0708d328953a21aa.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/02_Characters/TOM_pov_bitmap.png"
+dest_files=["res://.godot/imported/TOM_pov_bitmap.png-e59bccf5e106931f0708d328953a21aa.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

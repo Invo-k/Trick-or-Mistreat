@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bq3rhlk0us88h"
+path="res://.godot/imported/Galletas.dialogue-522030a5229d5b17681ee1610b702450.tres"
+
+[deps]
+
+source_file="res://05_Dialogue/Galletas.dialogue"
+dest_files=["res://.godot/imported/Galletas.dialogue-522030a5229d5b17681ee1610b702450.tres"]
+
+[params]
+
+defaults=true

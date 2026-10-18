@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cuc15xx6rysxb"]
 
 [ext_resource type="Script" uid="uid://c8mbrsseb6d5n" path="res://02_Scripts/01_UI/option_menu.gd" id="1_ed6lo"]
-[ext_resource type="PackedScene" uid="uid://dnbibaetklfdn" path="res://01_Scenes/00_UI/button_menu.tscn" id="2_hdkwi"]
+[ext_resource type="Texture2D" uid="uid://dknh0hkpwuqnx" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_OptionsMenu_Layout.png" id="2_hdkwi"]
 
 [node name="OptionMenu" type="CanvasLayer" unique_id=2014169054]
 layer = 999
@@ -22,8 +22,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_hdkwi")
+expand_mode = 3
+stretch_mode = 5
 
 [node name="ColorRect" type="ColorRect" parent="Control" unique_id=438853740]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -39,10 +43,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 500
-theme_override_constants/margin_top = 200
-theme_override_constants/margin_right = 500
-theme_override_constants/margin_bottom = 200
+theme_override_constants/margin_left = 495
+theme_override_constants/margin_top = 247
+theme_override_constants/margin_right = 577
+theme_override_constants/margin_bottom = 293
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=586305026]
 layout_mode = 2
@@ -54,13 +58,20 @@ size_flags_vertical = 3
 [node name="Screen_Text" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/Screen" unique_id=1690829976]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
+text = "Ajustes de Pantalla"
 fit_content = true
 scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Option_Screen" type="OptionButton" parent="Control/MarginContainer/VBoxContainer/Screen" unique_id=1680703319]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0, 1)
+theme_override_font_sizes/font_size = 40
 alignment = 1
 selected = 0
 item_count = 3
@@ -78,14 +89,23 @@ size_flags_vertical = 3
 [node name="Music_Text" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/Music" unique_id=149440076]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
+text = "Música"
 fit_content = true
 scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Music_Value" type="HSlider" parent="Control/MarginContainer/VBoxContainer/Music" unique_id=434341445]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 1.0
 
 [node name="SFX" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=78169475]
 layout_mode = 2
@@ -94,19 +114,40 @@ size_flags_vertical = 3
 [node name="SFX_Text" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/SFX" unique_id=1467729612]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
+text = "Efectos de Sonido"
 fit_content = true
 scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="SFX_Value" type="HSlider" parent="Control/MarginContainer/VBoxContainer/SFX" unique_id=457857779]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 1.0
 
-[node name="Back" parent="Control/MarginContainer/VBoxContainer" unique_id=736208372 instance=ExtResource("2_hdkwi")]
-layout_mode = 2
+[node name="Back" type="Button" parent="Control" unique_id=1862057852]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 0
+offset_left = 727.0
+offset_top = 912.0
+offset_right = 1127.0
+offset_bottom = 1012.0
+scale = Vector2(1.0799987, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Volver"
 
 [connection signal="item_selected" from="Control/MarginContainer/VBoxContainer/Screen/Option_Screen" to="." method="_on_option_screen_item_selected"]
 [connection signal="value_changed" from="Control/MarginContainer/VBoxContainer/Music/Music_Value" to="." method="_on_music_value_value_changed"]
 [connection signal="value_changed" from="Control/MarginContainer/VBoxContainer/SFX/SFX_Value" to="." method="_on_sfx_value_value_changed"]
-[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://kqqgrw4yvmsy"]
+
+[ext_resource type="Texture2D" uid="uid://b10nnvrmhdq6n" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Tornillos_Idle.png" id="1_yh0hw"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_ltteq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya7h7"]
+atlas = ExtResource("1_yh0hw")
+region = Rect2(633, 1195, 359, 407)
+
+[resource]
+script = ExtResource("2_ltteq")
+item_name = "Tornillos"
+item_sprite = SubResource("AtlasTexture_ya7h7")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

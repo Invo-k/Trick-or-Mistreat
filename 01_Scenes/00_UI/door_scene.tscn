@@ -4,11 +4,301 @@
 [ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_2p2q1"]
 [ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="2_c0ni1"]
 [ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="3_7cghn"]
-[ext_resource type="Resource" uid="uid://ciu3vgkoxb3h2" path="res://05_Dialogue/test.dialogue" id="3_fpyx8"]
+[ext_resource type="Texture2D" uid="uid://c8hqhxwk5g8sy" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoLocked.png" id="6_12sp0"]
+[ext_resource type="Resource" uid="uid://bu8yuyqbayuhm" path="res://05_Dialogue/R_Dialogue.dialogue" id="6_86k45"]
 [ext_resource type="BitMap" uid="uid://dqjw01gx7rf8b" path="res://icon_bitmap_test.svg" id="6_fpyx8"]
+[ext_resource type="Resource" uid="uid://bwy2o8pvo8c2n" path="res://05_Dialogue/Frankenstein.dialogue" id="7_e1in1"]
+[ext_resource type="Resource" uid="uid://bq3rhlk0us88h" path="res://05_Dialogue/Galletas.dialogue" id="8_2jwpl"]
+[ext_resource type="Texture2D" uid="uid://4np3bcnmj466" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Idle.png" id="8_drpds"]
+[ext_resource type="Texture2D" uid="uid://cv28l8oeugjjk" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov.png" id="8_s66iw"]
+[ext_resource type="Texture2D" uid="uid://b22vg8imcm66y" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Hover.png" id="9_u8n1s"]
+[ext_resource type="Texture2D" uid="uid://j8l5u5sek5ar" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Nia_Layout.png" id="11_5uf6x"]
+[ext_resource type="Texture2D" uid="uid://7xdlshtgm11" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Shaila_Layout.png" id="11_u8n1s"]
+[ext_resource type="Texture2D" uid="uid://dnncesntjbojt" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_NiaJumpscare_Layout.png" id="12_1ycyl"]
+[ext_resource type="Texture2D" uid="uid://o3uj3n3moh2b" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Bianca_Layout.png" id="12_2nl4j"]
+[ext_resource type="Texture2D" uid="uid://daytu7lx4eq2h" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Roger_Layout.png" id="12_u8n1s"]
+[ext_resource type="Texture2D" uid="uid://qc47rsi0fqkr" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_DoorClosed_Layout.png" id="14_dxk4y"]
+[ext_resource type="Texture2D" uid="uid://c5qb1mdrjj54d" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Star_Layout.png" id="15_2xt6m"]
+[ext_resource type="Texture2D" uid="uid://ca631f4fctdlo" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Helio_Layout.png" id="15_5cm08"]
+[ext_resource type="Texture2D" uid="uid://da0gy086g3e7d" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_HelioCansao_Layout.png" id="15_qy1me"]
+[ext_resource type="Texture2D" uid="uid://div4sn17xlwjn" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_StarJumpscare_Layout.png" id="19_2xt6m"]
+[ext_resource type="Texture2D" uid="uid://4jcnj84etobm" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_ShailaJumpscare_Layout.png" id="19_iw1rc"]
+[ext_resource type="Texture2D" uid="uid://bmiosg7534t4r" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_BiancaJumpscare_Layout.png" id="21_vqi3e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqi3e"]
+atlas = ExtResource("8_s66iw")
+region = Rect2(727, 1629, 2434, 531)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04ivp"]
+atlas = ExtResource("8_drpds")
+region = Rect2(69, 69, 303, 253)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhunq"]
+atlas = ExtResource("9_u8n1s")
+region = Rect2(69, 69, 303, 253)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6iobx"]
 shader = ExtResource("2_2p2q1")
+
+[sub_resource type="Animation" id="Animation_fpyx8"]
+resource_name = "Candy_t"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shady_Hands:offset_transform_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 540), Vector2(0, -50), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Shady_Hands:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.01),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_86k45"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shady_Hands:offset_transform_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Shady_Hands:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_12sp0")]
+}
+
+[sub_resource type="Animation" id="Animation_s66iw"]
+resource_name = "cookie_jumpscare"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_5uf6x"), ExtResource("12_1ycyl")]
+}
+
+[sub_resource type="Animation" id="Animation_qy1me"]
+resource_name = "door_open_cookie"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_12sp0"), ExtResource("11_5uf6x")]
+}
+
+[sub_resource type="Animation" id="Animation_1tkuf"]
+resource_name = "door_open_franky"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_12sp0"), ExtResource("11_u8n1s")]
+}
+
+[sub_resource type="Animation" id="Animation_5uf6x"]
+resource_name = "door_open_harpy"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_12sp0"), ExtResource("12_2nl4j")]
+}
+
+[sub_resource type="Animation" id="Animation_iw1rc"]
+resource_name = "door_open_medusa"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("14_dxk4y"), ExtResource("15_2xt6m")]
+}
+
+[sub_resource type="Animation" id="Animation_vf7d5"]
+resource_name = "door_open_pure_science"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("15_qy1me"), ExtResource("15_5cm08")]
+}
+
+[sub_resource type="Animation" id="Animation_e1in1"]
+resource_name = "door_open"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_12sp0"), ExtResource("12_u8n1s")]
+}
+
+[sub_resource type="Animation" id="Animation_5cm08"]
+resource_name = "door_open_science"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_12sp0"), ExtResource("15_qy1me")]
+}
+
+[sub_resource type="Animation" id="Animation_vqi3e"]
+resource_name = "franky_jumpscare"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_u8n1s"), ExtResource("19_iw1rc")]
+}
+
+[sub_resource type="Animation" id="Animation_2jwpl"]
+resource_name = "harpy_jumpscare"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("12_2nl4j"), ExtResource("21_vqi3e")]
+}
+
+[sub_resource type="Animation" id="Animation_1ycyl"]
+resource_name = "medusa_jumpscare"
+length = 0.19999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("15_2xt6m"), ExtResource("19_2xt6m")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_12sp0"]
+_data = {
+&"Candy_t": SubResource("Animation_fpyx8"),
+&"RESET": SubResource("Animation_86k45"),
+&"cookie_jumpscare": SubResource("Animation_s66iw"),
+&"door_open_cookie": SubResource("Animation_qy1me"),
+&"door_open_franky": SubResource("Animation_1tkuf"),
+&"door_open_harpy": SubResource("Animation_5uf6x"),
+&"door_open_medusa": SubResource("Animation_iw1rc"),
+&"door_open_pure_science": SubResource("Animation_vf7d5"),
+&"door_open_r": SubResource("Animation_e1in1"),
+&"door_open_science": SubResource("Animation_5cm08"),
+&"franky_jumpscare": SubResource("Animation_vqi3e"),
+&"harpy_jumpscare": SubResource("Animation_2jwpl"),
+&"medusa_jumpscare": SubResource("Animation_1ycyl")
+}
 
 [node name="Door_Scene" type="Control" unique_id=752925353]
 layout_mode = 3
@@ -18,24 +308,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sylov")
-Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("3_fpyx8")])
+Characters_Array = Array[Texture2D]([ExtResource("3_7cghn")])
+Characters_Array_Border = Array[Texture2D]([ExtResource("3_7cghn")])
+Character_Bitmap = Array[BitMap]([ExtResource("6_fpyx8")])
+Backgrounds_Array = Array[Texture2D]([ExtResource("6_12sp0")])
+CHARACTER_NAME = Array[String](["?", "Frankenstina", "Monstruo de las Galletas", "Arpía", "Cientifico", "Medusa", "?"])
+Hands_Description = "Recipiente de Caramelos"
+Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("6_86k45"), ExtResource("7_e1in1"), ExtResource("8_2jwpl"), null, null, null, null])
+Scene_Music = "res://00_Assets/03_Ost/The-Witchs-House-Snap.wav"
 
 [node name="Background" type="TextureRect" parent="." unique_id=917642958]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="Background" unique_id=1061887354]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.09803922, 1, 1, 1)
+texture = ExtResource("6_12sp0")
+expand_mode = 3
+stretch_mode = 5
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1640067736]
 layout_mode = 1
@@ -49,41 +341,50 @@ theme_override_constants/margin_top = 200
 theme_override_constants/margin_right = 600
 
 [node name="Character" type="TextureButton" parent="MarginContainer" unique_id=1095564803]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 texture_normal = ExtResource("3_7cghn")
 texture_click_mask = ExtResource("6_fpyx8")
 stretch_mode = 5
 
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=667119522]
+[node name="Shady_Hands" type="TextureButton" parent="." unique_id=184338680]
+unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -661.0
+offset_top = -285.99994
+offset_right = 1773.0
+offset_bottom = 245.0
 grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-theme_override_constants/margin_left = 320
-theme_override_constants/margin_top = 680
-theme_override_constants/margin_right = 320
-
-[node name="Shady_Hands" type="TextureButton" parent="MarginContainer2" unique_id=184338680]
-layout_mode = 2
-texture_normal = ExtResource("3_7cghn")
+grow_vertical = 0
+scale = Vector2(0.545, 0.545)
+offset_transform_enabled = true
+texture_normal = SubResource("AtlasTexture_vqi3e")
 texture_click_mask = ExtResource("6_fpyx8")
 stretch_mode = 5
 
-[node name="Button" type="Button" parent="." unique_id=629394282]
+[node name="Arrow" type="TextureButton" parent="." unique_id=851394022]
+unique_name_in_owner = true
+z_index = 1
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -285.0
-offset_top = 71.0
-offset_right = -46.0
-offset_bottom = 159.0
+offset_left = -176.99988
+offset_top = 48.000004
+offset_right = 126.00012
+offset_bottom = 301.0
 grow_horizontal = 0
-theme_override_font_sizes/font_size = 51
-text = "-->"
+scale = Vector2(0.46700984, 0.46700984)
+texture_normal = SubResource("AtlasTexture_04ivp")
+texture_pressed = SubResource("AtlasTexture_bhunq")
+texture_hover = SubResource("AtlasTexture_bhunq")
+flip_h = true
 
 [node name="Efecto" type="ColorRect" parent="." unique_id=157643219]
 material = SubResource("ShaderMaterial_6iobx")
@@ -95,6 +396,42 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="Animator" type="AnimationPlayer" parent="." unique_id=128539294]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_12sp0")
+
+[node name="MarginContainer3" type="MarginContainer" parent="." unique_id=1101723534]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 500
+theme_override_constants/margin_top = 900
+theme_override_constants/margin_right = 500
+theme_override_constants/margin_bottom = 80
+
+[node name="ItemNameDescription" type="RichTextLabel" parent="MarginContainer3" unique_id=641997800]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0.101960786, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[color=yellow]TEST[/color]"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="MarginContainer/Character" to="." method="_on_character_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/Character" to="." method="_on_character_hands_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/Character" to="." method="_on_character_pressed"]
-[connection signal="pressed" from="MarginContainer2/Shady_Hands" to="." method="_on_shady_hands_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Shady_Hands" to="." method="_on_shady_hands_mouse_entered"]
+[connection signal="mouse_exited" from="Shady_Hands" to="." method="_on_character_hands_mouse_exited"]
+[connection signal="pressed" from="Shady_Hands" to="." method="_on_shady_hands_pressed"]
+[connection signal="pressed" from="Arrow" to="." method="_on_button_pressed"]

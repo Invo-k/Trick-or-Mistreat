@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 			print("SE AÑADIÓ EL ITEM: ", ConfigManager.item_save)
 			# liberar el drop para que pueda entrar otro objeto
 			body_ref.item_hold = null
-			body_ref.color_rect.modulate = Color("ffffff77")
+			#body_ref.color_rect.modulate = Color("ffffff77")
 			queue_free()
 		else:
 			tween = create_tween()
@@ -45,7 +45,7 @@ func _on_area_2d_body_entered(body: StaticBody2D) -> void:
 	if body.is_in_group("dropable"):
 		if body.item_hold == null:
 			is_inside = true
-			body.color_rect.modulate = Color(0.0, 0.0, 0.0, 0.831)
+			#body.color_rect.modulate = Color("ffffff77")
 			body_ref = body
 			body.item_hold = self
 
@@ -54,7 +54,7 @@ func _on_area_2d_body_exited(body: StaticBody2D) -> void:
 	if body.is_in_group("dropable"):
 		if body.item_hold == self:
 			is_inside = false
-			body.color_rect.modulate = Color("ffffff77")
+			#body.color_rect.modulate = Color("ffffff77")
 			body_ref = body
 			body.item_hold = null
 

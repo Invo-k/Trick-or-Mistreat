@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://s5h17xipvs12"]
+
+[ext_resource type="Texture2D" uid="uid://o2stqaggupo8" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Sangre_Idle.png" id="1_fv40e"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_sf7t5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq8y5"]
+atlas = ExtResource("1_fv40e")
+region = Rect2(1970, 1233, 308, 364)
+
+[resource]
+script = ExtResource("2_sf7t5")
+item_name = "Copa de Vino"
+item_sprite = SubResource("AtlasTexture_cq8y5")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

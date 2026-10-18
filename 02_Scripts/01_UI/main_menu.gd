@@ -1,19 +1,19 @@
 extends Control
 
 const OPTION_MENU = preload("uid://cuc15xx6rysxb")
-
+@export var Scene_Music : String
 
 func _ready() -> void:
 	cargar_opciones_intro()
-
-
-
-
+	AudioManager.play_music(Scene_Music, 1.0)
+	GameValues.actual_character_level = 0
+	GameValues.is_candy_time = false
+	TransitionManager.transition_animator.play("Fade_Out")
+	
 func _on_start_pressed() -> void:
 	TransitionManager.transition_animator.play("Move_Right")
 	await TransitionManager.transition_animator.animation_finished
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/door_scene.tscn")
-	TransitionManager.transition_animator.play_backwards("Move_Left")
 
 func _on_options_pressed() -> void:
 	var new_option_menu = OPTION_MENU.instantiate()

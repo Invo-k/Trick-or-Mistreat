@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://cjp678ktpr0bp"]
+
+[ext_resource type="Texture2D" uid="uid://b0s4yj34e2d7k" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Huevos_Idle.png" id="1_jfs0o"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_oowvr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpnc1"]
+atlas = ExtResource("1_jfs0o")
+region = Rect2(618, 626, 634, 362)
+
+[resource]
+script = ExtResource("2_oowvr")
+item_name = "Huevos"
+item_sprite = SubResource("AtlasTexture_gpnc1")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

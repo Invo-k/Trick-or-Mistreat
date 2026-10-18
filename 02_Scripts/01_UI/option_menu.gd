@@ -6,7 +6,7 @@ extends CanvasLayer
 @onready var music_value: HSlider = $Control/MarginContainer/VBoxContainer/Music/Music_Value
 @onready var sfx_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/SFX/SFX_Text
 @onready var sfx_value: HSlider = $Control/MarginContainer/VBoxContainer/SFX/SFX_Value
-@onready var back: Button = $Control/MarginContainer/VBoxContainer/Back
+@onready var back: Button = %Back
 
 
 func cargar_opciones() -> void:
@@ -64,6 +64,8 @@ func _on_music_value_value_changed(value: float) -> void:
 func _on_sfx_value_value_changed(value: float) -> void:
 	ConfigManager.audio_sfx = value
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"),linear_to_db(value))
+
+
 
 func _on_back_pressed() -> void:
 	ConfigManager.save_options("GRAPHICS OPTIONS","Fullscreen", ConfigManager.screen_mode)

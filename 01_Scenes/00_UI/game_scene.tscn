@@ -4,42 +4,316 @@
 [ext_resource type="PackedScene" uid="uid://dkqsh8chdffwe" path="res://01_Scenes/99_Testing/drop.tscn" id="1_wt0nd"]
 [ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_ba7pe"]
 [ext_resource type="PackedScene" uid="uid://diyvynhq0vlfe" path="res://01_Scenes/99_Testing/bag_drops.tscn" id="3_mwvxh"]
+[ext_resource type="Texture2D" uid="uid://d1cn6aetdno2s" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoSalon.png" id="4_ba7pe"]
+[ext_resource type="Resource" uid="uid://cw5564oy40ya6" path="res://01_Scenes/02_Items/01_ItemData/spider.tres" id="4_lqpjl"]
+[ext_resource type="Texture2D" uid="uid://4omylc4linyj" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Lampara_Idle.png" id="4_t8mry"]
+[ext_resource type="Resource" uid="uid://1lfeg11yw7s" path="res://01_Scenes/02_Items/01_ItemData/bread.tres" id="5_3a1bt"]
+[ext_resource type="Texture2D" uid="uid://bj2vhkdwi1afb" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Lampara_Hover.png" id="5_iugxa"]
+[ext_resource type="Resource" uid="uid://88ntnunib5do" path="res://01_Scenes/02_Items/01_ItemData/ajo.tres" id="6_t8mry"]
+[ext_resource type="Texture2D" uid="uid://x82nkydbllam" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Pan_Idle.png" id="7_3xj4i"]
+[ext_resource type="Resource" uid="uid://3s1miv20j0ry" path="res://01_Scenes/02_Items/01_ItemData/bibble.tres" id="7_iugxa"]
+[ext_resource type="Resource" uid="uid://c1o6c13ivxwla" path="res://01_Scenes/02_Items/01_ItemData/pumkin.tres" id="8_8gc6y"]
+[ext_resource type="Texture2D" uid="uid://cjj58iegxvspy" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Pan_Hover.png" id="8_rjyml"]
+[ext_resource type="Resource" uid="uid://s5h17xipvs12" path="res://01_Scenes/02_Items/01_ItemData/wine.tres" id="9_3xj4i"]
+[ext_resource type="Resource" uid="uid://cn6xnm16u3gao" path="res://01_Scenes/02_Items/01_ItemData/coffe.tres" id="10_rjyml"]
+[ext_resource type="Texture2D" uid="uid://d052fmya0m001" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ajos_Idle.png" id="10_xtn1x"]
+[ext_resource type="Resource" uid="uid://kqqgrw4yvmsy" path="res://01_Scenes/02_Items/01_ItemData/tornillos.tres" id="11_cg4j5"]
+[ext_resource type="Texture2D" uid="uid://pi4cwcyylbs4" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ajos_Hover.png" id="11_hd20i"]
+[ext_resource type="Resource" uid="uid://cjp678ktpr0bp" path="res://01_Scenes/02_Items/01_ItemData/eggs.tres" id="12_xtn1x"]
+[ext_resource type="Texture2D" uid="uid://b68ooxwky0r7v" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Biblia_Idle.png" id="13_0kgsj"]
+[ext_resource type="Resource" uid="uid://tutgppse41iy" path="res://01_Scenes/02_Items/01_ItemData/frogs.tres" id="13_hd20i"]
+[ext_resource type="Resource" uid="uid://oslymvhbcrqe" path="res://01_Scenes/02_Items/01_ItemData/candy.tres" id="14_0kgsj"]
+[ext_resource type="Texture2D" uid="uid://7cvquiw0clia" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Idle.png" id="15_80njr"]
+[ext_resource type="Texture2D" uid="uid://dllev3ciwgd88" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Hover.png" id="16_00b45"]
+[ext_resource type="Texture2D" uid="uid://bxhpfskdnn03u" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_SalonFondo.png" id="16_iugxa"]
+[ext_resource type="Texture2D" uid="uid://o2stqaggupo8" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Sangre_Idle.png" id="18_00b45"]
+[ext_resource type="Texture2D" uid="uid://1dfpi276co40" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Sangre_Hover.png" id="19_ytlfb"]
+[ext_resource type="Texture2D" uid="uid://ddqk0bd1kstg4" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Cafe_Idle.png" id="21_tsr71"]
+[ext_resource type="Texture2D" uid="uid://p8rm848xvmfp" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Cafe_Hover.png" id="22_k7y60"]
+[ext_resource type="Texture2D" uid="uid://b10nnvrmhdq6n" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Tornillos_Idle.png" id="24_dyniu"]
+[ext_resource type="Texture2D" uid="uid://4np3bcnmj466" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Idle.png" id="25_4lypw"]
+[ext_resource type="Texture2D" uid="uid://dvxyb0dqlp83l" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Tornillos_Hover.png" id="25_8cpfc"]
+[ext_resource type="Texture2D" uid="uid://b22vg8imcm66y" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Hover.png" id="26_4lypw"]
+[ext_resource type="Texture2D" uid="uid://b0s4yj34e2d7k" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Huevos_Idle.png" id="27_ya7h7"]
+[ext_resource type="Texture2D" uid="uid://c1q5xjy7ykpqm" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Huevos_Hover.png" id="28_klvvd"]
+[ext_resource type="Texture2D" uid="uid://dylspo8xnchyv" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ancas_Idle.png" id="30_gpnc1"]
+[ext_resource type="Texture2D" uid="uid://dtfgdjm36idvk" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ancas_Hover.png" id="31_f1im3"]
+[ext_resource type="Texture2D" uid="uid://416frw3gvl8t" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Idle.png" id="33_f1im3"]
+[ext_resource type="Texture2D" uid="uid://bw66mekiy0s2m" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Hover.png" id="34_j71sr"]
+[ext_resource type="Texture2D" uid="uid://cv28l8oeugjjk" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov.png" id="41_j71sr"]
+[ext_resource type="BitMap" uid="uid://dvn6ctgman4v8" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov_bitmap.png" id="42_kuka5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gc6y"]
+atlas = ExtResource("4_t8mry")
+region = Rect2(1992, 0, 759, 934)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llh8w"]
+atlas = ExtResource("5_iugxa")
+region = Rect2(1992, 0, 759, 934)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cg4j5"]
+atlas = ExtResource("7_3xj4i")
+region = Rect2(1322, 267, 364, 646)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xj4i"]
+atlas = ExtResource("8_rjyml")
+region = Rect2(1322, 267, 364, 646)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kgsj"]
+atlas = ExtResource("10_xtn1x")
+region = Rect2(1738, 263, 283, 865)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtn1x"]
+atlas = ExtResource("11_hd20i")
+region = Rect2(1738, 263, 283, 865)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd20i"]
+atlas = ExtResource("13_0kgsj")
+region = Rect2(2970, 283, 478, 432)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytlfb"]
+atlas = ExtResource("15_80njr")
+region = Rect2(2552, 995, 480, 510)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0blo"]
+atlas = ExtResource("16_00b45")
+region = Rect2(2552, 995, 480, 510)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq8y5"]
+atlas = ExtResource("18_00b45")
+region = Rect2(1970, 1233, 308, 364)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80njr"]
+atlas = ExtResource("19_ytlfb")
+region = Rect2(1970, 1233, 308, 364)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyniu"]
+atlas = ExtResource("21_tsr71")
+region = Rect2(114, 361, 462, 628)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsr71"]
+atlas = ExtResource("22_k7y60")
+region = Rect2(114, 361, 462, 628)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya7h7"]
+atlas = ExtResource("24_dyniu")
+region = Rect2(633, 1195, 359, 407)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7y60"]
+atlas = ExtResource("25_8cpfc")
+region = Rect2(633, 1195, 359, 407)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpnc1"]
+atlas = ExtResource("27_ya7h7")
+region = Rect2(618, 626, 634, 362)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drpds"]
+atlas = ExtResource("28_klvvd")
+region = Rect2(618, 626, 634, 362)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j71sr"]
+atlas = ExtResource("30_gpnc1")
+region = Rect2(128, 1280, 792, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klvvd"]
+atlas = ExtResource("31_f1im3")
+region = Rect2(128, 1280, 792, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuka5"]
+atlas = ExtResource("33_f1im3")
+region = Rect2(2937, 1477, 895, 490)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1im3"]
+atlas = ExtResource("34_j71sr")
+region = Rect2(2937, 1477, 895, 490)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5g43m"]
 shader = ExtResource("2_ba7pe")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04ivp"]
+atlas = ExtResource("25_4lypw")
+region = Rect2(69, 69, 303, 253)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhunq"]
+atlas = ExtResource("26_4lypw")
+region = Rect2(69, 69, 303, 253)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3wek"]
+atlas = ExtResource("41_j71sr")
+region = Rect2(727, 1629, 2434, 531)
 
 [node name="Game_Scene" type="Node2D" unique_id=2096583920]
 script = ExtResource("1_5g43m")
 
 [node name="Drop" parent="." unique_id=1554410279 instance=ExtResource("1_wt0nd")]
-position = Vector2(1448, 413)
+z_index = 10
+position = Vector2(961, 1083.0001)
+scale = Vector2(9.479999, 3.8311338)
 
-[node name="Drop2" parent="." unique_id=631348294 instance=ExtResource("1_wt0nd")]
-position = Vector2(354, 300)
+[node name="Node" type="Node2D" parent="." unique_id=106347793]
 
-[node name="Drop3" parent="." unique_id=50268242 instance=ExtResource("1_wt0nd")]
-position = Vector2(736, 618)
+[node name="Spider" parent="Node" unique_id=669679697 instance=ExtResource("3_mwvxh")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 978.0
+offset_top = -7.0
+offset_right = 1737.0
+offset_bottom = 927.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.52, 0.52)
+texture_normal = SubResource("AtlasTexture_8gc6y")
+texture_pressed = SubResource("AtlasTexture_llh8w")
+texture_hover = SubResource("AtlasTexture_llh8w")
+item_type = ExtResource("4_lqpjl")
+bag_id = "Lámpara de Araña"
 
-[node name="Bag_Drops" parent="." unique_id=669679697 instance=ExtResource("3_mwvxh")]
-offset_left = 1138.0
-offset_top = 255.0
-offset_right = 1138.0
-offset_bottom = 255.0
+[node name="Bread" parent="Node" unique_id=15517703 instance=ExtResource("3_mwvxh")]
+offset_left = 656.0
+offset_top = 121.0
+offset_right = 1020.0
+offset_bottom = 767.0
+scale = Vector2(0.51740783, 0.51740783)
+texture_normal = SubResource("AtlasTexture_cg4j5")
+texture_pressed = SubResource("AtlasTexture_3xj4i")
+texture_hover = SubResource("AtlasTexture_3xj4i")
+item_type = ExtResource("5_3a1bt")
+bag_id = "Bolsa de Pan"
 
-[node name="Bag_Drops2" parent="." unique_id=15517703 instance=ExtResource("3_mwvxh")]
-offset_left = 740.0
-offset_top = 345.0
-offset_right = 740.0
-offset_bottom = 345.0
+[node name="Ajo" parent="Node" unique_id=414544665 instance=ExtResource("3_mwvxh")]
+offset_left = 860.00006
+offset_top = 107.000015
+offset_right = 1143.0001
+offset_bottom = 972.0
+scale = Vector2(0.5560954, 0.5560954)
+texture_normal = SubResource("AtlasTexture_0kgsj")
+texture_pressed = SubResource("AtlasTexture_xtn1x")
+texture_hover = SubResource("AtlasTexture_xtn1x")
+item_type = ExtResource("6_t8mry")
+bag_id = "Ajos"
 
-[node name="Bag_Drops3" parent="." unique_id=2133397253 instance=ExtResource("3_mwvxh")]
-offset_left = 1573.0
-offset_top = 167.0
-offset_right = 1573.0
-offset_bottom = 167.0
+[node name="Bibble" parent="Node" unique_id=2133397253 instance=ExtResource("3_mwvxh")]
+offset_left = 1500.0
+offset_top = 170.0
+offset_right = 1978.0
+offset_bottom = 602.0
+scale = Vector2(0.42440987, 0.42440987)
+texture_normal = SubResource("AtlasTexture_hd20i")
+texture_pressed = SubResource("AtlasTexture_hd20i")
+texture_hover = SubResource("AtlasTexture_hd20i")
+item_type = ExtResource("7_iugxa")
+bag_id = "La Biblia"
+
+[node name="Pumkin" parent="Node" unique_id=333575872 instance=ExtResource("3_mwvxh")]
+offset_left = 1257.9999
+offset_top = 480.0
+offset_right = 1737.9999
+offset_bottom = 990.0
+scale = Vector2(0.5682403, 0.5682403)
+texture_normal = SubResource("AtlasTexture_ytlfb")
+texture_pressed = SubResource("AtlasTexture_o0blo")
+texture_hover = SubResource("AtlasTexture_o0blo")
+item_type = ExtResource("8_8gc6y")
+bag_id = "Calabaza con Vela"
+
+[node name="Wiiiine" parent="Node" unique_id=1923907690 instance=ExtResource("3_mwvxh")]
+offset_left = 985.99994
+offset_top = 615.0
+offset_right = 1294.0
+offset_bottom = 979.0
+scale = Vector2(0.52000123, 0.52000123)
+texture_normal = SubResource("AtlasTexture_cq8y5")
+texture_pressed = SubResource("AtlasTexture_80njr")
+texture_hover = SubResource("AtlasTexture_80njr")
+item_type = ExtResource("9_3xj4i")
+bag_id = "Copa de Vino"
+
+[node name="Coffe" parent="Node" unique_id=2053952013 instance=ExtResource("3_mwvxh")]
+offset_left = 63.0
+offset_top = 184.0
+offset_right = 525.0
+offset_bottom = 812.0
+scale = Vector2(0.47999984, 0.47999984)
+texture_normal = SubResource("AtlasTexture_dyniu")
+texture_pressed = SubResource("AtlasTexture_tsr71")
+texture_hover = SubResource("AtlasTexture_tsr71")
+item_type = ExtResource("10_rjyml")
+bag_id = "Cafetera"
+
+[node name="Tornillos" parent="Node" unique_id=1866135934 instance=ExtResource("3_mwvxh")]
+offset_left = 322.0
+offset_top = 588.00006
+offset_right = 681.0
+offset_bottom = 995.00006
+scale = Vector2(0.5200006, 0.5200006)
+texture_normal = SubResource("AtlasTexture_ya7h7")
+texture_pressed = SubResource("AtlasTexture_k7y60")
+texture_hover = SubResource("AtlasTexture_k7y60")
+item_type = ExtResource("11_cg4j5")
+bag_id = "Caja de Tornillos"
+
+[node name="Eggs" parent="Node" unique_id=407297402 instance=ExtResource("3_mwvxh")]
+offset_left = 299.0
+offset_top = 298.0
+offset_right = 933.0
+offset_bottom = 660.0
+scale = Vector2(0.51564324, 0.51564324)
+texture_normal = SubResource("AtlasTexture_gpnc1")
+texture_pressed = SubResource("AtlasTexture_drpds")
+texture_hover = SubResource("AtlasTexture_drpds")
+item_type = ExtResource("12_xtn1x")
+bag_id = "Cesta de Huevos"
+
+[node name="Frogs" parent="Node" unique_id=728690430 instance=ExtResource("3_mwvxh")]
+offset_left = 57.999996
+offset_top = 646.0
+offset_right = 850.0
+offset_bottom = 1414.0
+scale = Vector2(0.50575393, 0.50575393)
+texture_normal = SubResource("AtlasTexture_j71sr")
+texture_pressed = SubResource("AtlasTexture_klvvd")
+texture_hover = SubResource("AtlasTexture_klvvd")
+item_type = ExtResource("13_hd20i")
+bag_id = "Ancas de Rana"
+
+[node name="Candy" parent="Node" unique_id=1342480978 instance=ExtResource("3_mwvxh")]
+offset_left = 1456.0
+offset_top = 730.99994
+offset_right = 2351.0
+offset_bottom = 1221.0
+scale = Vector2(0.52, 0.52)
+texture_normal = SubResource("AtlasTexture_kuka5")
+texture_pressed = SubResource("AtlasTexture_f1im3")
+texture_hover = SubResource("AtlasTexture_f1im3")
+item_type = ExtResource("14_0kgsj")
+bag_id = "Armario de Dulces"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1774610452]
 layer = -1
+
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=1324364531]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_iugxa")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Background2" type="TextureRect" parent="CanvasLayer" unique_id=1124131013]
+modulate = Color(1, 1, 1, 0.32156864)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_ba7pe")
+expand_mode = 3
+stretch_mode = 5
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1946161897]
 material = SubResource("ShaderMaterial_5g43m")
@@ -50,12 +324,63 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Button" type="Button" parent="CanvasLayer" unique_id=1984197879]
+[node name="Button" type="TextureButton" parent="CanvasLayer" unique_id=1813600195]
 offset_left = 36.0
 offset_top = 58.0
-offset_right = 275.0
-offset_bottom = 146.0
-theme_override_font_sizes/font_size = 51
-text = "<--"
+offset_right = 339.0
+offset_bottom = 311.0
+scale = Vector2(0.440062, 0.440062)
+texture_normal = SubResource("AtlasTexture_04ivp")
+texture_pressed = SubResource("AtlasTexture_bhunq")
+texture_hover = SubResource("AtlasTexture_bhunq")
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer" unique_id=317752486]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 480
+theme_override_constants/margin_top = 827
+theme_override_constants/margin_right = 480
+
+[node name="Shady_Hands" type="TextureButton" parent="CanvasLayer/MarginContainer2" unique_id=1530951]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.48, 0.48)
+mouse_filter = 2
+texture_normal = SubResource("AtlasTexture_p3wek")
+texture_click_mask = ExtResource("42_kuka5")
+stretch_mode = 5
+
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer" unique_id=1191753028]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 500
+theme_override_constants/margin_top = 900
+theme_override_constants/margin_right = 500
+theme_override_constants/margin_bottom = 80
+
+[node name="ItemNameDescription" type="RichTextLabel" parent="CanvasLayer/MarginContainer3" unique_id=976067402]
+unique_name_in_owner = true
+z_index = 10
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0.101960786, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[color=yellow]TEST[/color]"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

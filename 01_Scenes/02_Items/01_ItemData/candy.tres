@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://oslymvhbcrqe"]
+
+[ext_resource type="Texture2D" uid="uid://416frw3gvl8t" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Idle.png" id="1_0kom5"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_atyag"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuka5"]
+atlas = ExtResource("1_0kom5")
+region = Rect2(2937, 1477, 895, 490)
+
+[resource]
+script = ExtResource("2_atyag")
+item_name = "Caramelos"
+item_sprite = SubResource("AtlasTexture_kuka5")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item_Data" format=3 uid="uid://tutgppse41iy"]
+
+[ext_resource type="Texture2D" uid="uid://dylspo8xnchyv" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ancas_Idle.png" id="1_wavbs"]
+[ext_resource type="Script" uid="uid://bhf1lo8cykf0w" path="res://01_Scenes/02_Items/01_ItemData/item_data.gd" id="2_35s4j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j71sr"]
+atlas = ExtResource("1_wavbs")
+region = Rect2(128, 1280, 792, 768)
+
+[resource]
+script = ExtResource("2_35s4j")
+item_name = "Ancas de Rana Congeladas"
+item_sprite = SubResource("AtlasTexture_j71sr")
+metadata/_custom_type_script = "uid://bhf1lo8cykf0w"

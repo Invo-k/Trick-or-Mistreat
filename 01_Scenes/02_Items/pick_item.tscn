@@ -2,17 +2,20 @@
 
 [ext_resource type="Script" uid="uid://tg0ffdjyl4ih" path="res://01_Scenes/02_Items/pick_item.gd" id="1_t4g8m"]
 [ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="2_ilh34"]
+[ext_resource type="Texture2D" uid="uid://416frw3gvl8t" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Idle.png" id="2_tuc0q"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t4g8m"]
-atlas = ExtResource("2_ilh34")
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuka5"]
+atlas = ExtResource("2_tuc0q")
+region = Rect2(2937, 1477, 895, 490)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(128, 128)
 
 [node name="Pick_Item" type="Node2D" unique_id=783058067]
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_t4g8m")
 item_id = "PRUEBA"
-item_texture = SubResource("AtlasTexture_t4g8m")
+item_texture = SubResource("AtlasTexture_kuka5")
 
 [node name="item_sprite" type="Sprite2D" parent="." unique_id=1323671918]
 unique_name_in_owner = true

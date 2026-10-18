@@ -1,12 +1,25 @@
 [gd_scene format=3 uid="uid://diyvynhq0vlfe"]
 
-[ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="1_e7r28"]
 [ext_resource type="Script" uid="uid://brdf0dnq0egf6" path="res://01_Scenes/99_Testing/bag_drops.gd" id="1_tcqou"]
 [ext_resource type="BitMap" uid="uid://dqjw01gx7rf8b" path="res://icon_bitmap_test.svg" id="2_jckd3"]
+[ext_resource type="Resource" uid="uid://ciu3vgkoxb3h2" path="res://05_Dialogue/test.dialogue" id="4_o0blo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jckd3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lypw"]
 
 [node name="Bag_Drops" type="TextureButton" unique_id=414544665]
-texture_normal = ExtResource("1_e7r28")
+texture_normal = SubResource("AtlasTexture_jckd3")
+texture_pressed = SubResource("AtlasTexture_4lypw")
+texture_hover = SubResource("AtlasTexture_4lypw")
 texture_click_mask = ExtResource("2_jckd3")
 script = ExtResource("1_tcqou")
+bag_id = "CAJA DE PRUEBA"
+Dialogue_Description = ExtResource("4_o0blo")
+Start_Dialogue = "candy"
 
 [connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
