@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b4quw2vnagf60"]
+
+[ext_resource type="Script" uid="uid://tg0ffdjyl4ih" path="res://01_Scenes/02_Items/pick_item.gd" id="1_t4g8m"]
+[ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="2_ilh34"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4g8m"]
+atlas = ExtResource("2_ilh34")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(128, 128)
+
+[node name="Pick_Item" type="Node2D" unique_id=783058067]
+script = ExtResource("1_t4g8m")
+item_id = "PRUEBA"
+item_texture = SubResource("AtlasTexture_t4g8m")
+
+[node name="item_sprite" type="Sprite2D" parent="." unique_id=1323671918]
+unique_name_in_owner = true
+position = Vector2(-3.874302e-07, -3.874302e-07)
+texture = ExtResource("2_ilh34")
+
+[node name="Item_Area" type="Area2D" parent="." unique_id=819574181]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Item_Area" unique_id=1358157887]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[connection signal="body_entered" from="Item_Area" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Item_Area" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Item_Area" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Item_Area" to="." method="_on_area_2d_mouse_exited"]

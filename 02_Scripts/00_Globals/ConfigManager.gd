@@ -29,6 +29,7 @@ var config_file = ConfigFile.new()
 #region Gameplay Variables
 
 var is_dragging : bool
+var item_save : String
 
 #endregion
 

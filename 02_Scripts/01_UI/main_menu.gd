@@ -10,7 +10,10 @@ func _ready() -> void:
 
 
 func _on_start_pressed() -> void:
-	pass # Replace with function body.
+	TransitionManager.transition_animator.play("Move_Right")
+	await TransitionManager.transition_animator.animation_finished
+	get_tree().change_scene_to_file("res://01_Scenes/00_UI/door_scene.tscn")
+	TransitionManager.transition_animator.play_backwards("Move_Left")
 
 func _on_options_pressed() -> void:
 	var new_option_menu = OPTION_MENU.instantiate()

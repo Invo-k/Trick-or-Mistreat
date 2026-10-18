@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dqjw01gx7rf8b"
+path="res://.godot/imported/icon_bitmap_test.svg-f60769f2ddb7d8a562470400e56f0374.res"
+
+[deps]
+
+source_file="res://icon_bitmap_test.svg"
+dest_files=["res://.godot/imported/icon_bitmap_test.svg-f60769f2ddb7d8a562470400e56f0374.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

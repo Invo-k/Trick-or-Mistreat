@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://b6mrxmn7vc8tx"]
 
+[ext_resource type="Script" uid="uid://ck7njsdmxtbyn" path="res://01_Scenes/00_UI/game_scene.gd" id="1_5g43m"]
 [ext_resource type="PackedScene" uid="uid://dkqsh8chdffwe" path="res://01_Scenes/99_Testing/drop.tscn" id="1_wt0nd"]
-[ext_resource type="PackedScene" uid="uid://b4quw2vnagf60" path="res://01_Scenes/99_Testing/pick_item.tscn" id="2_mwvxh"]
+[ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_ba7pe"]
+[ext_resource type="PackedScene" uid="uid://diyvynhq0vlfe" path="res://01_Scenes/99_Testing/bag_drops.tscn" id="3_mwvxh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5g43m"]
+shader = ExtResource("2_ba7pe")
 
 [node name="Game_Scene" type="Node2D" unique_id=2096583920]
+script = ExtResource("1_5g43m")
 
 [node name="Drop" parent="." unique_id=1554410279 instance=ExtResource("1_wt0nd")]
 position = Vector2(1448, 413)
@@ -14,11 +20,42 @@ position = Vector2(354, 300)
 [node name="Drop3" parent="." unique_id=50268242 instance=ExtResource("1_wt0nd")]
 position = Vector2(736, 618)
 
-[node name="Pick_Item" parent="." unique_id=783058067 instance=ExtResource("2_mwvxh")]
-position = Vector2(1012, 203)
+[node name="Bag_Drops" parent="." unique_id=669679697 instance=ExtResource("3_mwvxh")]
+offset_left = 1138.0
+offset_top = 255.0
+offset_right = 1138.0
+offset_bottom = 255.0
 
-[node name="Pick_Item2" parent="." unique_id=1120557102 instance=ExtResource("2_mwvxh")]
-position = Vector2(627, 337)
+[node name="Bag_Drops2" parent="." unique_id=15517703 instance=ExtResource("3_mwvxh")]
+offset_left = 740.0
+offset_top = 345.0
+offset_right = 740.0
+offset_bottom = 345.0
 
-[node name="Pick_Item3" parent="." unique_id=2009880135 instance=ExtResource("2_mwvxh")]
-position = Vector2(1252, 622)
+[node name="Bag_Drops3" parent="." unique_id=2133397253 instance=ExtResource("3_mwvxh")]
+offset_left = 1573.0
+offset_top = 167.0
+offset_right = 1573.0
+offset_bottom = 167.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1774610452]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1946161897]
+material = SubResource("ShaderMaterial_5g43m")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1984197879]
+offset_left = 36.0
+offset_top = 58.0
+offset_right = 275.0
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 51
+text = "<--"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

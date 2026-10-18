@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://diyvynhq0vlfe"]
+
+[ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="1_e7r28"]
+[ext_resource type="Script" uid="uid://brdf0dnq0egf6" path="res://01_Scenes/99_Testing/bag_drops.gd" id="1_tcqou"]
+[ext_resource type="BitMap" uid="uid://dqjw01gx7rf8b" path="res://icon_bitmap_test.svg" id="2_jckd3"]
+
+[node name="Bag_Drops" type="TextureButton" unique_id=414544665]
+texture_normal = ExtResource("1_e7r28")
+texture_click_mask = ExtResource("2_jckd3")
+script = ExtResource("1_tcqou")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

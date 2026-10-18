@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://gk8o7j5gse3v"]
+
+[ext_resource type="Script" uid="uid://hlyk32e1phf" path="res://01_Scenes/00_UI/door_scene.gd" id="1_sylov"]
+[ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_2p2q1"]
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="2_c0ni1"]
+[ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="3_7cghn"]
+[ext_resource type="Resource" uid="uid://ciu3vgkoxb3h2" path="res://05_Dialogue/test.dialogue" id="3_fpyx8"]
+[ext_resource type="BitMap" uid="uid://dqjw01gx7rf8b" path="res://icon_bitmap_test.svg" id="6_fpyx8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6iobx"]
+shader = ExtResource("2_2p2q1")
+
+[node name="Door_Scene" type="Control" unique_id=752925353]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sylov")
+Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("3_fpyx8")])
+
+[node name="Background" type="TextureRect" parent="." unique_id=917642958]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=1061887354]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09803922, 1, 1, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1640067736]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 600
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 600
+
+[node name="Character" type="TextureButton" parent="MarginContainer" unique_id=1095564803]
+layout_mode = 2
+texture_normal = ExtResource("3_7cghn")
+texture_click_mask = ExtResource("6_fpyx8")
+stretch_mode = 5
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=667119522]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 320
+theme_override_constants/margin_top = 680
+theme_override_constants/margin_right = 320
+
+[node name="Shady_Hands" type="TextureButton" parent="MarginContainer2" unique_id=184338680]
+layout_mode = 2
+texture_normal = ExtResource("3_7cghn")
+texture_click_mask = ExtResource("6_fpyx8")
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=629394282]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -285.0
+offset_top = 71.0
+offset_right = -46.0
+offset_bottom = 159.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 51
+text = "-->"
+
+[node name="Efecto" type="ColorRect" parent="." unique_id=157643219]
+material = SubResource("ShaderMaterial_6iobx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="pressed" from="MarginContainer/Character" to="." method="_on_character_pressed"]
+[connection signal="pressed" from="MarginContainer2/Shady_Hands" to="." method="_on_shady_hands_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
