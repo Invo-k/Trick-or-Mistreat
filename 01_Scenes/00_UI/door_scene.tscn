@@ -109,7 +109,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_s66iw"]
 resource_name = "cookie_jumpscare"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -125,7 +125,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_qy1me"]
 resource_name = "door_open_cookie"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -157,7 +157,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_5uf6x"]
 resource_name = "door_open_harpy"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -173,7 +173,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_iw1rc"]
 resource_name = "door_open_medusa"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -189,7 +189,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_vf7d5"]
 resource_name = "door_open_pure_science"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -221,7 +221,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_5cm08"]
 resource_name = "door_open_science"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -237,7 +237,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_vqi3e"]
 resource_name = "franky_jumpscare"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -253,7 +253,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_2jwpl"]
 resource_name = "harpy_jumpscare"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -269,7 +269,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_1ycyl"]
 resource_name = "medusa_jumpscare"
-length = 0.19999999999999998
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
