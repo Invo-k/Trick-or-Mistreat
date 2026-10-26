@@ -1,13 +1,16 @@
 extends CanvasLayer
 
 @onready var screen_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/Screen/Screen_Text
-@onready var option_screen: OptionButton = $Control/MarginContainer/VBoxContainer/Screen/Option_Screen
+@onready var option_screen: OptionButton = %Option_Screen
 @onready var music_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/Music/Music_Text
-@onready var music_value: HSlider = $Control/MarginContainer/VBoxContainer/Music/Music_Value
 @onready var sfx_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/SFX/SFX_Text
-@onready var sfx_value: HSlider = $Control/MarginContainer/VBoxContainer/SFX/SFX_Value
+@onready var music_value: HSlider = %Music_Value
+@onready var sfx_value: HSlider = %SFX_Value
 @onready var back: Button = %Back
 
+
+func _ready() -> void:
+	option_screen.grab_focus()
 
 func cargar_opciones() -> void:
 	music_value.value = ConfigManager.audio_musica
@@ -72,3 +75,5 @@ func _on_back_pressed() -> void:
 	ConfigManager.save_options("AUDIO OPTIONS","BGM", ConfigManager.audio_musica)
 	ConfigManager.save_options("AUDIO OPTIONS","SFX", ConfigManager.audio_sfx)
 	queue_free()
+	GameValues.last_focus.grab_focus()
+	GameValues.last_focus = null

@@ -2,6 +2,8 @@ extends Control
 
 const OPTION_MENU = preload("uid://cuc15xx6rysxb")
 @export var Scene_Music : String
+@onready var start: Button_Menu = %Start
+@onready var options: Button_Menu = %Options
 
 func _ready() -> void:
 	cargar_opciones_intro()
@@ -9,6 +11,7 @@ func _ready() -> void:
 	GameValues.actual_character_level = 0
 	GameValues.is_candy_time = false
 	TransitionManager.transition_animator.play("Fade_Out")
+	start.grab_focus()
 	
 func _on_start_pressed() -> void:
 	TransitionManager.transition_animator.play("Move_Right")
@@ -18,6 +21,10 @@ func _on_start_pressed() -> void:
 func _on_options_pressed() -> void:
 	var new_option_menu = OPTION_MENU.instantiate()
 	call_deferred("add_child", new_option_menu)
+	GameValues.last_focus = options
+
+func _on_credits_pressed() -> void:
+	pass # Replace with function body.
 
 func _on_quit_pressed() -> void:
 	await get_tree().create_timer(0.2).timeout
