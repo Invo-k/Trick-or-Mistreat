@@ -1,34 +1,49 @@
 shader_type canvas_item;
-const float UPDATE_INTERVAL = .163;
-const float STATIC_GRANULARITY = .005;
-const float EDGE_BLUR = .5;
-const float BORDER_SIZE = .3;
 
-float generate_random_static (in float size, in float interval, in vec2 uv){
-	float time_step = TIME - mod(TIME,interval);
+// --- Ajustes editables ---
+uniform float coverage : hint_range(0.0, 1.0) = 0.5;        // 0 = nada, 1 = toda la pantalla
+uniform vec4 noise_color : source_color = vec4(1.0);
+uniform float noise_opacity : hint_range(0.0, 1.0) = 0.3;   // fuerza del ruido
+uniform float edge_softness : hint_range(0.05, 1.0) = 0.5;  // difuminado del borde del círculo
+uniform float vignette_strength : hint_range(0.0, 1.0) = 0.6; // oscurecimiento en la zona del ruido (0 = sin viñeta)
+uniform float aspect_ratio = 1.0;                           // ancho/alto del rect (1.778 para 16:9 = círculo perfecto)
+uniform float grain_size : hint_range(0.001, 0.05) = 0.005;
+uniform float update_interval : hint_range(0.01, 0.5) = 0.163;
+
+const float WOBBLE = 0.015;
+
+float generate_random_static(float size, float interval, vec2 uv) {
+	float time_step = mod(TIME - mod(TIME, interval), 1000.0);
 	vec2 uv_step = uv - mod(uv, size);
-	return fract(sin(dot(uv_step,vec2(12.0278*sin(time_step),15.0905)))*43758.5453);
+	return fract(sin(dot(uv_step, vec2(12.0278 * sin(time_step), 15.0905))) * 43758.5453);
 }
 
-vec2 get_polar_coords (vec2 center, vec2 uv){
-	vec2 pos = uv-center;
-	float r = length(pos);
-	float theta = atan(pos.y,pos.x);
-	return vec2(r,theta);
-}
-
-vec4 layer (in vec4 front_color, in vec4 back_color){
-	return vec4(mix(back_color.rgb,front_color.rgb,front_color.a),front_color.a+back_color.a);
+vec4 layer(vec4 front, vec4 back) {
+	float a = front.a + back.a * (1.0 - front.a);
+	vec3 rgb = (front.rgb * front.a + back.rgb * back.a * (1.0 - front.a)) / max(a, 0.0001);
+	return vec4(rgb, a);
 }
 
 void fragment() {
-	vec3 static_plot = vec3(generate_random_static(STATIC_GRANULARITY,UPDATE_INTERVAL,UV));
-	
-	vec2 c1 = vec2(0.5);
-	vec2 pv1 = get_polar_coords(c1,UV);
-	float func = BORDER_SIZE-.015*cos(4.0*pv1.y);
-	float border_plot = smoothstep(func,func+EDGE_BLUR, pv1.x);
-	vec4 border_color = vec4(vec3(0.0),1.0)*border_plot;
-	COLOR = vec4(static_plot,.1);
-	COLOR = layer(COLOR,border_color);
+	// Coordenadas polares desde el centro (corregidas por proporción de pantalla)
+	vec2 pos = (UV - vec2(0.5)) * vec2(aspect_ratio, 1.0);
+	float r = length(pos);
+	float theta = atan(pos.y, pos.x);
+
+	// Radio hasta la esquina: con coverage = 0 el borde queda fuera de la pantalla
+	float max_r = length(vec2(0.5 * aspect_ratio, 0.5));
+
+	// El borde del ruido avanza desde fuera de la pantalla hasta pasar el centro
+	float start = mix(max_r + WOBBLE, -edge_softness - WOBBLE, coverage);
+	float edge = start - WOBBLE * cos(4.0 * theta);
+	float mask = smoothstep(edge, edge + edge_softness, r);
+
+	// Ruido tintado, visible solo donde la máscara lo permite
+	float n = generate_random_static(grain_size, update_interval, UV);
+	vec4 noise = vec4(noise_color.rgb * n, noise_opacity * noise_color.a * mask);
+
+	// Viñeta oscura que crece con la misma máscara
+	vec4 vignette = vec4(0.0, 0.0, 0.0, vignette_strength * mask);
+
+	COLOR = layer(noise, vignette);
 }

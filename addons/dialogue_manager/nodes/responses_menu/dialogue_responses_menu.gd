@@ -26,6 +26,12 @@ signal response_selected(response: Variant)
 ## Hide any responses where [code]is_allowed[/code] is false
 @export var hide_failed_responses: bool = false
 
+
+@export_group("Animación")
+@export var focus_scale := Vector2(1.05, 1.05)
+@export var anim_time := 0.25
+
+
 ## The list of dialogue responses.
 var responses: Array = []:
 	set(value):
@@ -50,7 +56,30 @@ func _ready() -> void:
 	)
 
 	get_viewport().gui_focus_changed.connect(_on_focus_changed)
+	
+	
+func _setup_item_animation(item: Control) -> void:
+	if "disabled" in item and item.disabled:
+		return
+	item.pivot_offset_ratio = Vector2(0.5, 0.5)   # escala desde el centro del botón
+	item.focus_entered.connect(_animate_item.bind(item, focus_scale))
+	item.focus_exited.connect(_animate_item.bind(item, Vector2.ONE))
 
+
+func _animate_item(item: Control, target: Vector2) -> void:
+	if not is_instance_valid(item):
+		return
+	# Cada botón guarda su propio tween, así uno no corta la animación de otro
+	if item.has_meta("anim_tween"):
+		var old: Tween = item.get_meta("anim_tween")
+		if old and old.is_valid():
+			old.kill()
+
+	var t := item.create_tween()
+	t.set_ease(Tween.EASE_OUT)
+	t.set_trans(Tween.TRANS_EXPO)
+	t.tween_property(item, "scale", target, anim_time)
+	item.set_meta("anim_tween", t)
 
 func _exit_tree() -> void:
 	if is_instance_valid(response_template):
@@ -158,6 +187,8 @@ func _apply_responses() -> void:
 			item.set_meta("response", response)
 
 			add_child(item)
+			
+			_setup_item_animation(item)
 
 		if auto_configure_focus:
 			configure_focus()

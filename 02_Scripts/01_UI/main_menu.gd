@@ -14,12 +14,19 @@ func _ready() -> void:
 	start.grab_focus()
 	
 func _on_start_pressed() -> void:
+	start.release_focus()
 	TransitionManager.transition_animator.play("Move_Right")
 	await TransitionManager.transition_animator.animation_finished
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/door_scene.tscn")
 
 func _on_options_pressed() -> void:
 	var new_option_menu = OPTION_MENU.instantiate()
+	if TransitionManager.transition_animator.is_playing():
+		TransitionManager.transition_animator.speed_scale = 2
+		await TransitionManager.transition_animator.animation_finished
+		TransitionManager.transition_animator.speed_scale = 1
+	TransitionManager.transition_animator.play("menu_open")
+	await TransitionManager.transition_animator.animation_finished
 	call_deferred("add_child", new_option_menu)
 	GameValues.last_focus = options
 

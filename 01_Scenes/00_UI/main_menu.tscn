@@ -16,6 +16,50 @@
 [ext_resource type="Texture2D" uid="uid://chbecuatq5awp" path="res://00_Assets/00_Sprites/03_Buttons/TOM_QuitHover.png" id="12_1fncq"]
 [ext_resource type="BitMap" uid="uid://cckjhbfb71fel" path="res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/TOM_QuitIdle_bitmap.png" id="15_1afnw"]
 
+[sub_resource type="Gradient" id="Gradient_r1dcs"]
+offsets = PackedFloat32Array(0, 0.74698794)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1fncq"]
+gradient = SubResource("Gradient_r1dcs")
+width = 256
+height = 1804
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_1afnw"]
+offsets = PackedFloat32Array(0, 0.6807229)
+colors = PackedColorArray(1, 1, 0.36078432, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1afnw"]
+gradient = SubResource("Gradient_1afnw")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_1fncq"]
+offsets = PackedFloat32Array(0, 0.38554215)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nqrx2"]
+gradient = SubResource("Gradient_1fncq")
+width = 149
+height = 214
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_nqrx2"]
+offsets = PackedFloat32Array(0, 0.44578314)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_riqys"]
+gradient = SubResource("Gradient_nqrx2")
+width = 127
+height = 90
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="Main_Menu" type="Control" unique_id=1909116580]
 layout_mode = 3
 anchors_preset = 15
@@ -37,15 +81,16 @@ texture = ExtResource("2_b0sud")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2073730013]
-layout_mode = 1
+[node name="Button_Menu" type="CanvasLayer" parent="." unique_id=58482452]
+
+[node name="MarginContainer" type="MarginContainer" parent="Button_Menu" unique_id=2073730013]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Start" type="TextureButton" parent="MarginContainer" unique_id=1073848082]
+[node name="Start" type="TextureButton" parent="Button_Menu/MarginContainer" unique_id=1073848082]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
@@ -66,7 +111,7 @@ stretch_mode = 5
 script = ExtResource("2_njjq1")
 metadata/_custom_type_script = "uid://b1au8xu3v2744"
 
-[node name="Options" type="TextureButton" parent="MarginContainer" unique_id=2252673]
+[node name="Options" type="TextureButton" parent="Button_Menu/MarginContainer" unique_id=2252673]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
@@ -87,7 +132,7 @@ stretch_mode = 5
 script = ExtResource("2_njjq1")
 metadata/_custom_type_script = "uid://b1au8xu3v2744"
 
-[node name="Credits" type="TextureButton" parent="MarginContainer" unique_id=299297150]
+[node name="Credits" type="TextureButton" parent="Button_Menu/MarginContainer" unique_id=299297150]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
@@ -108,7 +153,7 @@ stretch_mode = 5
 script = ExtResource("2_njjq1")
 metadata/_custom_type_script = "uid://b1au8xu3v2744"
 
-[node name="Quit" type="TextureButton" parent="MarginContainer" unique_id=1767416614]
+[node name="Quit" type="TextureButton" parent="Button_Menu/MarginContainer" unique_id=1767416614]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 2
@@ -129,7 +174,113 @@ stretch_mode = 5
 script = ExtResource("2_njjq1")
 metadata/_custom_type_script = "uid://b1au8xu3v2744"
 
-[connection signal="pressed" from="MarginContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="MarginContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="MarginContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=826334726]
+visible = false
+color = Color(0.8776157, 0.8776158, 0.8776157, 1)
+
+[node name="PointLight2D14" type="PointLight2D" parent="CanvasModulate" unique_id=1386836664]
+position = Vector2(182, 409)
+rotation = -0.086672746
+energy = 0.84
+texture = SubResource("GradientTexture2D_1fncq")
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasModulate" unique_id=157998473]
+position = Vector2(1314, 120)
+energy = 2.64
+texture = SubResource("GradientTexture2D_1afnw")
+
+[node name="PointLight2D4" type="PointLight2D" parent="CanvasModulate" unique_id=207021578]
+position = Vector2(1066, 871)
+scale = Vector2(0.6, 0.6)
+energy = 2.64
+texture = SubResource("GradientTexture2D_1afnw")
+
+[node name="PointLight2D15" type="PointLight2D" parent="CanvasModulate" unique_id=1259661500]
+position = Vector2(1032.0001, 953)
+rotation = 0.34671077
+scale = Vector2(0.6, 0.6)
+energy = 1.14
+texture = SubResource("GradientTexture2D_nqrx2")
+
+[node name="PointLight2D2" type="PointLight2D" parent="CanvasModulate" unique_id=1869538956]
+position = Vector2(1125, 577)
+rotation = 0.87081724
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.94
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D3" type="PointLight2D" parent="CanvasModulate" unique_id=223160732]
+position = Vector2(963, 652)
+rotation = 0.87081724
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.94
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D5" type="PointLight2D" parent="CanvasModulate" unique_id=647333843]
+position = Vector2(1743, 606.99994)
+rotation = 2.203257
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D6" type="PointLight2D" parent="CanvasModulate" unique_id=114513622]
+position = Vector2(1848.9999, 504)
+rotation = 2.203257
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D7" type="PointLight2D" parent="CanvasModulate" unique_id=1919519847]
+position = Vector2(1551, 841)
+rotation = 2.9885736
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D8" type="PointLight2D" parent="CanvasModulate" unique_id=1234117340]
+position = Vector2(1643.0002, 644.0002)
+rotation = 0.5585749
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D9" type="PointLight2D" parent="CanvasModulate" unique_id=512857882]
+position = Vector2(1721.0002, 444.00006)
+rotation = -0.18831348
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D10" type="PointLight2D" parent="CanvasModulate" unique_id=862951191]
+position = Vector2(1781.9998, 359.00003)
+rotation = 1.3757006
+scale = Vector2(0.99999994, 0.99999994)
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D11" type="PointLight2D" parent="CanvasModulate" unique_id=1081654570]
+position = Vector2(1860.9999, 257.00003)
+rotation = 1.8478935
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D12" type="PointLight2D" parent="CanvasModulate" unique_id=1296108221]
+position = Vector2(1835, 79.00001)
+rotation = 1.549356
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[node name="PointLight2D13" type="PointLight2D" parent="CanvasModulate" unique_id=1939755133]
+position = Vector2(1915, 77.00001)
+rotation = 1.549356
+color = Color(1, 0.27058825, 0.20784314, 1)
+energy = 2.64
+texture = SubResource("GradientTexture2D_riqys")
+
+[connection signal="pressed" from="Button_Menu/MarginContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_Menu/MarginContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_Menu/MarginContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Button_Menu/MarginContainer/Quit" to="." method="_on_quit_pressed"]

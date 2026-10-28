@@ -36,6 +36,7 @@ func _on_mouse_entered():
 	tween.set_ease(Tween.EASE_OUT)
 	tween.set_trans(Tween.TRANS_EXPO)
 	tween.tween_property(self, "scale", Vector2(1.05, 1.05), 0.25)
+	grab_focus()
 
 
 func _gui_input(event): #Esta funcion es para cancelar la repetición de mantener pulsado algo y que se mueva infinitamente

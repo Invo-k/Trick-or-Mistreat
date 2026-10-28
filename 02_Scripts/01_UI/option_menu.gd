@@ -1,16 +1,29 @@
 extends CanvasLayer
 
-@onready var screen_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/Screen/Screen_Text
 @onready var option_screen: OptionButton = %Option_Screen
-@onready var music_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/Music/Music_Text
-@onready var sfx_text: RichTextLabel = $Control/MarginContainer/VBoxContainer/SFX/SFX_Text
 @onready var music_value: HSlider = %Music_Value
 @onready var sfx_value: HSlider = %SFX_Value
 @onready var back: Button = %Back
 
+@onready var screen_text: RichTextLabel = %Screen_Text
+@onready var music_text: RichTextLabel = %Music_Text
+@onready var sfx_text: RichTextLabel = %SFX_Text
+@onready var languaje_text: RichTextLabel = %Languaje_Text
+
+@export_category("OPTIONS_TEXTS")
+@export var wave_effect : String = "[wave amp=25 freq=5]"
+@export var shake_effect : String = "[color=yellow][shake rate=18 level=13]"
+@export var Screen_Text : String = "Ajustes de Pantalla"
+@export var Music_Text : String = "Música"
+@export var SFX_Text : String = "Efectos de Sonido"
+@export var Languaje_Text : String = "Idioma"
+
 
 func _ready() -> void:
+	cargar_opciones()
+	TransitionManager.transition_animator.play_backwards("menu_open")
 	option_screen.grab_focus()
+	await TransitionManager.transition_animator.animation_finished
 
 func cargar_opciones() -> void:
 	music_value.value = ConfigManager.audio_musica
@@ -69,11 +82,52 @@ func _on_sfx_value_value_changed(value: float) -> void:
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"),linear_to_db(value))
 
 
+func _on_languaje_value_item_selected(index: int) -> void:
+	match index:
+		0:
+			ConfigManager.languaje = "es"
+		
+		1:
+			ConfigManager.languaje = "en"
+
 
 func _on_back_pressed() -> void:
 	ConfigManager.save_options("GRAPHICS OPTIONS","Fullscreen", ConfigManager.screen_mode)
 	ConfigManager.save_options("AUDIO OPTIONS","BGM", ConfigManager.audio_musica)
 	ConfigManager.save_options("AUDIO OPTIONS","SFX", ConfigManager.audio_sfx)
+	TransitionManager.transition_animator.play("menu_open")
+	await TransitionManager.transition_animator.animation_finished
 	queue_free()
+	TransitionManager.transition_animator.play_backwards("menu_open")
 	GameValues.last_focus.grab_focus()
 	GameValues.last_focus = null
+
+
+
+func _on_option_focus_entered() -> void:
+	screen_text.text = shake_effect + Screen_Text + "[/shake]"
+
+func _on_option_focus_exited() -> void:
+	#screen_text.text = wave_effect + Screen_Text + "[/wave]"
+	screen_text.text = Screen_Text
+
+func _on_music_value_focus_entered() -> void:
+	music_text.text = shake_effect + Music_Text + "[/shake]"
+
+func _on_music_value_focus_exited() -> void:
+	#music_text.text = wave_effect + Music_Text + "[/wave]"
+	music_text.text = Music_Text
+
+func _on_sfx_value_focus_entered() -> void:
+	sfx_text.text = shake_effect + SFX_Text + "[/shake]"
+
+func _on_sfx_value_focus_exited() -> void:
+	#sfx_text.text = wave_effect + SFX_Text + "[/wave]"
+	sfx_text.text = SFX_Text
+
+func _on_languaje_value_focus_entered() -> void:
+	languaje_text.text = shake_effect + Languaje_Text + "[/shake]"
+
+func _on_languaje_value_focus_exited() -> void:
+	#languaje_text.text = wave_effect + Languaje_Text + "[/wave]"
+	languaje_text.text = Languaje_Text

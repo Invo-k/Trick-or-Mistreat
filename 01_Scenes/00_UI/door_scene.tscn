@@ -39,6 +39,14 @@ region = Rect2(69, 69, 303, 253)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6iobx"]
 shader = ExtResource("2_2p2q1")
+shader_parameter/coverage = 0.5
+shader_parameter/noise_color = Color(2.887845e-06, 0, 0.7245649, 1)
+shader_parameter/noise_opacity = 0.3
+shader_parameter/edge_softness = 0.5
+shader_parameter/vignette_strength = 0.6
+shader_parameter/aspect_ratio = 1.0
+shader_parameter/grain_size = 0.005
+shader_parameter/update_interval = 0.163
 
 [sub_resource type="Animation" id="Animation_fpyx8"]
 resource_name = "Candy_t"

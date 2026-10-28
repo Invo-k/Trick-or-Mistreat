@@ -1,0 +1,72 @@
+[gd_resource type="Theme" format=3 uid="uid://dgwdbf4br0yxc"]
+
+[sub_resource type="Texture2DRD" id="Texture2DRD_3q83f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsl3j"]
+bg_color = Color(0.7100706, 0.59109473, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nj7di"]
+bg_color = Color(0.95291525, 0.79787153, 1.1551381e-06, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcomt"]
+bg_color = Color(0.15061015, 0.18065786, 0.4905706, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xne0o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_udww3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qolw1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nj7di"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yeji0"]
+
+[resource]
+HSlider/constants/center_grabber = 0
+HSlider/constants/grabber_offset = 0
+HSlider/constants/tick_offset = 0
+HSlider/icons/grabber = SubResource("Texture2DRD_3q83f")
+HSlider/icons/grabber_disabled = SubResource("Texture2DRD_3q83f")
+HSlider/icons/grabber_highlight = SubResource("Texture2DRD_3q83f")
+HSlider/icons/tick = SubResource("Texture2DRD_3q83f")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_rsl3j")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_nj7di")
+HSlider/styles/slider = SubResource("StyleBoxFlat_dcomt")
+OptionButton/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+OptionButton/colors/font_focus_color = Color(0.8745098, 0.8745098, 0, 1)
+OptionButton/colors/font_outline_color = Color(0, 0, 0, 1)
+OptionButton/constants/outline_size = 0
+OptionButton/font_sizes/font_size = 16
+OptionButton/fonts/font = null
+OptionButton/icons/arrow = null
+OptionButton/styles/disabled = SubResource("StyleBoxEmpty_xne0o")
+OptionButton/styles/focus = SubResource("StyleBoxEmpty_udww3")
+OptionButton/styles/hover = SubResource("StyleBoxEmpty_qolw1")
+OptionButton/styles/normal = SubResource("StyleBoxEmpty_nj7di")
+OptionButton/styles/pressed = SubResource("StyleBoxEmpty_yeji0")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 0.7411765)
+RichTextLabel/constants/outline_size = 5
+RichTextLabel/constants/shadow_offset_x = 2
+RichTextLabel/constants/shadow_offset_y = 2
