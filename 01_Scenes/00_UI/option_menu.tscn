@@ -101,10 +101,10 @@ selected = 0
 item_count = 3
 popup/item_0/text = "Pantalla Completa"
 popup/item_0/id = 0
-popup/item_1/text = "Modo Ventana"
+popup/item_1/text = "1280x720"
 popup/item_1/id = 1
-popup/item_2/text = "Sin Bordes"
-popup/item_2/id = 2
+popup/item_2/text = "960x540"
+popup/item_2/id = 3
 script = ExtResource("3_o4475")
 arrow_left = NodePath("../TextureRect2")
 arrow_right = NodePath("../TextureRect")
@@ -149,8 +149,9 @@ focus_next = NodePath(".")
 focus_previous = NodePath(".")
 theme = ExtResource("4_rsl3j")
 max_value = 1.0
-step = 0.05
+step = 0.01
 value = 1.0
+ticks_position = 2
 
 [node name="SFX" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=78169475]
 layout_mode = 2
@@ -182,7 +183,7 @@ focus_next = NodePath(".")
 focus_previous = NodePath(".")
 theme = ExtResource("4_rsl3j")
 max_value = 1.0
-step = 0.05
+step = 0.01
 value = 1.0
 
 [node name="Screen2" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=1560087818]
@@ -219,6 +220,7 @@ stretch_mode = 5
 flip_h = true
 
 [node name="Languaje_Value" type="OptionButton" parent="Control/MarginContainer/VBoxContainer/Screen2/HBoxContainer" unique_id=1583003995 node_paths=PackedStringArray("arrow_left", "arrow_right")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4

@@ -1,5 +1,31 @@
 [gd_resource type="Theme" format=3 uid="uid://dgwdbf4br0yxc"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nj7di"]
+bg_color = Color(0, 0, 0, 0.6039216)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.24313726, 0.2901961, 0.7254902, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udww3"]
+bg_color = Color(0, 0, 0, 0.6039216)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 0, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+corner_detail = 1
+
 [sub_resource type="Texture2DRD" id="Texture2DRD_3q83f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsl3j"]
@@ -12,7 +38,7 @@ expand_margin_top = 8.0
 expand_margin_right = 8.0
 expand_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nj7di"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xne0o"]
 bg_color = Color(0.95291525, 0.79787153, 1.1551381e-06, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
@@ -42,15 +68,21 @@ expand_margin_bottom = 8.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yeji0"]
 
 [resource]
+Button/font_sizes/font_size = 50
+Button/styles/disabled = SubResource("StyleBoxFlat_nj7di")
+Button/styles/focus = SubResource("StyleBoxFlat_udww3")
+Button/styles/hover = SubResource("StyleBoxFlat_udww3")
+Button/styles/normal = SubResource("StyleBoxFlat_nj7di")
+Button/styles/pressed = SubResource("StyleBoxFlat_udww3")
 HSlider/constants/center_grabber = 0
 HSlider/constants/grabber_offset = 0
 HSlider/constants/tick_offset = 0
-HSlider/icons/grabber = SubResource("Texture2DRD_3q83f")
+HSlider/icons/grabber = null
 HSlider/icons/grabber_disabled = SubResource("Texture2DRD_3q83f")
 HSlider/icons/grabber_highlight = SubResource("Texture2DRD_3q83f")
 HSlider/icons/tick = SubResource("Texture2DRD_3q83f")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_rsl3j")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_nj7di")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_xne0o")
 HSlider/styles/slider = SubResource("StyleBoxFlat_dcomt")
 OptionButton/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 OptionButton/colors/font_focus_color = Color(0.8745098, 0.8745098, 0, 1)

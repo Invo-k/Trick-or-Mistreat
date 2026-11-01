@@ -1,0 +1,23 @@
+~ start
+
+
+
+=> END
+
+~ negociation
+
+- Si
+	do GameValues.candy_time_animation.emit()
+	Tú: Ahí tienes.
+	=> candy_time
+- No
+	Tú: Ahora voy, dame un momento.
+	=> END
+=> END
+
+=> END
+
+~ candy_time
+
+
+=> END

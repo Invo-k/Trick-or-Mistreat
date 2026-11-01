@@ -4,13 +4,10 @@ extends Control
 @onready var character: TextureButton = %Character
 @onready var shady_hands: TextureButton = %Shady_Hands
 @onready var item_name_description: RichTextLabel = %ItemNameDescription
-@onready var animator: AnimationPlayer = %Animator
+@onready var animator: AnimationPlayer = %Scene_Animator
 @onready var arrow: TextureButton = %Arrow
 
 @export_category("IMAGES")
-@export var Characters_Array : Array[Texture2D]
-@export var Characters_Array_Border : Array[Texture2D]
-@export var Character_Bitmap : Array[BitMap]
 @export var Backgrounds_Array : Array[Texture2D]
 
 
@@ -27,6 +24,7 @@ func _ready() -> void:
 	background.texture = GameValues.door_texture
 	if !GameValues.is_candy_time:
 		character.disabled = true
+		arrow.hide()
 		arrow.disabled = true
 	
 	AudioManager.play_music(Scene_Music, 1.0)
@@ -54,10 +52,7 @@ func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/game_scene.tscn")
 
 func prepare_scene() -> void:
-	background.texture = Backgrounds_Array[GameValues.actual_character_level]
-	character.texture_normal = Characters_Array[GameValues.actual_character_level]
-	character.texture_hover = Characters_Array_Border[GameValues.actual_character_level]
-	character.texture_click_mask = Character_Bitmap[GameValues.actual_character_level]
+	background.texture = Backgrounds_Array[0]
 	if GameValues.is_candy_time:
 		shady_hands.show()
 	else:

@@ -1,13 +1,74 @@
 ~ door
-Roger: Probandooooo la puertaaaa
-Roger: TOMA UNA TILDÉ CON MAYÚSCULAS, y ahorá algó con minúsculas. áéíóúÁÉÍÓÚ
+R: Probandooooo la puertaaaa
+R: TOMA UNA TILDÉ CON MAYÚSCULAS, y ahorá algó con minúsculas. áéíóúÁÉÍÓÚ
 Como funciona eso?
 - SI
 - NO
 - PROBANDOOO
 => END
 
-~ candy
+~ test
 Texto de Prueba.
 Si lees esto es que no nos dió tiempo a terminar en la Jam esta parte ._.
+=> END
+
+~ spider
+[color=royal_blue](Una lámpara de araña con araña incluida.)
+[color=royal_blue](Perfecta para aquellos que sean fans de las cosas brillantes.)
+=> END
+
+~ bread
+[color=royal_blue](Una bolsa repleta de barras de pan.)
+[color=royal_blue](Desconozco cuanto tiempo llevará ahí.)
+[color=royal_blue][font_size=25](Y prefiero seguir sin saberlo.)
+=> END
+
+~ ajo
+[color=royal_blue](El enemigo número 1 de los vampiros.)
+[color=royal_blue](Lo único que no entiendo es porque demonios hay tantos colgando de la pared.)
+=> END
+
+~ bible
+[color=royal_blue](Un libro situado en una especie de altar sagrado.)
+[color=royal_blue](Sinceramente, no me apetece nada revisar su contenido.)
+=> END
+
+~ wine
+[color=royal_blue](Una copa de vino a medio consumir.)
+[color=royal_blue](Creo que podría dar el pego como sangre.)
+=> END
+
+~ pumkin
+[color=royal_blue](Una calabaza con una vela encendida en su interior.)
+[color=royal_blue](Me habría gustado llenar con más de estas el jardín, una pena que no quedasen en la tienda.)
+=> END
+
+~ cofe
+[color=royal_blue](Esta maquina de cafe venía con la casa.)
+[color=royal_blue](Creo que esta estropeada, porque da igual que intente preparar siempre hace cafés super cargados de cafeina.)
+[color=royal_blue](Mi teoría es que me la encasquetaron en el proceso de mudanza.)
+[color=royal_blue](A ver que hago yo con ella...)
+=> END
+
+~ tornillos
+[color=royal_blue](Una caja repleta de diferentes tipos de tornillos )
+[color=royal_blue](Hay algunos que ni siquiera se para que se usarían.)
+=> END
+
+~ eggs
+[color=royal_blue](Una huevera con una docena de huevos.)
+[color=royal_blue](Y ya está.)
+[color=royal_blue](Nada más.)
+[color=royal_blue][speed=0.4](Simplemente huevos.)
+[color=royal_blue](Creo que es lo más normal que tengo en esta habitación.)
+=> END
+
+~ frogs
+[color=royal_blue](Una colección de ancas de rana que me encontré revisando el sotano.)
+[color=royal_blue](El anterior dueño sin duda tenía unos gustos muy raros...)
+=> END
+
+~ candy
+[color=royal_blue](Un surtido de caramelos y dulces recien horneados para Halloween.)
+[color=royal_blue](Como no tenía sitio donde dejarlos terminaron en el cajón.)
 => END

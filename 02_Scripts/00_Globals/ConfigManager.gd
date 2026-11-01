@@ -37,13 +37,13 @@ func _ready() -> void:
 	if !FileAccess.file_exists(_SAVE_PATH_SETTINGS): #si no existe un archivo en la ruta _SAVE_PATH_SETTINGS, crea estos valores, luego hay que guardarlos:
 		#(primero titulo de la categoria, luego titulo individual y luego valor)
 		
-		config_file.set_value("AUDIO OPTIONS", "Master", audio_master)
-		config_file.set_value("AUDIO OPTIONS", "BGM", audio_musica)
-		config_file.set_value("AUDIO OPTIONS", "SFX", audio_sfx)
+		config_file.set_value("AUDIO", "Master", audio_master)
+		config_file.set_value("AUDIO", "BGM", audio_musica)
+		config_file.set_value("AUDIO", "SFX", audio_sfx)
 		
-		config_file.set_value("GRAPHICS OPTIONS", "Fullscreen", screen_mode)
+		config_file.set_value("GRAPHICS", "Fullscreen", screen_mode)
 		
-		config_file.set_value("LOCALIZATION OPTIONS","Languaje", languaje)
+		config_file.set_value("LOCALIZATION","Languaje", languaje)
 		
 		config_file.save(_SAVE_PATH_SETTINGS) #guardas los valores que acabas de crear
 
@@ -68,6 +68,7 @@ func save_options(section:String,key:String, value)->void:
 	else:
 		config_file.set_value(section, key, value)
 		config_file.save(_SAVE_PATH_SETTINGS)
+		print("Se ha realizado un guardado de la sección: ", section, ", ", key, ": ", value)
 	
 	
 ## Función que puede ser llama por otra escena para cargar el valor de una key. Devuelve su valor.
@@ -107,32 +108,32 @@ func load_config():
 ##En caso de que alguien modifique sin querer la configuración, esto se asegura de que si no detecta un idioma existente, lo cambie a ingles.
 func check_config():
 	#carga el audio y lo revisa
-	audio_master = load_options("AUDIO OPTIONS", "Master")
-	audio_musica = load_options("AUDIO OPTIONS", "BGM")
-	audio_sfx = load_options("AUDIO OPTIONS", "SFX")
+	audio_master = load_options("AUDIO", "Master")
+	audio_musica = load_options("AUDIO", "BGM")
+	audio_sfx = load_options("AUDIO", "SFX")
 	if audio_master < 0 or audio_master > 1:
 		audio_master = 1
-		save_options("AUDIO OPTIONS", "Master", audio_master)
+		save_options("AUDIO", "Master", audio_master)
 		print("AVISO: EL JUEGO NO ESTABA EN UN MASTER VALIDO")
 		
 	if audio_musica < 0 or audio_musica > 1:
 		audio_musica = 1
-		save_options("AUDIO OPTIONS", "BGM", audio_musica)
+		save_options("AUDIO", "BGM", audio_musica)
 		print("AVISO: EL JUEGO NO ESTABA EN UN MUSIC VALIDO")
 		
 	if audio_sfx < 0 or audio_sfx > 1:
 		audio_sfx = 1
-		save_options("AUDIO OPTIONS", "SFX", audio_sfx)
+		save_options("AUDIO", "SFX", audio_sfx)
 		print("AVISO: EL JUEGO NO ESTABA EN UN SFX VALIDO")
 	
 	#carga la pantalla
-	screen_mode = load_options("GRAPHICS OPTIONS", "Fullscreen")
+	screen_mode = load_options("GRAPHICS", "Fullscreen")
 	
 	#carga el idioma y lo revisa
-	languaje = load_options("LOCALIZATION OPTIONS","Languaje")
+	languaje = load_options("LOCALIZATION","Languaje")
 	if languaje != "es": #añadir más aquí si se añaden idiomas
 		languaje = "es" #por si acaso alguien lo cambia en el archivo externo sin querer.
-		save_options("LOCALIZATION OPTIONS","Languaje", languaje)
+		save_options("LOCALIZATION","Languaje", languaje)
 		print("AVISO: EL JUEGO NO ESTABA EN UN IDIOMA ADMINISTRADO")
 
 #endregion

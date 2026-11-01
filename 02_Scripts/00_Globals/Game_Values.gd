@@ -13,11 +13,15 @@ var actual_character_level : int
 ##Para activar la animación del candy y algunas opciones
 var is_candy_time : bool
 ##Fondo de la puerta
+const door_texture_initial : Texture2D = preload("res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoLocked.png")
 var door_texture : Texture2D = load("res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoLocked.png")
 
 
-##Cambia la transición
+##Cambia del juego al menú (Se usa para los game over y el final del juego)
 func change_scene_dialogue():
 	TransitionManager.transition_animator.play("Move_Right")
 	await TransitionManager.transition_animator.animation_finished
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/main_menu.tscn")
+	first_dialogue = false
+	actual_character_level = 0
+	door_texture = door_texture_initial

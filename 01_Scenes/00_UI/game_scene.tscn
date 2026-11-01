@@ -20,8 +20,8 @@
 [ext_resource type="Resource" uid="uid://kqqgrw4yvmsy" path="res://01_Scenes/02_Items/01_ItemData/tornillos.tres" id="11_cg4j5"]
 [ext_resource type="Texture2D" uid="uid://pi4cwcyylbs4" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ajos_Hover.png" id="11_hd20i"]
 [ext_resource type="Resource" uid="uid://cjp678ktpr0bp" path="res://01_Scenes/02_Items/01_ItemData/eggs.tres" id="12_xtn1x"]
-[ext_resource type="Texture2D" uid="uid://b68ooxwky0r7v" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Biblia_Idle.png" id="13_0kgsj"]
 [ext_resource type="Resource" uid="uid://tutgppse41iy" path="res://01_Scenes/02_Items/01_ItemData/frogs.tres" id="13_hd20i"]
+[ext_resource type="Texture2D" uid="uid://b6ppmchqb5nq0" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Biblia_Hover.png" id="13_j71sr"]
 [ext_resource type="Resource" uid="uid://oslymvhbcrqe" path="res://01_Scenes/02_Items/01_ItemData/candy.tres" id="14_0kgsj"]
 [ext_resource type="Texture2D" uid="uid://7cvquiw0clia" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Idle.png" id="15_80njr"]
 [ext_resource type="Texture2D" uid="uid://dllev3ciwgd88" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Hover.png" id="16_00b45"]
@@ -67,9 +67,16 @@ region = Rect2(1738, 263, 283, 865)
 atlas = ExtResource("11_hd20i")
 region = Rect2(1738, 263, 283, 865)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j71sr"]
+load_path = "res://.godot/imported/TOM_Biblia_Idle.png-66a2479373871cd302e08b6391d5dca0.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_hd20i"]
-atlas = ExtResource("13_0kgsj")
+atlas = SubResource("CompressedTexture2D_j71sr")
 region = Rect2(2970, 283, 478, 432)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bcjj"]
+atlas = ExtResource("13_j71sr")
+region = Rect2(2965, 276, 485, 450)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ytlfb"]
 atlas = ExtResource("15_80njr")
@@ -127,8 +134,20 @@ region = Rect2(2937, 1477, 895, 490)
 atlas = ExtResource("34_j71sr")
 region = Rect2(2937, 1477, 895, 490)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5g43m"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3wek"]
+atlas = ExtResource("41_j71sr")
+region = Rect2(727, 1629, 2434, 531)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j71sr"]
 shader = ExtResource("2_ba7pe")
+shader_parameter/coverage = 0.4670000221825
+shader_parameter/noise_color = Color(0, 0.2627451, 0.8156863, 1)
+shader_parameter/noise_opacity = 0.3
+shader_parameter/edge_softness = 0.5
+shader_parameter/vignette_strength = 0.6550000311125
+shader_parameter/aspect_ratio = 1.0
+shader_parameter/grain_size = 0.005
+shader_parameter/update_interval = 0.163
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04ivp"]
 atlas = ExtResource("25_4lypw")
@@ -137,10 +156,6 @@ region = Rect2(69, 69, 303, 253)
 [sub_resource type="AtlasTexture" id="AtlasTexture_bhunq"]
 atlas = ExtResource("26_4lypw")
 region = Rect2(69, 69, 303, 253)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p3wek"]
-atlas = ExtResource("41_j71sr")
-region = Rect2(727, 1629, 2434, 531)
 
 [node name="Game_Scene" type="Node2D" unique_id=2096583920]
 script = ExtResource("1_5g43m")
@@ -200,8 +215,8 @@ offset_right = 1978.0
 offset_bottom = 602.0
 scale = Vector2(0.42440987, 0.42440987)
 texture_normal = SubResource("AtlasTexture_hd20i")
-texture_pressed = SubResource("AtlasTexture_hd20i")
-texture_hover = SubResource("AtlasTexture_hd20i")
+texture_pressed = SubResource("AtlasTexture_7bcjj")
+texture_hover = SubResource("AtlasTexture_7bcjj")
 item_type = ExtResource("7_iugxa")
 bag_id = "La Biblia"
 
@@ -304,6 +319,7 @@ expand_mode = 3
 stretch_mode = 5
 
 [node name="Background2" type="TextureRect" parent="CanvasLayer" unique_id=1124131013]
+visible = false
 modulate = Color(1, 1, 1, 0.32156864)
 anchors_preset = 15
 anchor_right = 1.0
@@ -314,25 +330,6 @@ mouse_filter = 2
 texture = ExtResource("4_ba7pe")
 expand_mode = 3
 stretch_mode = 5
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1946161897]
-material = SubResource("ShaderMaterial_5g43m")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="Button" type="TextureButton" parent="CanvasLayer" unique_id=1813600195]
-offset_left = 36.0
-offset_top = 58.0
-offset_right = 339.0
-offset_bottom = 311.0
-scale = Vector2(0.440062, 0.440062)
-texture_normal = SubResource("AtlasTexture_04ivp")
-texture_pressed = SubResource("AtlasTexture_bhunq")
-texture_hover = SubResource("AtlasTexture_bhunq")
 
 [node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer" unique_id=317752486]
 anchors_preset = 15
@@ -383,4 +380,25 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=53479639]
+
+[node name="Efecto" type="ColorRect" parent="CanvasLayer2" unique_id=1946161897]
+material = SubResource("ShaderMaterial_j71sr")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Arrow" type="TextureButton" parent="CanvasLayer2" unique_id=1813600195]
+offset_left = 36.0
+offset_top = 58.0
+offset_right = 339.0
+offset_bottom = 311.0
+scale = Vector2(0.440062, 0.440062)
+texture_normal = SubResource("AtlasTexture_04ivp")
+texture_pressed = SubResource("AtlasTexture_bhunq")
+texture_hover = SubResource("AtlasTexture_bhunq")
+
+[connection signal="pressed" from="CanvasLayer2/Arrow" to="." method="_on_button_pressed"]

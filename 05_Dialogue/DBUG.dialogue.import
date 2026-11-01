@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://caiy5yv1huk1"
+path="res://.godot/imported/DBUG.dialogue-008ccd72ffbaa60f37782cc0551ed06f.tres"
+
+[deps]
+
+source_file="res://05_Dialogue/DBUG.dialogue"
+dest_files=["res://.godot/imported/DBUG.dialogue-008ccd72ffbaa60f37782cc0551ed06f.tres"]
+
+[params]
+
+defaults=true

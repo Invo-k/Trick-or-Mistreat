@@ -211,6 +211,7 @@ theme_override_constants/margin_left = 270
 theme_override_constants/margin_top = 750
 theme_override_constants/margin_right = 270
 theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
 
 [node name="PanelContainer" type="PanelContainer" parent="Balloon/MarginContainer" unique_id=2145270309]
 layout_mode = 2
@@ -244,6 +245,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_8bfcl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xxuv8")
 text = "Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue...Dialogue..."
 skip_action = &"back"
+seconds_per_step = 0.03
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=418507161]
 custom_minimum_size = Vector2(20, 10)
@@ -317,7 +319,6 @@ theme_override_constants/separation = 35
 alignment = 2
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
-focus_scale = Vector2(1.1, 1.1)
 
 [node name="ResponseExample" type="Button" parent="Balloon/Container/ResponsesMenu" unique_id=1446810977]
 layout_mode = 2

@@ -75,6 +75,30 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Arrow:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Arrow:offset_transform_position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -360), Vector2(0, 50), Vector2(0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_86k45"]
 length = 0.001
@@ -113,6 +137,30 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("6_12sp0")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Arrow:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Arrow:offset_transform_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_s66iw"]
@@ -316,9 +364,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sylov")
-Characters_Array = Array[Texture2D]([ExtResource("3_7cghn")])
-Characters_Array_Border = Array[Texture2D]([ExtResource("3_7cghn")])
-Character_Bitmap = Array[BitMap]([ExtResource("6_fpyx8")])
 Backgrounds_Array = Array[Texture2D]([ExtResource("6_12sp0")])
 CHARACTER_NAME = Array[String](["?", "Frankenstina", "Monstruo de las Galletas", "Arpía", "Cientifico", "Medusa", "?"])
 Hands_Description = "Recipiente de Caramelos"
@@ -389,6 +434,7 @@ offset_right = 126.00012
 offset_bottom = 301.0
 grow_horizontal = 0
 scale = Vector2(0.46700984, 0.46700984)
+offset_transform_enabled = true
 texture_normal = SubResource("AtlasTexture_04ivp")
 texture_pressed = SubResource("AtlasTexture_bhunq")
 texture_hover = SubResource("AtlasTexture_bhunq")
@@ -404,7 +450,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Animator" type="AnimationPlayer" parent="." unique_id=128539294]
+[node name="Scene_Animator" type="AnimationPlayer" parent="." unique_id=128539294]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_12sp0")
 
@@ -417,9 +463,9 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_constants/margin_left = 500
-theme_override_constants/margin_top = 900
+theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 500
-theme_override_constants/margin_bottom = 80
+theme_override_constants/margin_bottom = 946
 
 [node name="ItemNameDescription" type="RichTextLabel" parent="MarginContainer3" unique_id=641997800]
 unique_name_in_owner = true

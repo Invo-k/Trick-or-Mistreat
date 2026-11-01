@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cnxa6uwgl1hvj"
+path="res://.godot/imported/Medusa.dialogue-bf6c3d892dc6da3a56637f9445e22998.tres"
+
+[deps]
+
+source_file="res://05_Dialogue/Medusa.dialogue"
+dest_files=["res://.godot/imported/Medusa.dialogue-bf6c3d892dc6da3a56637f9445e22998.tres"]
+
+[params]
+
+defaults=true

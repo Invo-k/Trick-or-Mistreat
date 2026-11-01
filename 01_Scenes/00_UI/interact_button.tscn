@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://c0hd8m2e5hsja"]
+
+[ext_resource type="Script" uid="uid://dqxvud256dy8f" path="res://01_Scenes/00_UI/interact_button.gd" id="1_7pmr3"]
+[ext_resource type="Texture2D" uid="uid://de3le03kryt08" path="res://00_Assets/00_Sprites/04_UI/arrow_down.png" id="2_7pmr3"]
+
+[sub_resource type="Animation" id="Animation_7pmr3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arrow_texture:offset_transform_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("arrow_texture:offset_transform_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5gyqt"]
+resource_name = "arrow"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arrow_texture:offset_transform_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.5256036, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -5), Vector2(0, 0), Vector2(0, 0), Vector2(0, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("arrow_texture:offset_transform_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.2, 0.8), Vector2(1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nkb0v"]
+_data = {
+&"RESET": SubResource("Animation_7pmr3"),
+&"arrow": SubResource("Animation_5gyqt")
+}
+
+[node name="Interact_Button" type="Button" unique_id=706125477]
+offset_right = 9.0
+offset_bottom = 8.0
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_7pmr3")
+
+[node name="arrow_animator" type="AnimationPlayer" parent="." unique_id=1013832651]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_nkb0v")
+
+[node name="arrow_texture" type="TextureRect" parent="." unique_id=1299433074]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_right = 25.0
+offset_bottom = 28.57143
+grow_horizontal = 2
+offset_transform_enabled = true
+texture = ExtResource("2_7pmr3")
+expand_mode = 5
+stretch_mode = 5
+
+[connection signal="focus_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

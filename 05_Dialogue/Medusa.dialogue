@@ -1,0 +1,24 @@
+~ start
+
+
+
+=> END
+
+~ negociation
+
+- Si
+	do GameValues.candy_time_animation.emit()
+	Tú: Toma
+	=> candy_time
+- No
+	Tú: Ahora voy, dame un momento.
+	=> END
+=> END
+
+=> END
+
+~ candy_time
+[color=royal_blue](Por favor, que esto funcione...)
+
+=> END
+=> END
