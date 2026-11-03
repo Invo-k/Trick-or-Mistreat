@@ -1,4 +1,5 @@
 ~ start
+set ConfigManager.item_save = ""
 [color=royal_blue]Este es mi primer Halloween en mi nueva casa.
 [color=royal_blue]Creo que ya tengo todo preparado para que puedan empezar las visitas.
 set ConfigManager.item_save = ""
@@ -10,26 +11,26 @@ do animator.play("door_open_r")
 do AudioManager.await_for_sfx()
 #enseñar personaje
 ?: Ey... ¿Truco o Maltrato?
-Tú: ¿[b]Maltrato[/b]? Querras decir "Truco o Trato", no?
-?: Vaya... Parece que eres nuevo por aqui.
-Tú: Supongo? Me mude hace unas semanas. [br]¿Que pasa con eso?
-?: Y aún encima seré yo quien te lo tiene que explicar, eh?
-?: En fin... Mira, este pueblo es un poco peculiar. [br]¿Cuando llega la noche de Halloween lo normal es que la gente se disfraza de monstruos para pedir dulces, no?
-?: Pero en este pueblo ocurre lo contrario... [br]Este día los monstruos invaden el pueblo y se disfrazan de humanos para pedir dulces.
+Tú: ¿[b]Maltrato[/b]? ¿Querrás decir "Truco o Trato", no?
+?: Vaya... Nuevo por aquí, ¿no?
+Tú: ¿Supongo? Me mude hace unas semanas. [br]¿Qué pasa con eso?
+?: Y aún encima seré yo quien te lo tiene que explicar, ¿eh?
+?: En fin... Mira, este pueblo es un poco peculiar. [br]¿Cuándo llega la noche de Halloween lo normal es que la gente se disfrace de monstruos para pedir dulces, no?
+?: Pues en este pueblo ocurre lo contrario... [br]Este día los monstruos invaden el pueblo y se disfrazan de humanos para pedir dulces.
 ?: Y digamos que no tienen tan buen genio como los humanos.
-?: De ahí que cambiasemos nuestra costumbre a "Truco o Maltrato", porque es exactamente lo que ellos hacen.
-?: En fin, ahora que te he contado mi vida y "he salvado la tuya", [br]¿Me das ya mis dulces? Quiero ir a otras casas a pedir comida.
-Tú: Pero... ¿Y que hago si viene un monstruo? [br]Es la primera noticia que tengo de todo esto.
-?: Es muy fácil... Simplemente dales algo que creas que les pueda gustar y via.
+?: De ahí que cambiásemos nuestra costumbre a "Truco o Maltrato", porque es exactamente lo que ellos hacen.
+?: En fin, ahora que te he contado mi vida y "he salvado la tuya", [br]¿Me das ya mis dulces? Quiero ir a otras casas a pedir comida gratis.
+Tú: Pero... ¿Y qué hago si viene un monstruo? [br]Es la primera noticia que tengo de todo esto...
+?: Es muy fácil... Simplemente dales algo que creas que les pueda gustar y vía.
 ?: [font_size=25]Y más te vale no darles algo que les pueda molestar.
-Tú: Dijiste algo?
+Tú: ¿Dijiste algo?
 ?: Que me des mis dulces.
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-?: Has traido ya los dulces?
-- Si
+?: ¿Has traído ya los dulces?
+- Sí
 	do GameValues.candy_time_animation.emit()
 	Tú: Ahí tienes.
 	=> candy_time
@@ -40,10 +41,10 @@ do GameValues.candy_time_animation.emit()
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	?: Eh? No me vas a dar nada?
+	?: ¿Eh? ¿No me vas a dar nada?
 	?: Pues vas tu bien si quieres sobrevivir esta noche.
 else:
-	?: En serio...? [br]Me has traido esto?
+	?: ¿En serio...? [br]¿Me has traído esto?
 	?: La verdad es que me esperaba otra cosa...
 	?: En fin, suerte sobreviviendo esta noche.
 

@@ -27,8 +27,6 @@ func add_item_to_mouse() -> void:
 
 func _on_mouse_entered() -> void:
 	GameValues.change_item_name_description.emit(bag_id)
-	
-
 
 func _on_mouse_exited() -> void:
 	GameValues.change_item_name_description.emit("")

@@ -6,6 +6,7 @@ extends Control
 @onready var item_name_description: RichTextLabel = %ItemNameDescription
 @onready var animator: AnimationPlayer = %Scene_Animator
 @onready var arrow: TextureButton = %Arrow
+@onready var scene_animator: AnimationPlayer = %Scene_Animator
 
 @export_category("IMAGES")
 @export var Backgrounds_Array : Array[Texture2D]
@@ -33,7 +34,7 @@ func _ready() -> void:
 	GameValues.candy_time_animation.connect(activate_candy_time)
 	GameValues.next_dialogue.connect(show_new_dialogue)
 	if !GameValues.first_dialogue:
-		TransitionManager.transition_animator.play_backwards("Move_Left")
+		TransitionManager.transition_animator.play_backwards("Move")
 		await TransitionManager.transition_animator.animation_finished
 		DialogueManager.show_dialogue_balloon(Dialogue_Stages[GameValues.actual_character_level], "start")
 		GameValues.first_dialogue = true
@@ -47,7 +48,7 @@ func _on_shady_hands_pressed() -> void:
 
 func _on_button_pressed() -> void:
 	print("PULSÉ EL BOTÓN")
-	TransitionManager.transition_animator.play("Move_Right")
+	TransitionManager.transition_animator.play("Move")
 	await TransitionManager.transition_animator.animation_finished
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/game_scene.tscn")
 
@@ -92,3 +93,6 @@ func show_new_dialogue():
 	await DialogueManager.dialogue_ended
 	GameValues.actual_character_level += 1
 	DialogueManager.show_dialogue_balloon(Dialogue_Stages[GameValues.actual_character_level], "start")
+
+func await_light():
+	await scene_animator.animation_finished

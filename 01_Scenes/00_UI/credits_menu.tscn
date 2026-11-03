@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c4jetd63rblw8"]
+
+[ext_resource type="Texture2D" uid="uid://b7b3cine75vtb" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_CreditsMenu_Layout.png" id="2_a8tbi"]
+[ext_resource type="Texture2D" uid="uid://segytgcwc1bt" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_idle.png" id="6_4pk36"]
+[ext_resource type="Texture2D" uid="uid://t6alu8no8u0b" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_hover.png" id="7_0wep1"]
+
+[node name="CreditsMenu" type="CanvasLayer" unique_id=2014169054]
+layer = 999
+
+[node name="Control" type="Control" parent="." unique_id=1762709683]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Control" unique_id=1313078149]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_a8tbi")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Back" type="TextureButton" parent="Control" unique_id=1044795510]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 0
+offset_left = 31.0
+offset_top = 948.0
+offset_right = 586.0
+offset_bottom = 1084.0
+rotation = 0.13601962
+scale = Vector2(0.59999907, 0.55555534)
+size_flags_horizontal = 4
+size_flags_vertical = 6
+focus_neighbor_left = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+texture_normal = ExtResource("6_4pk36")
+texture_pressed = ExtResource("7_0wep1")
+texture_hover = ExtResource("7_0wep1")
+texture_focused = ExtResource("7_0wep1")
+
+[connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]

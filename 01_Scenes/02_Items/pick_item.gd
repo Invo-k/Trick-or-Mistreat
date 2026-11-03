@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 		if is_inside:
 			ConfigManager.item_save = item_id
 			print("SE AÑADIÓ EL ITEM: ", ConfigManager.item_save)
+			GameValues.scale_hands.emit()
 			# liberar el drop para que pueda entrar otro objeto
 			body_ref.item_hold = null
 			#body_ref.color_rect.modulate = Color("ffffff77")

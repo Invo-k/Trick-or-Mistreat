@@ -1,9 +1,12 @@
 extends Control
 
 const OPTION_MENU = preload("uid://cuc15xx6rysxb")
+const CREDITS_MENU = preload("res://01_Scenes/00_UI/credits_menu.tscn")
 @export var Scene_Music : String
 @onready var start: Button_Menu = %Start
 @onready var options: Button_Menu = %Options
+@onready var credits: Button_Menu = %Credits
+@onready var animator_main_menu: AnimationPlayer = %animator_main_menu
 
 func _ready() -> void:
 	cargar_opciones_intro()
@@ -11,11 +14,13 @@ func _ready() -> void:
 	GameValues.actual_character_level = 0
 	GameValues.is_candy_time = false
 	TransitionManager.transition_animator.play("Fade_Out")
+	animator_main_menu.play("intro_candy")
+	await animator_main_menu.animation_finished
 	start.grab_focus()
 	
 func _on_start_pressed() -> void:
 	start.release_focus()
-	TransitionManager.transition_animator.play("Move_Right")
+	TransitionManager.transition_animator.play("Move")
 	await TransitionManager.transition_animator.animation_finished
 	get_tree().change_scene_to_file("res://01_Scenes/00_UI/door_scene.tscn")
 
@@ -31,7 +36,15 @@ func _on_options_pressed() -> void:
 	GameValues.last_focus = options
 
 func _on_credits_pressed() -> void:
-	pass # Replace with function body.
+	var new_credits_menu = CREDITS_MENU.instantiate()
+	if TransitionManager.transition_animator.is_playing():
+		TransitionManager.transition_animator.speed_scale = 2
+		await TransitionManager.transition_animator.animation_finished
+		TransitionManager.transition_animator.speed_scale = 1
+	TransitionManager.transition_animator.play("menu_open")
+	await TransitionManager.transition_animator.animation_finished
+	call_deferred("add_child", new_credits_menu)
+	GameValues.last_focus = credits
 
 func _on_quit_pressed() -> void:
 	await get_tree().create_timer(0.2).timeout

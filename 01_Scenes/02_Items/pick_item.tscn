@@ -12,7 +12,7 @@ region = Rect2(2937, 1477, 895, 490)
 size = Vector2(128, 128)
 
 [node name="Pick_Item" type="Node2D" unique_id=783058067]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.2, 0.2)
 script = ExtResource("1_t4g8m")
 item_id = "PRUEBA"
 item_texture = SubResource("AtlasTexture_kuka5")

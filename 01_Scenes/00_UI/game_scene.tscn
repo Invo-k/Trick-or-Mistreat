@@ -5,15 +5,13 @@
 [ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_ba7pe"]
 [ext_resource type="PackedScene" uid="uid://diyvynhq0vlfe" path="res://01_Scenes/99_Testing/bag_drops.tscn" id="3_mwvxh"]
 [ext_resource type="Texture2D" uid="uid://d1cn6aetdno2s" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoSalon.png" id="4_ba7pe"]
+[ext_resource type="Texture2D" uid="uid://c8kotlrfu5npi" path="res://00_Assets/00_Sprites/01_Items/TOM_R_Lamp.png" id="4_f1im3"]
 [ext_resource type="Resource" uid="uid://cw5564oy40ya6" path="res://01_Scenes/02_Items/01_ItemData/spider.tres" id="4_lqpjl"]
-[ext_resource type="Texture2D" uid="uid://4omylc4linyj" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Lampara_Idle.png" id="4_t8mry"]
 [ext_resource type="Resource" uid="uid://1lfeg11yw7s" path="res://01_Scenes/02_Items/01_ItemData/bread.tres" id="5_3a1bt"]
-[ext_resource type="Texture2D" uid="uid://bj2vhkdwi1afb" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Lampara_Hover.png" id="5_iugxa"]
+[ext_resource type="Texture2D" uid="uid://c1f0furytilob" path="res://00_Assets/00_Sprites/01_Items/TOM_R_Pan.png" id="6_gpnc1"]
 [ext_resource type="Resource" uid="uid://88ntnunib5do" path="res://01_Scenes/02_Items/01_ItemData/ajo.tres" id="6_t8mry"]
-[ext_resource type="Texture2D" uid="uid://x82nkydbllam" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Pan_Idle.png" id="7_3xj4i"]
 [ext_resource type="Resource" uid="uid://3s1miv20j0ry" path="res://01_Scenes/02_Items/01_ItemData/bibble.tres" id="7_iugxa"]
 [ext_resource type="Resource" uid="uid://c1o6c13ivxwla" path="res://01_Scenes/02_Items/01_ItemData/pumkin.tres" id="8_8gc6y"]
-[ext_resource type="Texture2D" uid="uid://cjj58iegxvspy" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Pan_Hover.png" id="8_rjyml"]
 [ext_resource type="Resource" uid="uid://s5h17xipvs12" path="res://01_Scenes/02_Items/01_ItemData/wine.tres" id="9_3xj4i"]
 [ext_resource type="Resource" uid="uid://cn6xnm16u3gao" path="res://01_Scenes/02_Items/01_ItemData/coffe.tres" id="10_rjyml"]
 [ext_resource type="Texture2D" uid="uid://d052fmya0m001" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ajos_Idle.png" id="10_xtn1x"]
@@ -25,7 +23,6 @@
 [ext_resource type="Resource" uid="uid://oslymvhbcrqe" path="res://01_Scenes/02_Items/01_ItemData/candy.tres" id="14_0kgsj"]
 [ext_resource type="Texture2D" uid="uid://7cvquiw0clia" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Idle.png" id="15_80njr"]
 [ext_resource type="Texture2D" uid="uid://dllev3ciwgd88" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Calabaza_Hover.png" id="16_00b45"]
-[ext_resource type="Texture2D" uid="uid://bxhpfskdnn03u" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_SalonFondo.png" id="16_iugxa"]
 [ext_resource type="Texture2D" uid="uid://o2stqaggupo8" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Sangre_Idle.png" id="18_00b45"]
 [ext_resource type="Texture2D" uid="uid://1dfpi276co40" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Sangre_Hover.png" id="19_ytlfb"]
 [ext_resource type="Texture2D" uid="uid://ddqk0bd1kstg4" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Cafe_Idle.png" id="21_tsr71"]
@@ -40,24 +37,9 @@
 [ext_resource type="Texture2D" uid="uid://dtfgdjm36idvk" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Ancas_Hover.png" id="31_f1im3"]
 [ext_resource type="Texture2D" uid="uid://416frw3gvl8t" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Idle.png" id="33_f1im3"]
 [ext_resource type="Texture2D" uid="uid://bw66mekiy0s2m" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Dulces_Hover.png" id="34_j71sr"]
-[ext_resource type="Texture2D" uid="uid://cv28l8oeugjjk" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov.png" id="41_j71sr"]
-[ext_resource type="BitMap" uid="uid://dvn6ctgman4v8" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov_bitmap.png" id="42_kuka5"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8gc6y"]
-atlas = ExtResource("4_t8mry")
-region = Rect2(1992, 0, 759, 934)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_llh8w"]
-atlas = ExtResource("5_iugxa")
-region = Rect2(1992, 0, 759, 934)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cg4j5"]
-atlas = ExtResource("7_3xj4i")
-region = Rect2(1322, 267, 364, 646)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3xj4i"]
-atlas = ExtResource("8_rjyml")
-region = Rect2(1322, 267, 364, 646)
+[ext_resource type="Texture2D" uid="uid://b604f528y848s" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_SalonFondoCorregido.png" id="36_j71sr"]
+[ext_resource type="Texture2D" uid="uid://cexikuk72a81w" path="res://00_Assets/00_Sprites/02_Characters/TOM_R_povCut.png" id="38_j71sr"]
+[ext_resource type="BitMap" uid="uid://cq03t135r3w6f" path="res://00_Assets/00_Sprites/02_Characters/TOM_R_povCut_bitmap.png" id="39_kuka5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0kgsj"]
 atlas = ExtResource("10_xtn1x")
@@ -134,10 +116,6 @@ region = Rect2(2937, 1477, 895, 490)
 atlas = ExtResource("34_j71sr")
 region = Rect2(2937, 1477, 895, 490)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p3wek"]
-atlas = ExtResource("41_j71sr")
-region = Rect2(727, 1629, 2434, 531)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_j71sr"]
 shader = ExtResource("2_ba7pe")
 shader_parameter/coverage = 0.4670000221825
@@ -161,7 +139,6 @@ region = Rect2(69, 69, 303, 253)
 script = ExtResource("1_5g43m")
 
 [node name="Drop" parent="." unique_id=1554410279 instance=ExtResource("1_wt0nd")]
-z_index = 10
 position = Vector2(961, 1083.0001)
 scale = Vector2(9.479999, 3.8311338)
 
@@ -178,11 +155,10 @@ offset_bottom = 927.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.52, 0.52)
-texture_normal = SubResource("AtlasTexture_8gc6y")
-texture_pressed = SubResource("AtlasTexture_llh8w")
-texture_hover = SubResource("AtlasTexture_llh8w")
+texture_normal = ExtResource("4_f1im3")
 item_type = ExtResource("4_lqpjl")
 bag_id = "Lámpara de Araña"
+Start_Dialogue = "spider"
 
 [node name="Bread" parent="Node" unique_id=15517703 instance=ExtResource("3_mwvxh")]
 offset_left = 656.0
@@ -190,11 +166,10 @@ offset_top = 121.0
 offset_right = 1020.0
 offset_bottom = 767.0
 scale = Vector2(0.51740783, 0.51740783)
-texture_normal = SubResource("AtlasTexture_cg4j5")
-texture_pressed = SubResource("AtlasTexture_3xj4i")
-texture_hover = SubResource("AtlasTexture_3xj4i")
+texture_normal = ExtResource("6_gpnc1")
 item_type = ExtResource("5_3a1bt")
 bag_id = "Bolsa de Pan"
+Start_Dialogue = "bread"
 
 [node name="Ajo" parent="Node" unique_id=414544665 instance=ExtResource("3_mwvxh")]
 offset_left = 860.00006
@@ -207,6 +182,7 @@ texture_pressed = SubResource("AtlasTexture_xtn1x")
 texture_hover = SubResource("AtlasTexture_xtn1x")
 item_type = ExtResource("6_t8mry")
 bag_id = "Ajos"
+Start_Dialogue = "ajo"
 
 [node name="Bibble" parent="Node" unique_id=2133397253 instance=ExtResource("3_mwvxh")]
 offset_left = 1500.0
@@ -219,6 +195,7 @@ texture_pressed = SubResource("AtlasTexture_7bcjj")
 texture_hover = SubResource("AtlasTexture_7bcjj")
 item_type = ExtResource("7_iugxa")
 bag_id = "La Biblia"
+Start_Dialogue = "bible"
 
 [node name="Pumkin" parent="Node" unique_id=333575872 instance=ExtResource("3_mwvxh")]
 offset_left = 1257.9999
@@ -231,6 +208,7 @@ texture_pressed = SubResource("AtlasTexture_o0blo")
 texture_hover = SubResource("AtlasTexture_o0blo")
 item_type = ExtResource("8_8gc6y")
 bag_id = "Calabaza con Vela"
+Start_Dialogue = "pumkin"
 
 [node name="Wiiiine" parent="Node" unique_id=1923907690 instance=ExtResource("3_mwvxh")]
 offset_left = 985.99994
@@ -243,6 +221,7 @@ texture_pressed = SubResource("AtlasTexture_80njr")
 texture_hover = SubResource("AtlasTexture_80njr")
 item_type = ExtResource("9_3xj4i")
 bag_id = "Copa de Vino"
+Start_Dialogue = "wine"
 
 [node name="Coffe" parent="Node" unique_id=2053952013 instance=ExtResource("3_mwvxh")]
 offset_left = 63.0
@@ -255,6 +234,7 @@ texture_pressed = SubResource("AtlasTexture_tsr71")
 texture_hover = SubResource("AtlasTexture_tsr71")
 item_type = ExtResource("10_rjyml")
 bag_id = "Cafetera"
+Start_Dialogue = "cofe"
 
 [node name="Tornillos" parent="Node" unique_id=1866135934 instance=ExtResource("3_mwvxh")]
 offset_left = 322.0
@@ -267,6 +247,7 @@ texture_pressed = SubResource("AtlasTexture_k7y60")
 texture_hover = SubResource("AtlasTexture_k7y60")
 item_type = ExtResource("11_cg4j5")
 bag_id = "Caja de Tornillos"
+Start_Dialogue = "tornillos"
 
 [node name="Eggs" parent="Node" unique_id=407297402 instance=ExtResource("3_mwvxh")]
 offset_left = 299.0
@@ -279,6 +260,7 @@ texture_pressed = SubResource("AtlasTexture_drpds")
 texture_hover = SubResource("AtlasTexture_drpds")
 item_type = ExtResource("12_xtn1x")
 bag_id = "Cesta de Huevos"
+Start_Dialogue = "eggs"
 
 [node name="Frogs" parent="Node" unique_id=728690430 instance=ExtResource("3_mwvxh")]
 offset_left = 57.999996
@@ -291,6 +273,7 @@ texture_pressed = SubResource("AtlasTexture_klvvd")
 texture_hover = SubResource("AtlasTexture_klvvd")
 item_type = ExtResource("13_hd20i")
 bag_id = "Ancas de Rana"
+Start_Dialogue = "frogs"
 
 [node name="Candy" parent="Node" unique_id=1342480978 instance=ExtResource("3_mwvxh")]
 offset_left = 1456.0
@@ -314,7 +297,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("16_iugxa")
+texture = ExtResource("36_j71sr")
 expand_mode = 3
 stretch_mode = 5
 
@@ -337,7 +320,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 theme_override_constants/margin_left = 480
 theme_override_constants/margin_top = 827
 theme_override_constants/margin_right = 480
@@ -346,10 +328,8 @@ theme_override_constants/margin_right = 480
 unique_name_in_owner = true
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_scale = Vector2(0.48, 0.48)
-mouse_filter = 2
-texture_normal = SubResource("AtlasTexture_p3wek")
-texture_click_mask = ExtResource("42_kuka5")
+texture_normal = ExtResource("38_j71sr")
+texture_click_mask = ExtResource("39_kuka5")
 stretch_mode = 5
 
 [node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer" unique_id=1191753028]
@@ -381,6 +361,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=53479639]
+layer = 10
 
 [node name="Efecto" type="ColorRect" parent="CanvasLayer2" unique_id=1946161897]
 material = SubResource("ShaderMaterial_j71sr")
@@ -401,4 +382,6 @@ texture_normal = SubResource("AtlasTexture_04ivp")
 texture_pressed = SubResource("AtlasTexture_bhunq")
 texture_hover = SubResource("AtlasTexture_bhunq")
 
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer2/Shady_Hands" to="." method="_on_shady_hands_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/MarginContainer2/Shady_Hands" to="." method="_on_shady_hands_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer2/Arrow" to="." method="_on_button_pressed"]

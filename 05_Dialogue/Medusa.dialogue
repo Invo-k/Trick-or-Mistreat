@@ -1,12 +1,27 @@
 ~ start
-
-
-
+set ConfigManager.item_save = ""
+do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock1.wav")
+do AudioManager.await_for_sfx()
+[color=royal_blue](No me acostumbro al sonido.)
+[color=royal_blue](Tocará abrir.)
+do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
+do animator.play("door_open_medusa")
+do AudioManager.await_for_sfx()
+[color=purple]Al otro lado de la puerta, aparece una mujer de piel verde y pelo rosa.
+[color=purple]Al principio piensas que lleva rastas, pero enseguida te percatas de que los mechones tienen cabeza y ondean sin viento que los empuje.
+[color=purple]Y para acompañar, la portadora de la melena venenosa lleva gafas de sol en medio de la noche, supones que para no transformar en piedra a todo el que se le cruce.
+[color=purple]A su pose altiva, le acompañan joyas y accesorios dorados de categoría.
+Medusa: Truco o maltrato.
+Tú: Em, ¿hola?
+Medusa: Ya. Mira, por si no te habías enterado, es Halloween.
+Medusa: Yo pico a la puerta, tú abres, yo digo "truco o maltrato" y tú me traes algo bonito, ¿sí?
+Medusa: Así que deja de arrastrar los pies y ponte a buscar.
+do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-
-- Si
+Medusa: ¿Ya has terminado de perder el tiempo?
+- Sí
 	do GameValues.candy_time_animation.emit()
 	Tú: Toma
 	=> candy_time
@@ -18,7 +33,49 @@
 => END
 
 ~ candy_time
-[color=royal_blue](Por favor, que esto funcione...)
+if ConfigManager.item_save == "Lámpara de Araña":
+	Medusa: ¡Qué ven mis ojos! ¡Si hasta combina con mi bolso! Te lo has ganado, has acertado de pleno.
+	Tú: Vaya, gracias... No esperaba que[next=auto]
+	Medusa: Me la regalas, ¿verdad? Estupendo.
+	Tú: P-p-pero... espera...  yo...  pero...[next=auto]
+	Medusa: ¡Gracias! ¡Hasta el año que viene! Bye Bye!
+	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
+	do animator.play_backwards("door_open_medusa")
+	do AudioManager.await_for_sfx()
+	[color=royal_blue](Pero.... mi lámpara...)
+	do GameValues.next_dialogue.emit()
 
-=> END
+elif ConfigManager.item_save == "Ancas de Rana Congeladas":
+	Medusa: ¡Puaj! ¿¡Pero qué es esto!?
+	Tú: Son ancas de rana. Las serpientes comen ranas.
+	Medusa: ¿Ah, sí? Si tanto sabes, listillo, ¿por qué me las traes congeladas?
+	Medusa: ¡Las serpientes somos de sangre fría! ¡Y estamos en otoño!
+	Tú: L-l-lo siento, t-t-te traeré otra cosa.
+	do animator.play("medusa_jumpscare")
+	[color=purple]Te sujeta firmemente con ambos brazos.
+	[color=purple]Intentas zafarte y protestar, pero su fuerza es monstruosa.
+	[color=purple]Su pelo serpentino se crespa y saca los colmillos. Escuchas los silbidos amenazadores de su cabellera zumbar con agresividad.
+	Medusa: ¡Ah, no, y un jamón! ¡Tú no te vas a ningún lado!
+	Medusa: Traerme a MÍ, una reina de alta clase, unas asquerosas ranas mugrientas y frías, como si fuera cualquier víbora de tres al cuarto.
+	Medusa: Valgo mucho más que eso. Y, ¿sabes qué, enano? ¡Te lo haré pagar con tu peso en oro!
+	do animator.play("aaaaaaaa_statue")
+	do await_light()
+	[color=purple]Un rayo de luz rosado te ciega por completo. 
+	[color=purple]Ella te suelta, pero no puedes mover ni los párpados para pestañear.
+	[color=purple]Sientes como pierdes sentido en los brazos y piernas, que son lentamente transformados en una piedra preciosa, dorada y centelleante, que se extiende por todo tu cuerpo hasta dejarte sin aire.
+	do GameValues.change_scene_dialogue()
+
+elif ConfigManager.item_save == "" or ConfigManager.item_save == null:
+	Medusa: Espero que me estés ofreciendo la cesta. Porque si no más vale que vuelvas ahí dentro.
+	do GameValues.candy_time_animation.emit()
+
+else:
+	Medusa: ¿Y esto? Ugh, bueno... supongo que me sirve. 
+	Medusa: Espero que te pongas las pilas y dejes de ser pobre. Venga, adiós, buenas noches.
+	Tú: Buenas noch[next=auto]
+	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
+	do animator.play_backwards("door_open_medusa")
+	do AudioManager.await_for_sfx()
+	[color=royal_blue](Se ha marchado...)
+	do GameValues.next_dialogue.emit()
 => END

@@ -3,7 +3,7 @@ extends CanvasLayer
 @onready var option_screen: OptionButton = %Option_Screen
 @onready var music_value: HSlider = %Music_Value
 @onready var sfx_value: HSlider = %SFX_Value
-@onready var back: Button = %Back
+@onready var back: TextureButton = %Back
 
 @onready var screen_text: RichTextLabel = %Screen_Text
 @onready var music_text: RichTextLabel = %Music_Text

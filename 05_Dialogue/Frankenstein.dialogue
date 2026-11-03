@@ -3,24 +3,26 @@ set ConfigManager.item_save = ""
 Espero que no venga ningún monstruo...
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock3.wav")
 do AudioManager.await_for_sfx()
-Tú: Bueno... Vamos a ver quien es.
+Tú: Bueno... Vamos a ver quién es.
+do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_franky")
+do AudioManager.await_for_sfx()
 Frankenstein: ¿Truuuco ooo Maaltraaatoooo?
-Vale, parece una persona normal.
-Tú: Hola! Me encanta tu disfraz.
-Frankenstein: Diisfraaaz?
-Uy, pues quizá no.
-A ver... El chico de antes me comentó que intentase darles lo que quisiesen
-Tú: Bueno... Que te gustaría?
+[color=royal_blue](Vale, definitivamente no parece una persona normal.)
+Tú: Hola... Me encanta tu... ¿disfraz?
+Frankenstein: ¿Diisfraaaz?
+[color=royal_blue](Vale, definitivamente no lo es.)
+[color=royal_blue](A ver... El chico de antes me comentó que intentase darles algo que les guste.)
+Tú: Bueno... ¿Hay algo que te gustaría?
 Frankenstein: ¿Truuuco ooo Maaltraaatooo?
-Tú: Si, ahora voy.
-Vale... ¿Que demonios le doy yo a algo que se parece a Frankenstein?
+Tú: Sí, ahora voy...
+[color=royal_blue](Vale... ¿Qué demonios le doy yo a algo que se parece a Frankenstein?)
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-Frankenstein: : ¿Truuuco ooo Maaltraaatooo?
-- Si
+Frankenstein: ¿Truuuco ooo Maaltraaatooo?
+- Sí
 	do GameValues.candy_time_animation.emit()
 	Tú: Ahí tienes.
 	=> candy_time
@@ -31,8 +33,8 @@ Frankenstein: : ¿Truuuco ooo Maaltraaatooo?
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	Frankenstein: Boolsa... ¿Vaciiia?
-	Frankenstein: Eso nooo.
+	Frankenstein: Boolsa... ¿Vacííía?
+	Frankenstein: Eso nooouur.
 	do GameValues.candy_time_animation.emit()
 	=> END
 elif ConfigManager.item_save == "Calabaza con Vela":
@@ -49,6 +51,6 @@ else:
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 do animator.play_backwards("door_open_franky")
 do AudioManager.await_for_sfx()
-Uf... Parece que le ha gustado...
+[color=royal_blue](Uf... Parece que le ha gustado...)
 do GameValues.next_dialogue.emit()
 => END

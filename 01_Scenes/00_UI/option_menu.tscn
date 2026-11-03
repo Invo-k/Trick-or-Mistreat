@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://cuc15xx6rysxb"]
 
 [ext_resource type="Script" uid="uid://c8mbrsseb6d5n" path="res://02_Scripts/01_UI/option_menu.gd" id="1_ed6lo"]
-[ext_resource type="Texture2D" uid="uid://dknh0hkpwuqnx" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_OptionsMenu_Layout.png" id="2_hdkwi"]
+[ext_resource type="Texture2D" uid="uid://bal6fyau50ywo" path="res://00_Assets/00_Sprites/04_UI/TOM_R_Options.png" id="2_rsl3j"]
 [ext_resource type="Script" uid="uid://bnaqwbh4d1od2" path="res://02_Scripts/01_UI/CarouselOptions.gd" id="3_o4475"]
 [ext_resource type="Texture2D" uid="uid://dwqx7d8w0qd22" path="res://00_Assets/00_Sprites/04_UI/arrow.png" id="3_p6lhk"]
 [ext_resource type="Theme" uid="uid://dgwdbf4br0yxc" path="res://00_Assets/06_Themes/UI_Theme.tres" id="4_rsl3j"]
+[ext_resource type="Texture2D" uid="uid://segytgcwc1bt" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_idle.png" id="6_dcomt"]
+[ext_resource type="Texture2D" uid="uid://t6alu8no8u0b" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_hover.png" id="7_2ohyt"]
 
 [node name="OptionMenu" type="CanvasLayer" unique_id=2014169054]
 layer = 999
@@ -25,7 +27,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_hdkwi")
+texture = ExtResource("2_rsl3j")
 expand_mode = 3
 stretch_mode = 5
 
@@ -36,9 +38,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 531
+theme_override_constants/margin_left = 545
 theme_override_constants/margin_top = 217
-theme_override_constants/margin_right = 577
+theme_override_constants/margin_right = 530
 theme_override_constants/margin_bottom = 312
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=586305026]
@@ -94,8 +96,8 @@ theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0)
 theme_override_colors/icon_hover_color = Color(1, 1, 1, 0)
 theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 0)
 theme_override_font_sizes/font_size = 40
+toggle_mode = false
 button_mask = 0
-flat = true
 alignment = 1
 selected = 0
 item_count = 3
@@ -237,8 +239,8 @@ theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0)
 theme_override_colors/icon_hover_color = Color(1, 1, 1, 0)
 theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 0)
 theme_override_font_sizes/font_size = 40
+toggle_mode = false
 button_mask = 0
-flat = true
 alignment = 1
 selected = 0
 item_count = 2
@@ -259,14 +261,14 @@ texture = ExtResource("3_p6lhk")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="Back" type="Button" parent="Control" unique_id=1862057852]
+[node name="Back" type="TextureButton" parent="Control" unique_id=1044795510]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 0
-offset_left = 727.0
-offset_top = 912.0
-offset_right = 1127.0
-offset_bottom = 1012.0
+offset_left = 663.00006
+offset_top = 900.0
+offset_right = 1218.0
+offset_bottom = 1036.0
 scale = Vector2(1.0799987, 1)
 size_flags_horizontal = 4
 size_flags_vertical = 6
@@ -276,9 +278,10 @@ focus_neighbor_right = NodePath(".")
 focus_neighbor_bottom = NodePath("../MarginContainer/VBoxContainer/Screen/HBoxContainer/Option_Screen")
 focus_next = NodePath(".")
 focus_previous = NodePath(".")
-theme_override_colors/font_focus_color = Color(0.8745098, 0.8745098, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Volver"
+texture_normal = ExtResource("6_dcomt")
+texture_pressed = ExtResource("7_2ohyt")
+texture_hover = ExtResource("7_2ohyt")
+texture_focused = ExtResource("7_2ohyt")
 
 [connection signal="focus_entered" from="Control/MarginContainer/VBoxContainer/Screen/HBoxContainer/Option_Screen" to="." method="_on_option_focus_entered"]
 [connection signal="focus_exited" from="Control/MarginContainer/VBoxContainer/Screen/HBoxContainer/Option_Screen" to="." method="_on_option_focus_exited"]

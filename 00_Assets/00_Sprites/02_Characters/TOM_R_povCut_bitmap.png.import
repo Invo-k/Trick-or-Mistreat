@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cq03t135r3w6f"
+path="res://.godot/imported/TOM_R_povCut_bitmap.png-9e309a2a64ca13dc72e7f5f73266f3ea.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/02_Characters/TOM_R_povCut_bitmap.png"
+dest_files=["res://.godot/imported/TOM_R_povCut_bitmap.png-9e309a2a64ca13dc72e7f5f73266f3ea.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

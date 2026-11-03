@@ -2,32 +2,34 @@
 
 [ext_resource type="Script" uid="uid://hlyk32e1phf" path="res://01_Scenes/00_UI/door_scene.gd" id="1_sylov"]
 [ext_resource type="Shader" uid="uid://b0m0q1pqrfca0" path="res://03_Shaders/statica_shader.gdshader" id="2_2p2q1"]
+[ext_resource type="Texture2D" uid="uid://dix41m3x6rt8y" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_closed.png" id="2_4pcbm"]
 [ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="2_c0ni1"]
 [ext_resource type="Texture2D" uid="uid://cj7rceuksbx8r" path="res://icon.svg" id="3_7cghn"]
-[ext_resource type="Texture2D" uid="uid://c8hqhxwk5g8sy" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_BocetoLocked.png" id="6_12sp0"]
 [ext_resource type="Resource" uid="uid://bu8yuyqbayuhm" path="res://05_Dialogue/R_Dialogue.dialogue" id="6_86k45"]
 [ext_resource type="BitMap" uid="uid://dqjw01gx7rf8b" path="res://icon_bitmap_test.svg" id="6_fpyx8"]
+[ext_resource type="Resource" uid="uid://caiy5yv1huk1" path="res://05_Dialogue/DBUG.dialogue" id="7_2qju8"]
 [ext_resource type="Resource" uid="uid://bwy2o8pvo8c2n" path="res://05_Dialogue/Frankenstein.dialogue" id="7_e1in1"]
 [ext_resource type="Resource" uid="uid://bq3rhlk0us88h" path="res://05_Dialogue/Galletas.dialogue" id="8_2jwpl"]
 [ext_resource type="Texture2D" uid="uid://4np3bcnmj466" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Idle.png" id="8_drpds"]
-[ext_resource type="Texture2D" uid="uid://cv28l8oeugjjk" path="res://00_Assets/00_Sprites/02_Characters/TOM_pov.png" id="8_s66iw"]
+[ext_resource type="Resource" uid="uid://ckh1kx4m1momw" path="res://05_Dialogue/Harpy.dialogue" id="8_s5n6k"]
+[ext_resource type="Resource" uid="uid://cnxa6uwgl1hvj" path="res://05_Dialogue/Medusa.dialogue" id="9_k1gnt"]
 [ext_resource type="Texture2D" uid="uid://b22vg8imcm66y" path="res://00_Assets/00_Sprites/03_Buttons/TOM_Atras_Hover.png" id="9_u8n1s"]
-[ext_resource type="Texture2D" uid="uid://j8l5u5sek5ar" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Nia_Layout.png" id="11_5uf6x"]
-[ext_resource type="Texture2D" uid="uid://7xdlshtgm11" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Shaila_Layout.png" id="11_u8n1s"]
-[ext_resource type="Texture2D" uid="uid://dnncesntjbojt" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_NiaJumpscare_Layout.png" id="12_1ycyl"]
-[ext_resource type="Texture2D" uid="uid://o3uj3n3moh2b" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Bianca_Layout.png" id="12_2nl4j"]
-[ext_resource type="Texture2D" uid="uid://daytu7lx4eq2h" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Roger_Layout.png" id="12_u8n1s"]
-[ext_resource type="Texture2D" uid="uid://qc47rsi0fqkr" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_DoorClosed_Layout.png" id="14_dxk4y"]
-[ext_resource type="Texture2D" uid="uid://c5qb1mdrjj54d" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Star_Layout.png" id="15_2xt6m"]
-[ext_resource type="Texture2D" uid="uid://ca631f4fctdlo" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_Helio_Layout.png" id="15_5cm08"]
-[ext_resource type="Texture2D" uid="uid://da0gy086g3e7d" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_HelioCansao_Layout.png" id="15_qy1me"]
-[ext_resource type="Texture2D" uid="uid://div4sn17xlwjn" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_StarJumpscare_Layout.png" id="19_2xt6m"]
-[ext_resource type="Texture2D" uid="uid://4jcnj84etobm" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_ShailaJumpscare_Layout.png" id="19_iw1rc"]
-[ext_resource type="Texture2D" uid="uid://bmiosg7534t4r" path="res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/TOM_BiancaJumpscare_Layout.png" id="21_vqi3e"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vqi3e"]
-atlas = ExtResource("8_s66iw")
-region = Rect2(727, 1629, 2434, 531)
+[ext_resource type="Texture2D" uid="uid://cmvik3sjxhlqc" path="res://00_Assets/00_Sprites/04_UI/TOM_R_pov.png" id="10_2qju8"]
+[ext_resource type="BitMap" uid="uid://cq03t135r3w6f" path="res://00_Assets/00_Sprites/02_Characters/TOM_R_povCut_bitmap.png" id="10_4pcbm"]
+[ext_resource type="Resource" uid="uid://x8gn3b1bdocc" path="res://05_Dialogue/end_demo.dialogue" id="10_k1gnt"]
+[ext_resource type="Texture2D" uid="uid://dssgqsgeywl6n" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Nia.png" id="16_tgrai"]
+[ext_resource type="Texture2D" uid="uid://cur3i5sp2g3wa" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Shaila.png" id="17_2qju8"]
+[ext_resource type="Texture2D" uid="uid://b3pg13p1bgvg6" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Nia.png" id="17_s5n6k"]
+[ext_resource type="Texture2D" uid="uid://coiuvim1nkauh" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Bianca.png" id="18_tgrai"]
+[ext_resource type="Texture2D" uid="uid://cg1uyecrynefa" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Star.png" id="19_kob72"]
+[ext_resource type="Texture2D" uid="uid://bynvaf0crgqoh" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Helio.png" id="20_4pcbm"]
+[ext_resource type="Texture2D" uid="uid://cq8wont63md57" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_HelioCfe.png" id="21_2qju8"]
+[ext_resource type="Texture2D" uid="uid://dq4f8xjd3865" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Shaila.png" id="23_s5n6k"]
+[ext_resource type="Texture2D" uid="uid://m63sbfrgfaf7" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_open_Roger.png" id="23_tgrai"]
+[ext_resource type="Texture2D" uid="uid://dmsusc2h2x0by" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Bianca.png" id="24_k1gnt"]
+[ext_resource type="Texture2D" uid="uid://bvw8ts6j6dya6" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Star.png" id="25_rbu42"]
+[ext_resource type="Texture2D" uid="uid://dxqkes5viqqqi" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Roger.png" id="26_2qju8"]
+[ext_resource type="Texture2D" uid="uid://cbu0crhyhelqy" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_R_jumpscare_Helio.png" id="26_4pcbm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04ivp"]
 atlas = ExtResource("8_drpds")
@@ -136,7 +138,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("6_12sp0")]
+"values": [ExtResource("2_4pcbm")]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -162,6 +164,154 @@ tracks/4/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MarginContainer3/PointLight2D:enabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("MarginContainer3/PointLight2D2:enabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("MarginContainer3/PointLight2D:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2.08)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("MarginContainer3/PointLight2D2:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2.08)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("MarginContainer3/PointLight2D:energy")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MarginContainer3/PointLight2D2:energy")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_k1gnt"]
+resource_name = "aaaaaaaa_statue"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer3/PointLight2D:enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer3/PointLight2D2:enabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MarginContainer3/PointLight2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.19999999, 0.5333333, 0.76666665),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 2.08), Vector2(37.285, 77.632), Vector2(1, 2.08)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MarginContainer3/PointLight2D2:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.19999999, 0.5333333, 0.76666665),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 2.08), Vector2(37.285, 77.632), Vector2(1, 2.08)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MarginContainer3/PointLight2D:energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5333, 0.77, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 15.0, 1.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MarginContainer3/PointLight2D2:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5333, 0.766, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 15.0, 1.0, 0.0]
+}
 
 [sub_resource type="Animation" id="Animation_s66iw"]
 resource_name = "cookie_jumpscare"
@@ -176,7 +326,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("11_5uf6x"), ExtResource("12_1ycyl")]
+"values": [ExtResource("17_s5n6k"), ExtResource("16_tgrai")]
 }
 
 [sub_resource type="Animation" id="Animation_qy1me"]
@@ -192,7 +342,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_12sp0"), ExtResource("11_5uf6x")]
+"values": [ExtResource("2_4pcbm"), ExtResource("17_s5n6k")]
 }
 
 [sub_resource type="Animation" id="Animation_1tkuf"]
@@ -208,7 +358,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_12sp0"), ExtResource("11_u8n1s")]
+"values": [ExtResource("2_4pcbm"), ExtResource("17_2qju8")]
 }
 
 [sub_resource type="Animation" id="Animation_5uf6x"]
@@ -224,7 +374,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_12sp0"), ExtResource("12_2nl4j")]
+"values": [ExtResource("2_4pcbm"), ExtResource("18_tgrai")]
 }
 
 [sub_resource type="Animation" id="Animation_iw1rc"]
@@ -240,7 +390,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("14_dxk4y"), ExtResource("15_2xt6m")]
+"values": [ExtResource("2_4pcbm"), ExtResource("19_kob72")]
 }
 
 [sub_resource type="Animation" id="Animation_vf7d5"]
@@ -256,7 +406,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("15_qy1me"), ExtResource("15_5cm08")]
+"values": [ExtResource("20_4pcbm"), ExtResource("21_2qju8")]
 }
 
 [sub_resource type="Animation" id="Animation_e1in1"]
@@ -272,7 +422,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_12sp0"), ExtResource("12_u8n1s")]
+"values": [ExtResource("2_4pcbm"), ExtResource("23_tgrai")]
 }
 
 [sub_resource type="Animation" id="Animation_5cm08"]
@@ -288,7 +438,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_12sp0"), ExtResource("15_qy1me")]
+"values": [ExtResource("2_4pcbm"), ExtResource("20_4pcbm")]
 }
 
 [sub_resource type="Animation" id="Animation_vqi3e"]
@@ -304,7 +454,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("11_u8n1s"), ExtResource("19_iw1rc")]
+"values": [ExtResource("17_2qju8"), ExtResource("23_s5n6k")]
 }
 
 [sub_resource type="Animation" id="Animation_2jwpl"]
@@ -320,7 +470,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("12_2nl4j"), ExtResource("21_vqi3e")]
+"values": [ExtResource("18_tgrai"), ExtResource("24_k1gnt")]
 }
 
 [sub_resource type="Animation" id="Animation_1ycyl"]
@@ -336,13 +486,46 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("15_2xt6m"), ExtResource("19_2xt6m")]
+"values": [ExtResource("19_kob72"), ExtResource("25_rbu42")]
+}
+
+[sub_resource type="Animation" id="Animation_tgrai"]
+resource_name = "r_jumpscare"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("23_tgrai"), ExtResource("26_2qju8")]
+}
+
+[sub_resource type="Animation" id="Animation_2qju8"]
+resource_name = "science_jumpscare"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("20_4pcbm"), ExtResource("26_4pcbm")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_12sp0"]
 _data = {
 &"Candy_t": SubResource("Animation_fpyx8"),
 &"RESET": SubResource("Animation_86k45"),
+&"aaaaaaaa_statue": SubResource("Animation_k1gnt"),
 &"cookie_jumpscare": SubResource("Animation_s66iw"),
 &"door_open_cookie": SubResource("Animation_qy1me"),
 &"door_open_franky": SubResource("Animation_1tkuf"),
@@ -353,8 +536,20 @@ _data = {
 &"door_open_science": SubResource("Animation_5cm08"),
 &"franky_jumpscare": SubResource("Animation_vqi3e"),
 &"harpy_jumpscare": SubResource("Animation_2jwpl"),
-&"medusa_jumpscare": SubResource("Animation_1ycyl")
+&"medusa_jumpscare": SubResource("Animation_1ycyl"),
+&"r_jumpscare": SubResource("Animation_tgrai"),
+&"science_jumpscare": SubResource("Animation_2qju8")
 }
+
+[sub_resource type="Gradient" id="Gradient_rbu42"]
+offsets = PackedFloat32Array(0, 0.6807229)
+colors = PackedColorArray(1, 0, 1, 1, 0.0481928, 0.0481928, 0.0481928, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bhunq"]
+gradient = SubResource("Gradient_rbu42")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 1)
 
 [node name="Door_Scene" type="Control" unique_id=752925353]
 layout_mode = 3
@@ -364,10 +559,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sylov")
-Backgrounds_Array = Array[Texture2D]([ExtResource("6_12sp0")])
-CHARACTER_NAME = Array[String](["?", "Frankenstina", "Monstruo de las Galletas", "Arpía", "Cientifico", "Medusa", "?"])
+Backgrounds_Array = Array[Texture2D]([ExtResource("2_4pcbm")])
+CHARACTER_NAME = Array[String](["?", "Frankenstein", "Monstruo de las Galletas", "Científico", "Arpía", "Medusa", "?"])
 Hands_Description = "Recipiente de Caramelos"
-Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("6_86k45"), ExtResource("7_e1in1"), ExtResource("8_2jwpl"), null, null, null, null])
+Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("6_86k45"), ExtResource("7_e1in1"), ExtResource("8_2jwpl"), ExtResource("7_2qju8"), ExtResource("8_s5n6k"), ExtResource("9_k1gnt"), ExtResource("10_k1gnt")])
 Scene_Music = "res://00_Assets/03_Ost/The-Witchs-House-Snap.wav"
 
 [node name="Background" type="TextureRect" parent="." unique_id=917642958]
@@ -378,7 +573,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_12sp0")
+texture = ExtResource("2_4pcbm")
 expand_mode = 3
 stretch_mode = 5
 
@@ -409,16 +604,16 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -661.0
+offset_left = -780.0
 offset_top = -285.99994
-offset_right = 1773.0
+offset_right = 1654.0
 offset_bottom = 245.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(0.545, 0.545)
+scale = Vector2(0.64, 0.64)
 offset_transform_enabled = true
-texture_normal = SubResource("AtlasTexture_vqi3e")
-texture_click_mask = ExtResource("6_fpyx8")
+texture_normal = ExtResource("10_2qju8")
+texture_click_mask = ExtResource("10_4pcbm")
 stretch_mode = 5
 
 [node name="Arrow" type="TextureButton" parent="." unique_id=851394022]
@@ -481,6 +676,22 @@ fit_content = true
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PointLight2D" type="PointLight2D" parent="MarginContainer3" unique_id=1165781466]
+position = Vector2(804, 485)
+scale = Vector2(1, 2.08)
+enabled = false
+color = Color(1, 0, 1, 1)
+energy = 0.0
+texture = SubResource("GradientTexture2D_bhunq")
+
+[node name="PointLight2D2" type="PointLight2D" parent="MarginContainer3" unique_id=725574269]
+position = Vector2(1168, 485)
+scale = Vector2(1, 2.08)
+enabled = false
+color = Color(1, 0, 1, 1)
+energy = 0.0
+texture = SubResource("GradientTexture2D_bhunq")
 
 [connection signal="mouse_entered" from="MarginContainer/Character" to="." method="_on_character_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/Character" to="." method="_on_character_hands_mouse_exited"]
