@@ -1,0 +1,35 @@
+key,es,en
+SCREENMODE,Ajustes de Pantalla,Screen Mode
+MUSIC,Música,Music
+SFX,Efectos de Sonido,Sfx
+LANGUAGE,Idioma,Language
+Pantalla Completa,Pantalla Completa,Fullscreen
+CONTINUE,Continuar,Continue
+OPTIONS,Opciones,Options
+BACKTOTITTLE,Volver al Menú,Back to Tittle
+GAMEBY,[color=green]JUEGO HECHO POR,[color=green]GAME BY
+INVOCRED,"[color=orange]Invokah[/color]
+Productor
+Lead Programmer
+Game Designer
+Character Designer
+Escritor","[color=orange]Invokah[/color]
+Producer
+Lead Programmer
+Game Designer
+Character Designer
+Script Writer"
+SHURACRED,"[color=light_blue]Shura[/color]
+Co-Productora
+Lead Artist
+Character Designer
+Game Designer
+Escritora","[color=light_blue]Shura[/color]
+Co-Producer
+Lead Artist
+Character Designer
+Game Designer
+Script Writer"
+CHECHEREXCRED,"[color=medium_blue]Checherex[/color]
+Compositor","[color=medium_blue]Checherex[/color]
+Compositor"

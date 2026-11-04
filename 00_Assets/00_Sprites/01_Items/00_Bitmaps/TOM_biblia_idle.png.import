@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bbcuu05y55bat"
+path="res://.godot/imported/TOM_biblia_idle.png-209716a89da487cfae1514807c2aa461.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/01_Items/00_Bitmaps/TOM_biblia_idle.png"
+dest_files=["res://.godot/imported/TOM_biblia_idle.png-209716a89da487cfae1514807c2aa461.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

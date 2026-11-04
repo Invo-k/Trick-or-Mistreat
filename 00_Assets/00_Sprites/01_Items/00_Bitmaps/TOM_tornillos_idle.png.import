@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://xssdpe6jcjfv"
+path="res://.godot/imported/TOM_tornillos_idle.png-7f7b4f5e4b59c4a2697a8b63aa8f0909.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/01_Items/00_Bitmaps/TOM_tornillos_idle.png"
+dest_files=["res://.godot/imported/TOM_tornillos_idle.png-7f7b4f5e4b59c4a2697a8b63aa8f0909.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

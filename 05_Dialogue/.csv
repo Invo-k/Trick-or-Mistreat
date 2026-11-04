@@ -1,0 +1,459 @@
+key,?context,_comments,_locations
+Tú,dialogue,Character name,"res://05_Dialogue/Frankenstein.dialogue
+res://05_Dialogue/Galletas.dialogue
+res://05_Dialogue/R_Dialogue.dialogue
+res://05_Dialogue/Harpy.dialogue
+res://05_Dialogue/DBUG.dialogue
+res://05_Dialogue/Medusa.dialogue"
+Frankenstein,dialogue,Character name,res://05_Dialogue/Frankenstein.dialogue
+bwy2o8pvo8c2n_593c4f,dialogue,Line: Espero que no venga ningún monstruo...,res://05_Dialogue/Frankenstein.dialogue:2
+bwy2o8pvo8c2n_c3e9cc,dialogue,"Character: Tú
+Line: Bueno... Vamos a ver quién es.",res://05_Dialogue/Frankenstein.dialogue:5
+bwy2o8pvo8c2n_d0fe50,dialogue,"Character: Frankenstein
+Line: ¿Truuuco ooo Maaltraaatoooo?",res://05_Dialogue/Frankenstein.dialogue:9
+bwy2o8pvo8c2n_a3a24a,dialogue,"Line: [color=royal_blue](Vale, definitivamente no parece una persona normal.)",res://05_Dialogue/Frankenstein.dialogue:10
+bwy2o8pvo8c2n_97263d,dialogue,"Character: Tú
+Line: Hola... Me encanta tu... ¿disfraz?",res://05_Dialogue/Frankenstein.dialogue:11
+bwy2o8pvo8c2n_419052,dialogue,"Character: Frankenstein
+Line: ¿Diisfraaaz?",res://05_Dialogue/Frankenstein.dialogue:12
+bwy2o8pvo8c2n_d96457,dialogue,"Line: [color=royal_blue](Vale, definitivamente no lo es.)",res://05_Dialogue/Frankenstein.dialogue:13
+bwy2o8pvo8c2n_0228d7,dialogue,Line: [color=royal_blue](A ver... El chico de antes me comentó que intentase darles algo que les guste.),res://05_Dialogue/Frankenstein.dialogue:14
+bwy2o8pvo8c2n_6ccd47,dialogue,"Character: Tú
+Line: Bueno... ¿Hay algo que te gustaría?",res://05_Dialogue/Frankenstein.dialogue:15
+bwy2o8pvo8c2n_6313e4,dialogue,"Character: Frankenstein
+Line: ¿Truuuco ooo Maaltraaatooo?",res://05_Dialogue/Frankenstein.dialogue:16
+bwy2o8pvo8c2n_9d1dc2,dialogue,"Character: Tú
+Line: Sí, ahora voy...",res://05_Dialogue/Frankenstein.dialogue:17
+bwy2o8pvo8c2n_250300,dialogue,Line: [color=royal_blue](Vale... ¿Qué demonios le doy yo a algo que se parece a Frankenstein?),res://05_Dialogue/Frankenstein.dialogue:18
+bwy2o8pvo8c2n_e89cb1,dialogue,"Character: Frankenstein
+Line: ¿Truuuco ooo Maaltraaatooo?",res://05_Dialogue/Frankenstein.dialogue:23
+bwy2o8pvo8c2n_dfe482,dialogue,"Character: Tú
+Line: Ahí tienes.",res://05_Dialogue/Frankenstein.dialogue:26
+bwy2o8pvo8c2n_31c6ff,dialogue,Line: Sí,res://05_Dialogue/Frankenstein.dialogue:24
+bwy2o8pvo8c2n_517696,dialogue,"Character: Tú
+Line: Ahora voy, dame un momento.",res://05_Dialogue/Frankenstein.dialogue:29
+bwy2o8pvo8c2n_5dddaf,dialogue,Line: No,res://05_Dialogue/Frankenstein.dialogue:28
+bwy2o8pvo8c2n_a01736,dialogue,"Character: Frankenstein
+Line: Boolsa... ¿Vacííía?",res://05_Dialogue/Frankenstein.dialogue:35
+bwy2o8pvo8c2n_baad7d,dialogue,"Character: Frankenstein
+Line: Eso nooouur.",res://05_Dialogue/Frankenstein.dialogue:36
+bwy2o8pvo8c2n_38365a,dialogue,"Character: Frankenstein
+Line: NOOOOO!",res://05_Dialogue/Frankenstein.dialogue:41
+bwy2o8pvo8c2n_bd6d55,dialogue,"Character: Frankenstein
+Line: FUEEGOO NO GUSTAAAAA!",res://05_Dialogue/Frankenstein.dialogue:42
+bwy2o8pvo8c2n_a57bc9,dialogue,"Character: Frankenstein
+Line: TU NO SEER BUEEENO!",res://05_Dialogue/Frankenstein.dialogue:43
+bwy2o8pvo8c2n_b17d0f,dialogue,"Character: Frankenstein
+Line: Graaziaaas.",res://05_Dialogue/Frankenstein.dialogue:48
+bwy2o8pvo8c2n_ab02d3,dialogue,Line: [color=royal_blue](Uf... Parece que le ha gustado...),res://05_Dialogue/Frankenstein.dialogue:53
+MonstruoDeLasGalletas,dialogue,Character name,res://05_Dialogue/Galletas.dialogue
+bq3rhlk0us88h_d3d9b0,dialogue,Line: [color=royal_blue](Uy.),res://05_Dialogue/Galletas.dialogue:5
+bq3rhlk0us88h_84758d,dialogue,Line: [color=royal_blue](Parece que esta chica se ha pegado un atracón de dulces.),res://05_Dialogue/Galletas.dialogue:6
+bq3rhlk0us88h_b50fe2,dialogue,Line: [color=royal_blue](Pero hay algo en ella que me da mala espina.),res://05_Dialogue/Galletas.dialogue:7
+bq3rhlk0us88h_d1b262,dialogue,"Character: MonstruoDeLasGalletas
+Line: …",res://05_Dialogue/Galletas.dialogue:8
+bq3rhlk0us88h_118579,dialogue,"Character: Tú
+Line: …",res://05_Dialogue/Galletas.dialogue:9
+bq3rhlk0us88h_aeb69d,dialogue,"Line: [color=royal_blue](Bueno, si no dice ""Truco o Maltrato"" será mejor cerrar la puerta...)",res://05_Dialogue/Galletas.dialogue:10
+bq3rhlk0us88h_85133d,dialogue,Line: [color=royal_blue](¿Mmm?),res://05_Dialogue/Galletas.dialogue:14
+bq3rhlk0us88h_071ad7,dialogue,Line: [color=royal_blue](¡Ha bloqueado la puerta con el pie para evitar que cierre!),res://05_Dialogue/Galletas.dialogue:18
+bq3rhlk0us88h_a285f3,dialogue,"Character: MonstruoDeLasGalletas
+Line: Grrr...",res://05_Dialogue/Galletas.dialogue:19
+bq3rhlk0us88h_083d9b,dialogue,Line: [color=royal_blue](Nunca he escuchado un estómago gruñir tanto.),res://05_Dialogue/Galletas.dialogue:20
+bq3rhlk0us88h_830d39,dialogue,Line: [color=royal_blue](Algo en la forma en la que me mira...),res://05_Dialogue/Galletas.dialogue:21
+bq3rhlk0us88h_b836b3,dialogue,"Line: [color=royal_blue](Aunque no haya hecho ""Truco o Maltrato"", más vale que le pille algo de comer.)",res://05_Dialogue/Galletas.dialogue:22
+bq3rhlk0us88h_42d5a9,dialogue,Line: [color=purple]¿Darle la cesta?,res://05_Dialogue/Galletas.dialogue:26
+bq3rhlk0us88h_4da88e,dialogue,"Character: Tú
+Line: Toma.",res://05_Dialogue/Galletas.dialogue:29
+bq3rhlk0us88h_bbde0c,dialogue,"Line: [color=purple]Le das la bolsa vacía, pero al ver que no tiene nada dentro te la devuelve.",res://05_Dialogue/Galletas.dialogue:31
+bq3rhlk0us88h_79ebbb,dialogue,Line: Sí,res://05_Dialogue/Galletas.dialogue:27
+bq3rhlk0us88h_dc26a4,dialogue,"Character: MonstruoDeLasGalletas
+Line: …",res://05_Dialogue/Galletas.dialogue:38
+bq3rhlk0us88h_e4ad96,dialogue,Line: Aun no,res://05_Dialogue/Galletas.dialogue:37
+bq3rhlk0us88h_60adb1,dialogue,Line: [color=purple]Su boca se desencaja de forma inhumana mostrando un túnel en su garganta con hileras e hileras de dientes que no parecen terminar.,res://05_Dialogue/Galletas.dialogue:42
+bq3rhlk0us88h_2c35ae,dialogue,"Line: [color=purple]Engulle tu ofrenda de un solo bocado, provocando que su cuello se expanda temporalmente por el volumen.",res://05_Dialogue/Galletas.dialogue:43
+bq3rhlk0us88h_71f759,dialogue,"Line: [color=purple]Tras unas cuantas contracciones, logra al fin tragar la comida.",res://05_Dialogue/Galletas.dialogue:44
+bq3rhlk0us88h_93d4dc,dialogue,Line: [color=purple]Se relame los dientes y los dedos de forma casi compulsiva.,res://05_Dialogue/Galletas.dialogue:45
+bq3rhlk0us88h_b84306,dialogue,Line: [color=purple]Su expresión comunica satisfacción.,res://05_Dialogue/Galletas.dialogue:46
+bq3rhlk0us88h_70c57c,dialogue,"Line: [color=purple]Se sacude las migas de la sudadera, y sin mediar palabra se dirige a la casa vecina.",res://05_Dialogue/Galletas.dialogue:47
+bq3rhlk0us88h_0ca32b,dialogue,Line: [color=royal_blue](¡Pero qué rayos era esa cosa!),res://05_Dialogue/Galletas.dialogue:53
+bq3rhlk0us88h_ae7f16,dialogue,"Character: Tú
+Line: ¿Toma?",res://05_Dialogue/Galletas.dialogue:58
+bq3rhlk0us88h_5332c1,dialogue,Line: [color=purple]Ella examina brevemente lo que le has dado.,res://05_Dialogue/Galletas.dialogue:59
+bq3rhlk0us88h_334066,dialogue,Line: [color=purple]Lo huele y le da una lengüetada.,res://05_Dialogue/Galletas.dialogue:60
+bq3rhlk0us88h_24e793,dialogue,"Line: [color=purple]Lo deja en el suelo, con desinterés.",res://05_Dialogue/Galletas.dialogue:61
+bq3rhlk0us88h_c68610,dialogue,"Line: [color=purple]Ya erguida, vuelve a mirarte inquieta.",res://05_Dialogue/Galletas.dialogue:62
+bq3rhlk0us88h_59373f,dialogue,Line: [color=purple]Sus tripas gruñen tan sonoramente que sientes el impulso de taparte los oídos.,res://05_Dialogue/Galletas.dialogue:63
+bq3rhlk0us88h_6e4ff7,dialogue,Line: [color=purple]Ella se estruja la barriga y saliva profusamente.,res://05_Dialogue/Galletas.dialogue:64
+bq3rhlk0us88h_06edd7,dialogue,Line: [color=purple]Sus ojos parecen desorbitados y huele el aire como si hubiera algo cocinándose.,res://05_Dialogue/Galletas.dialogue:65
+bq3rhlk0us88h_212ab2,dialogue,Line: [color=purple]Oh no.,res://05_Dialogue/Galletas.dialogue:66
+bq3rhlk0us88h_bbc284,dialogue,Line: [color=purple]Te está mirando como si fueras el último trozo de tortilla.,res://05_Dialogue/Galletas.dialogue:67
+bq3rhlk0us88h_7d85db,dialogue,"Line: [color=purple]Corres a cerrar la puerta pero antes de que puedas hacerlo, su boca se abre monstruosamente, dejando ver un túnel interminable de hileras de dientes afilados.",res://05_Dialogue/Galletas.dialogue:69
+bq3rhlk0us88h_39221e,dialogue,"Line: [color=purple]Antes de que puedas gritar, se lanza sobre ti.",res://05_Dialogue/Galletas.dialogue:70
+?,dialogue,Character name,"res://05_Dialogue/R_Dialogue.dialogue
+res://05_Dialogue/DBUG.dialogue"
+bu8yuyqbayuhm_ba993a,dialogue,Line: [color=royal_blue]Este es mi primer Halloween en mi nueva casa.,res://05_Dialogue/R_Dialogue.dialogue:2
+bu8yuyqbayuhm_8f050c,dialogue,Line: [color=royal_blue]Creo que ya tengo todo preparado para que puedan empezar las visitas.,res://05_Dialogue/R_Dialogue.dialogue:3
+bu8yuyqbayuhm_b6a950,dialogue,"Character: Tú
+Line: Venga, vamos con la primera visita.",res://05_Dialogue/R_Dialogue.dialogue:7
+bu8yuyqbayuhm_401e9c,dialogue,"Character: ?
+Line: Ey... ¿Truco o Maltrato?",res://05_Dialogue/R_Dialogue.dialogue:12
+bu8yuyqbayuhm_7291d6,dialogue,"Character: Tú
+Line: ¿[b]Maltrato[/b]? ¿Querrás decir ""Truco o Trato"", no?",res://05_Dialogue/R_Dialogue.dialogue:13
+bu8yuyqbayuhm_31ac5d,dialogue,"Character: ?
+Line: Vaya... Nuevo por aquí, ¿no?",res://05_Dialogue/R_Dialogue.dialogue:14
+bu8yuyqbayuhm_5abbbe,dialogue,"Character: Tú
+Line: ¿Supongo? Me mude hace unas semanas. [br]¿Qué pasa con eso?",res://05_Dialogue/R_Dialogue.dialogue:15
+bu8yuyqbayuhm_34a064,dialogue,"Character: ?
+Line: Y aún encima seré yo quien te lo tiene que explicar, ¿eh?",res://05_Dialogue/R_Dialogue.dialogue:16
+bu8yuyqbayuhm_e1b10e,dialogue,"Character: ?
+Line: En fin... Mira, este pueblo es un poco peculiar. [br]¿Cuándo llega la noche de Halloween lo normal es que la gente se disfrace de monstruos para pedir dulces, no?",res://05_Dialogue/R_Dialogue.dialogue:17
+bu8yuyqbayuhm_1ff861,dialogue,"Character: ?
+Line: Pues en este pueblo ocurre lo contrario... [br]Este día los monstruos invaden el pueblo y se disfrazan de humanos para pedir dulces.",res://05_Dialogue/R_Dialogue.dialogue:18
+bu8yuyqbayuhm_5d6020,dialogue,"Character: ?
+Line: Y digamos que no tienen tan buen genio como los humanos.",res://05_Dialogue/R_Dialogue.dialogue:19
+bu8yuyqbayuhm_b2a270,dialogue,"Character: ?
+Line: De ahí que cambiásemos nuestra costumbre a ""Truco o Maltrato"", porque es exactamente lo que ellos hacen.",res://05_Dialogue/R_Dialogue.dialogue:20
+bu8yuyqbayuhm_05a093,dialogue,"Character: ?
+Line: En fin, ahora que te he contado mi vida y ""he salvado la tuya"", [br]¿Me das ya mis dulces? Quiero ir a otras casas a pedir comida gratis.",res://05_Dialogue/R_Dialogue.dialogue:21
+bu8yuyqbayuhm_578eb6,dialogue,"Character: Tú
+Line: Pero... ¿Y qué hago si viene un monstruo? [br]Es la primera noticia que tengo de todo esto...",res://05_Dialogue/R_Dialogue.dialogue:22
+bu8yuyqbayuhm_dea160,dialogue,"Character: ?
+Line: Es muy fácil... Simplemente dales algo que creas que les pueda gustar y vía.",res://05_Dialogue/R_Dialogue.dialogue:23
+bu8yuyqbayuhm_e7268b,dialogue,"Character: ?
+Line: [font_size=25]Y más te vale no darles algo que les pueda molestar.",res://05_Dialogue/R_Dialogue.dialogue:24
+bu8yuyqbayuhm_0e8fac,dialogue,"Character: Tú
+Line: ¿Dijiste algo?",res://05_Dialogue/R_Dialogue.dialogue:25
+bu8yuyqbayuhm_e8c9cb,dialogue,"Character: ?
+Line: Que me des mis dulces.",res://05_Dialogue/R_Dialogue.dialogue:26
+bu8yuyqbayuhm_aa5c4c,dialogue,"Character: ?
+Line: ¿Has traído ya los dulces?",res://05_Dialogue/R_Dialogue.dialogue:31
+bu8yuyqbayuhm_484201,dialogue,"Character: Tú
+Line: Ahí tienes.",res://05_Dialogue/R_Dialogue.dialogue:34
+bu8yuyqbayuhm_9212b5,dialogue,Line: Sí,res://05_Dialogue/R_Dialogue.dialogue:32
+bu8yuyqbayuhm_e20f72,dialogue,"Character: Tú
+Line: Ahora voy, dame un momento.",res://05_Dialogue/R_Dialogue.dialogue:37
+bu8yuyqbayuhm_438d8c,dialogue,Line: No,res://05_Dialogue/R_Dialogue.dialogue:36
+bu8yuyqbayuhm_0cc2ac,dialogue,"Character: ?
+Line: ¿Eh? ¿No me vas a dar nada?",res://05_Dialogue/R_Dialogue.dialogue:43
+bu8yuyqbayuhm_b811d9,dialogue,"Character: ?
+Line: Pues vas tu bien si quieres sobrevivir esta noche.",res://05_Dialogue/R_Dialogue.dialogue:44
+bu8yuyqbayuhm_492e02,dialogue,"Character: ?
+Line: ¿En serio...? [br]¿Me has traído esto?",res://05_Dialogue/R_Dialogue.dialogue:46
+bu8yuyqbayuhm_8182d3,dialogue,"Character: ?
+Line: La verdad es que me esperaba otra cosa...",res://05_Dialogue/R_Dialogue.dialogue:47
+bu8yuyqbayuhm_adbc1e,dialogue,"Character: ?
+Line: En fin, suerte sobreviviendo esta noche.",res://05_Dialogue/R_Dialogue.dialogue:48
+bu8yuyqbayuhm_178c65,dialogue,Line: [color=royal_blue]Bueno... Eso ha sido raro...,res://05_Dialogue/R_Dialogue.dialogue:54
+bu8yuyqbayuhm_4ecbc8,dialogue,Line: [color=royal_blue]Mi cesta para guardar chucherias.,res://05_Dialogue/R_Dialogue.dialogue:60
+bu8yuyqbayuhm_cd5c31,dialogue,Line: [color=royal_blue]Ahora mismo no tiene nada dentro.,res://05_Dialogue/R_Dialogue.dialogue:62
+bu8yuyqbayuhm_36b109,dialogue,Line: [color=royal_blue]Ahora mismo tiene dentro {{ConfigManager.item_save}}.,res://05_Dialogue/R_Dialogue.dialogue:64
+R,dialogue,Character name,res://05_Dialogue/test.dialogue
+ciu3vgkoxb3h2_c7228f,dialogue,"Character: R
+Line: Probandooooo la puertaaaa",res://05_Dialogue/test.dialogue:1
+ciu3vgkoxb3h2_d95ff0,dialogue,"Character: R
+Line: TOMA UNA TILDÉ CON MAYÚSCULAS, y ahorá algó con minúsculas. áéíóúÁÉÍÓÚ",res://05_Dialogue/test.dialogue:2
+ciu3vgkoxb3h2_b53dfc,dialogue,Line: Como funciona eso?,res://05_Dialogue/test.dialogue:3
+ciu3vgkoxb3h2_1fcbbb,dialogue,Line: SI,res://05_Dialogue/test.dialogue:4
+ciu3vgkoxb3h2_196556,dialogue,Line: NO,res://05_Dialogue/test.dialogue:5
+ciu3vgkoxb3h2_ae058f,dialogue,Line: PROBANDOOO,res://05_Dialogue/test.dialogue:6
+ciu3vgkoxb3h2_e22286,dialogue,Line: Texto de Prueba.,res://05_Dialogue/test.dialogue:10
+ciu3vgkoxb3h2_ee542c,dialogue,Line: Si lees esto es que no nos dió tiempo a terminar en la Jam esta parte ._.,res://05_Dialogue/test.dialogue:11
+ciu3vgkoxb3h2_194de2,dialogue,Line: [color=royal_blue](Una lámpara de araña con araña incluida.),res://05_Dialogue/test.dialogue:15
+ciu3vgkoxb3h2_332ec7,dialogue,Line: [color=royal_blue](Perfecta para aquellos que sean fans de las cosas brillantes.),res://05_Dialogue/test.dialogue:16
+ciu3vgkoxb3h2_00b09d,dialogue,Line: [color=royal_blue](Una bolsa repleta de barras de pan.),res://05_Dialogue/test.dialogue:20
+ciu3vgkoxb3h2_ca424c,dialogue,Line: [color=royal_blue](Desconozco cuanto tiempo llevará ahí.),res://05_Dialogue/test.dialogue:21
+ciu3vgkoxb3h2_fd48af,dialogue,Line: [color=royal_blue][font_size=25](Y prefiero seguir sin saberlo.),res://05_Dialogue/test.dialogue:22
+ciu3vgkoxb3h2_794788,dialogue,Line: [color=royal_blue](El enemigo número 1 de los vampiros.),res://05_Dialogue/test.dialogue:26
+ciu3vgkoxb3h2_38d0dd,dialogue,Line: [color=royal_blue](Lo único que no entiendo es porque demonios hay tantos colgando de la pared.),res://05_Dialogue/test.dialogue:27
+ciu3vgkoxb3h2_d89a59,dialogue,Line: [color=royal_blue](Un libro situado en una especie de altar sagrado.),res://05_Dialogue/test.dialogue:31
+ciu3vgkoxb3h2_19b77c,dialogue,"Line: [color=royal_blue](Sinceramente, no me apetece nada revisar su contenido.)",res://05_Dialogue/test.dialogue:32
+ciu3vgkoxb3h2_5c2bc9,dialogue,Line: [color=royal_blue](Una copa de vino a medio consumir.),res://05_Dialogue/test.dialogue:36
+ciu3vgkoxb3h2_935502,dialogue,Line: [color=royal_blue](Creo que podría dar el pego como sangre.),res://05_Dialogue/test.dialogue:37
+ciu3vgkoxb3h2_46b122,dialogue,Line: [color=royal_blue](Una calabaza con una vela encendida en su interior.),res://05_Dialogue/test.dialogue:41
+ciu3vgkoxb3h2_bd3c21,dialogue,"Line: [color=royal_blue](Me habría gustado llenar con más de estas el jardín, una pena que no quedasen en la tienda.)",res://05_Dialogue/test.dialogue:42
+ciu3vgkoxb3h2_330509,dialogue,Line: [color=royal_blue](Esta maquina de cafe venía con la casa.),res://05_Dialogue/test.dialogue:46
+ciu3vgkoxb3h2_da0384,dialogue,"Line: [color=royal_blue](Creo que esta estropeada, porque da igual que intente preparar siempre hace cafés super cargados de cafeina.)",res://05_Dialogue/test.dialogue:47
+ciu3vgkoxb3h2_528c1c,dialogue,Line: [color=royal_blue](Mi teoría es que me la encasquetaron en el proceso de mudanza.),res://05_Dialogue/test.dialogue:48
+ciu3vgkoxb3h2_7a03a6,dialogue,Line: [color=royal_blue](A ver que hago yo con ella...),res://05_Dialogue/test.dialogue:49
+ciu3vgkoxb3h2_c720fb,dialogue,Line: [color=royal_blue](Una caja repleta de diferentes tipos de tornillos ),res://05_Dialogue/test.dialogue:53
+ciu3vgkoxb3h2_81bb34,dialogue,Line: [color=royal_blue](Hay algunos que ni siquiera se para que se usarían.),res://05_Dialogue/test.dialogue:54
+ciu3vgkoxb3h2_b56a3e,dialogue,Line: [color=royal_blue](Una huevera con una docena de huevos.),res://05_Dialogue/test.dialogue:58
+ciu3vgkoxb3h2_543a62,dialogue,Line: [color=royal_blue](Y ya está.),res://05_Dialogue/test.dialogue:59
+ciu3vgkoxb3h2_9b8bec,dialogue,Line: [color=royal_blue](Nada más.),res://05_Dialogue/test.dialogue:60
+ciu3vgkoxb3h2_4abbc4,dialogue,Line: [color=royal_blue][speed=0.4](Simplemente huevos.),res://05_Dialogue/test.dialogue:61
+ciu3vgkoxb3h2_11a38a,dialogue,Line: [color=royal_blue](Creo que es lo más normal que tengo en esta habitación.),res://05_Dialogue/test.dialogue:62
+ciu3vgkoxb3h2_5e95bc,dialogue,Line: [color=royal_blue](Una colección de ancas de rana que me encontré revisando el sotano.),res://05_Dialogue/test.dialogue:66
+ciu3vgkoxb3h2_c22fe2,dialogue,Line: [color=royal_blue](El anterior dueño sin duda tenía unos gustos muy raros...),res://05_Dialogue/test.dialogue:67
+ciu3vgkoxb3h2_84e79f,dialogue,Line: [color=royal_blue](Un surtido de caramelos y dulces recien horneados para Halloween.),res://05_Dialogue/test.dialogue:71
+ciu3vgkoxb3h2_bb0555,dialogue,Line: [color=royal_blue](Como no tenía sitio donde dejarlos terminaron en el cajón.),res://05_Dialogue/test.dialogue:72
+Arpía,dialogue,Character name,res://05_Dialogue/Harpy.dialogue
+ckh1kx4m1momw_17b3c4,dialogue,Line: [color=royal_blue](Necesito un respiro... Ojalá pase un tiempo hasta que venga el siguiente monstruo.),res://05_Dialogue/Harpy.dialogue:2
+ckh1kx4m1momw_af0b72,dialogue,"Line: [color=royal_blue](¡OH, VENGA YA!)",res://05_Dialogue/Harpy.dialogue:7
+ckh1kx4m1momw_aa67ef,dialogue,"Character: Tú
+Line: ¿Sí?",res://05_Dialogue/Harpy.dialogue:8
+ckh1kx4m1momw_b674a7,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:12
+ckh1kx4m1momw_01d940,dialogue,"Character: Arpía
+Line: ¡YA ERA HORA, MULSITO DE POLLO!",res://05_Dialogue/Harpy.dialogue:13
+ckh1kx4m1momw_6aba91,dialogue,"Character: Arpía
+Line: ¡CREÍ QUE ME DEJARÍAS AQUÍ TIRADA TODA LA NOCHE!",res://05_Dialogue/Harpy.dialogue:14
+ckh1kx4m1momw_27e738,dialogue,Line: [color=royal_blue](¡¿UN PÁJARO QUE HABLA?! Y espera... ¿Qué se supone que me ha llamado?),res://05_Dialogue/Harpy.dialogue:15
+ckh1kx4m1momw_4e9814,dialogue,"Character: Tú
+Line: Disculpa... ¿Qué se te ofrece?",res://05_Dialogue/Harpy.dialogue:16
+ckh1kx4m1momw_b3a111,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:17
+ckh1kx4m1momw_760410,dialogue,"Character: Arpía
+Line: CIERRA EL PICO UN MOMENTO, MUSLITO DE POLLO.",res://05_Dialogue/Harpy.dialogue:18
+ckh1kx4m1momw_c111ad,dialogue,"Character: Arpía
+Line: MIS PLUMAS NECESITAN UN POCO DE CUIDADO.",res://05_Dialogue/Harpy.dialogue:19
+ckh1kx4m1momw_a36e1e,dialogue,"Character: Arpía
+Line: QUIERO PROTEÍNA PARA DARLES REFUERZO.",res://05_Dialogue/Harpy.dialogue:20
+ckh1kx4m1momw_edf310,dialogue,"Character: Arpía
+Line: ASÍ QUE... ¿CÓMO SE DECÍA...?",res://05_Dialogue/Harpy.dialogue:21
+ckh1kx4m1momw_c46a0c,dialogue,"Character: Arpía
+Line: ¿TRUCO O MALTRATO, RENACUAJO?",res://05_Dialogue/Harpy.dialogue:22
+ckh1kx4m1momw_97c388,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:23
+ckh1kx4m1momw_807fe1,dialogue,Line: [color=royal_blue](Definitivamente debería darme prisa con esta...),res://05_Dialogue/Harpy.dialogue:24
+ckh1kx4m1momw_9f82e1,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:29
+ckh1kx4m1momw_cac4e8,dialogue,"Character: Arpía
+Line: ¿TIENES YA MI PROTEÍNA?",res://05_Dialogue/Harpy.dialogue:30
+ckh1kx4m1momw_df025f,dialogue,"Character: Tú
+Line: Espero que eso te sirva...",res://05_Dialogue/Harpy.dialogue:33
+ckh1kx4m1momw_74c1ff,dialogue,Line: Sí,res://05_Dialogue/Harpy.dialogue:31
+ckh1kx4m1momw_c793a0,dialogue,"Character: Tú
+Line: Ahora mismo voy!",res://05_Dialogue/Harpy.dialogue:36
+ckh1kx4m1momw_b20026,dialogue,Line: No,res://05_Dialogue/Harpy.dialogue:35
+ckh1kx4m1momw_091e8f,dialogue,"Character: Arpía
+Line: EH? VACÍA?",res://05_Dialogue/Harpy.dialogue:42
+ckh1kx4m1momw_14ee5f,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:43
+ckh1kx4m1momw_52c514,dialogue,"Character: Arpía
+Line: ¿QUÉ SIGNIFICA ESTO?",res://05_Dialogue/Harpy.dialogue:44
+ckh1kx4m1momw_0b2002,dialogue,Line: [color=royal_blue](Oh no... Me he debido de confundir por las prisas...),res://05_Dialogue/Harpy.dialogue:45
+ckh1kx4m1momw_c65fad,dialogue,"Character: Arpía
+Line: OH... YA LO ENTIENDO...",res://05_Dialogue/Harpy.dialogue:46
+ckh1kx4m1momw_6c8ada,dialogue,Line: [color=purple]El ave te mira de refilon y se relame.,res://05_Dialogue/Harpy.dialogue:47
+ckh1kx4m1momw_e81411,dialogue,"Character: Arpía
+Line: SI NO HAY TRATO...",res://05_Dialogue/Harpy.dialogue:48
+ckh1kx4m1momw_1b1347,dialogue,"Character: Arpía
+Line: ¡ES QUE TU ERES LA PROTEÍNA!",res://05_Dialogue/Harpy.dialogue:50
+ckh1kx4m1momw_686f03,dialogue,"Character: Tú
+Line: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake]",res://05_Dialogue/Harpy.dialogue:51
+ckh1kx4m1momw_18cc5f,dialogue,"Character: Tú
+Line: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake]",res://05_Dialogue/Harpy.dialogue:52
+ckh1kx4m1momw_48203f,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:53
+ckh1kx4m1momw_bab01a,dialogue,"Character: Tú
+Line: Justo lo que me pediste, proteína pura y dura.",res://05_Dialogue/Harpy.dialogue:57
+ckh1kx4m1momw_2ef4f2,dialogue,"Character: Arpía
+Line: .....",res://05_Dialogue/Harpy.dialogue:58
+ckh1kx4m1momw_e9c2d5,dialogue,"Character: Tú
+Line: .....",res://05_Dialogue/Harpy.dialogue:59
+ckh1kx4m1momw_2bc9ae,dialogue,"Character: Arpía
+Line: ......",res://05_Dialogue/Harpy.dialogue:60
+ckh1kx4m1momw_fecc5d,dialogue,Line: [color=royal_blue](¿Porque demonios pensé que sería buena idea darle huevos a un pájaro...?),res://05_Dialogue/Harpy.dialogue:61
+ckh1kx4m1momw_e701c9,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:63
+ckh1kx4m1momw_49f43d,dialogue,"Character: Arpía
+Line: ¿COMO TE ATREVES A OFRECERME A MIS CRIAS COMO PROTEÍNA?",res://05_Dialogue/Harpy.dialogue:64
+ckh1kx4m1momw_978b59,dialogue,"Character: Arpía
+Line: ¡PAGARÁS CON TU CARNE POR ESTA OFENSA!",res://05_Dialogue/Harpy.dialogue:65
+ckh1kx4m1momw_38a676,dialogue,"Character: Tú
+Line: Se que no es proteína, pero... Pensé que te gustaría.",res://05_Dialogue/Harpy.dialogue:68
+ckh1kx4m1momw_5ad3e4,dialogue,"Character: Arpía
+Line: PAN? EN SERIO?",res://05_Dialogue/Harpy.dialogue:69
+ckh1kx4m1momw_5b9cf6,dialogue,"Character: Tú
+Line: Bueno... A las aves les suele gustar mucho...",res://05_Dialogue/Harpy.dialogue:70
+ckh1kx4m1momw_b8c02d,dialogue,"Character: Arpía
+Line: ¿CREES QUE SOLO POR TENER PLUMAS Y PICO ME DEBE GUSTAR EL PAN?",res://05_Dialogue/Harpy.dialogue:71
+ckh1kx4m1momw_420aff,dialogue,"Character: Tú
+Line: Sí...?",res://05_Dialogue/Harpy.dialogue:72
+ckh1kx4m1momw_83117b,dialogue,"Character: Arpía
+Line: .....",res://05_Dialogue/Harpy.dialogue:73
+ckh1kx4m1momw_3398bb,dialogue,Line: [color=royal_blue](Definitivamente no se que estaba pensando... Me está mirando fatal),res://05_Dialogue/Harpy.dialogue:74
+ckh1kx4m1momw_06d0e7,dialogue,"Character: Arpía
+Line: TIENES SUERTE DE QUE ESTA SEMANA MI DIETA SE BASE EN CARBOHIDRATOS, MUSLITO DE POLLO...",res://05_Dialogue/Harpy.dialogue:75
+ckh1kx4m1momw_ad594b,dialogue,"Character: Arpía
+Line: TE ACEPTARÉ ESTO.",res://05_Dialogue/Harpy.dialogue:76
+ckh1kx4m1momw_83e242,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:77
+ckh1kx4m1momw_771ebf,dialogue,Line: [color=purple]La arpía se vá dejando plumas y migas alrededor de la puerta.,res://05_Dialogue/Harpy.dialogue:81
+ckh1kx4m1momw_0e4007,dialogue,"Line: [color=royal_blue](Ufff, esto ha sido horrible.)",res://05_Dialogue/Harpy.dialogue:82
+ckh1kx4m1momw_3459dc,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:86
+ckh1kx4m1momw_ca7ae5,dialogue,"Character: Arpía
+Line: ¡ES PERFECTO! ¡JUSTO LO QUE NECESITABA PARA EJERCITAR MIS PLUMAS!",res://05_Dialogue/Harpy.dialogue:87
+ckh1kx4m1momw_6c1b31,dialogue,"Character: Arpía
+Line: GRACIAS, MUSLITO DE POLLO.",res://05_Dialogue/Harpy.dialogue:88
+ckh1kx4m1momw_a1d4ff,dialogue,Line: [color=royal_blue](Por favor... no vuelvas.),res://05_Dialogue/Harpy.dialogue:92
+ckh1kx4m1momw_1aac41,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:96
+ckh1kx4m1momw_68552a,dialogue,"Character: Arpía
+Line: ¿QUÉ SIGNIFICA ESTO?",res://05_Dialogue/Harpy.dialogue:97
+ckh1kx4m1momw_6429dc,dialogue,Line: [color=royal_blue](Oh no... Me he debido de confundir por las prisas...),res://05_Dialogue/Harpy.dialogue:98
+ckh1kx4m1momw_f6d18b,dialogue,"Character: Arpía
+Line: OH... YA LO ENTIENDO...",res://05_Dialogue/Harpy.dialogue:99
+ckh1kx4m1momw_7894ed,dialogue,Line: [color=purple]El ave te mira de refilon y se relame.,res://05_Dialogue/Harpy.dialogue:100
+ckh1kx4m1momw_46cc97,dialogue,"Character: Arpía
+Line: SI NO HAY COMIDA...",res://05_Dialogue/Harpy.dialogue:101
+ckh1kx4m1momw_72f8c4,dialogue,"Character: Arpía
+Line: ¡ES QUE TU ERES LA PROTEÍNA!",res://05_Dialogue/Harpy.dialogue:103
+ckh1kx4m1momw_e8fe46,dialogue,"Character: Tú
+Line: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake]",res://05_Dialogue/Harpy.dialogue:104
+ckh1kx4m1momw_1f9968,dialogue,"Character: Tú
+Line: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake]",res://05_Dialogue/Harpy.dialogue:105
+ckh1kx4m1momw_364f5a,dialogue,"Character: Arpía
+Line: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]",res://05_Dialogue/Harpy.dialogue:106
+Científico?,dialogue,Character name,res://05_Dialogue/DBUG.dialogue
+Científico Loco?,dialogue,Character name,res://05_Dialogue/DBUG.dialogue
+Pirado,dialogue,Character name,res://05_Dialogue/DBUG.dialogue
+caiy5yv1huk1_6942e8,dialogue,Line: [color=royal_blue](¿Eh?),res://05_Dialogue/DBUG.dialogue:4
+caiy5yv1huk1_59353b,dialogue,Line: [color=royal_blue](¿Han vuelto a llamar a la puerta?),res://05_Dialogue/DBUG.dialogue:5
+caiy5yv1huk1_949619,dialogue,Line: [color=royal_blue](Por favor... que esta vez sea alguien normal...),res://05_Dialogue/DBUG.dialogue:8
+caiy5yv1huk1_891e7c,dialogue,"Character: ?
+Line: ...",res://05_Dialogue/DBUG.dialogue:12
+caiy5yv1huk1_fd5d22,dialogue,Line: [color=royal_blue](Vale... este parece... ¿normal?),res://05_Dialogue/DBUG.dialogue:13
+caiy5yv1huk1_001c65,dialogue,"Character: Científico?
+Line: Huh.....",res://05_Dialogue/DBUG.dialogue:14
+caiy5yv1huk1_46bdda,dialogue,Line: [color=royal_blue](Y parece algo cansado y desorientado...),res://05_Dialogue/DBUG.dialogue:15
+caiy5yv1huk1_5a5c0e,dialogue,Line: [color=royal_blue](Espera...),res://05_Dialogue/DBUG.dialogue:16
+caiy5yv1huk1_4b21aa,dialogue,"Line: [color=royal_blue](Me está empezando a mirar con ojos de cachorrito mientras me saca una pequeña tarjeta donde pone ""¿Truco o Maltrato?"")",res://05_Dialogue/DBUG.dialogue:17
+caiy5yv1huk1_d4c012,dialogue,Line: [color=royal_blue](Ahora me da pena...),res://05_Dialogue/DBUG.dialogue:18
+caiy5yv1huk1_73949b,dialogue,Line: [color=royal_blue](¿Quizá tenga algo para animarlo?),res://05_Dialogue/DBUG.dialogue:19
+caiy5yv1huk1_2df6e9,dialogue,"Character: Científico?
+Line: ...?",res://05_Dialogue/DBUG.dialogue:24
+caiy5yv1huk1_dabcd3,dialogue,"Character: Tú
+Line: Ahí... ¿tienes?",res://05_Dialogue/DBUG.dialogue:28
+caiy5yv1huk1_57c4f5,dialogue,Line: Toma,res://05_Dialogue/DBUG.dialogue:26
+caiy5yv1huk1_113b11,dialogue,"Character: Tú
+Line: Disculpa... dame un momentito.",res://05_Dialogue/DBUG.dialogue:31
+caiy5yv1huk1_f39235,dialogue,Line: Dame un momento,res://05_Dialogue/DBUG.dialogue:30
+caiy5yv1huk1_8dfbb3,dialogue,"Character: Científico?
+Line: ......",res://05_Dialogue/DBUG.dialogue:39
+caiy5yv1huk1_2d2d77,dialogue,Line: [color=purple]Al ver el contenido de la cesta su expresión cambia por completo en cuestión de segundos.,res://05_Dialogue/DBUG.dialogue:43
+caiy5yv1huk1_ffaf46,dialogue,"Line: [color=purple]Acto seguido, saca de sus bolsillos lo que parece ser una probeta de laboratorio triangular y comienza a vertir dentro el contenido de la cafetera.",res://05_Dialogue/DBUG.dialogue:44
+caiy5yv1huk1_d1537b,dialogue,"Character: Tú
+Line: Oye... cuidado, eso tiene muchísima...",res://05_Dialogue/DBUG.dialogue:45
+caiy5yv1huk1_ef9d54,dialogue,Line: [color=royal_blue](¿Se lo acaba de beber de una sola sentada?),res://05_Dialogue/DBUG.dialogue:46
+caiy5yv1huk1_584f6b,dialogue,"Line: [color=royal_blue](Si mal no recuerdo, eso estaba cargadísimo de cafeína y azúcar...)",res://05_Dialogue/DBUG.dialogue:47
+caiy5yv1huk1_f2f34a,dialogue,"Character: Científico?
+Line: ....",res://05_Dialogue/DBUG.dialogue:48
+caiy5yv1huk1_be5ded,dialogue,"Character: Científico?
+Line: ....",res://05_Dialogue/DBUG.dialogue:49
+caiy5yv1huk1_8db93f,dialogue,"Character: Científico?
+Line: ¡Ohhhh yeahhhh!",res://05_Dialogue/DBUG.dialogue:51
+caiy5yv1huk1_6a4b2f,dialogue,"Character: Científico Loco?
+Line: ¡Esto sí que es material del bueno, chaval!",res://05_Dialogue/DBUG.dialogue:52
+caiy5yv1huk1_8c9bbc,dialogue,"Character: Científico Loco?
+Line: ¡Definitivamente incorporaré esta máquina salvavidas a mi laboratorio!",res://05_Dialogue/DBUG.dialogue:53
+caiy5yv1huk1_8417e2,dialogue,"Character: Tú
+Line: Solo es una cafetera...",res://05_Dialogue/DBUG.dialogue:54
+caiy5yv1huk1_8241a0,dialogue,"Character: Científico Loco?
+Line: No, no, no, chaval.",res://05_Dialogue/DBUG.dialogue:55
+caiy5yv1huk1_cb852b,dialogue,"Character: Científico Loco?
+Line: Ahora es mi [wave amp=25 freq=5]9º maravilla del mundo[/wave].",res://05_Dialogue/DBUG.dialogue:56
+caiy5yv1huk1_187d10,dialogue,Line: [color=royal_blue](Quizá tiene demasiadas maravillas...),res://05_Dialogue/DBUG.dialogue:57
+caiy5yv1huk1_ec15e5,dialogue,"Character: Científico Loco?
+Line: En fin, gracias por el café.",res://05_Dialogue/DBUG.dialogue:58
+caiy5yv1huk1_502f1a,dialogue,"Character: Científico Loco?
+Line: ¡Nos vemos, chaval!",res://05_Dialogue/DBUG.dialogue:59
+caiy5yv1huk1_c05833,dialogue,Line: [color=royal_blue](Y ahí se va el que seguramente será el visitante más normal de toda la noche.),res://05_Dialogue/DBUG.dialogue:63
+caiy5yv1huk1_3573ca,dialogue,"Character: Científico?
+Line: ....",res://05_Dialogue/DBUG.dialogue:67
+caiy5yv1huk1_15c448,dialogue,"Character: Científico?
+Line: ... ¿en serio?",res://05_Dialogue/DBUG.dialogue:68
+caiy5yv1huk1_ebbb11,dialogue,"Character: Científico?
+Line: ¿Una biblia?",res://05_Dialogue/DBUG.dialogue:69
+caiy5yv1huk1_0ffed6,dialogue,"Character: Pirado
+Line: ¿Te crees gracioso, chaval?",res://05_Dialogue/DBUG.dialogue:71
+caiy5yv1huk1_850ad8,dialogue,"Character: Pirado
+Line: No me he pasado 53 horas semanales de mi vida trabajando en un laboratorio para que ahora listillos como tu me restrieguen teorias sin fundamento por la cara.",res://05_Dialogue/DBUG.dialogue:72
+caiy5yv1huk1_746dec,dialogue,"Character: Pirado
+Line: Aun así... Dejaa que te agradezca el detalle con una muestra gratis de mi última formula...",res://05_Dialogue/DBUG.dialogue:73
+caiy5yv1huk1_a1a42d,dialogue,"Character: Pirado
+Line: Serás el conejillo de indias perfecto :)",res://05_Dialogue/DBUG.dialogue:74
+caiy5yv1huk1_56b082,dialogue,"Character: Científico?
+Line: ....",res://05_Dialogue/DBUG.dialogue:78
+caiy5yv1huk1_dda440,dialogue,"Line: [color=royal_blue](No parece haberle gustado, pero tampoco le molesta del todo)",res://05_Dialogue/DBUG.dialogue:79
+caiy5yv1huk1_94ad07,dialogue,Line: [color=royal_blue](Quizá esperaba otra cosa...),res://05_Dialogue/DBUG.dialogue:80
+Medusa,dialogue,Character name,res://05_Dialogue/Medusa.dialogue
+cnxa6uwgl1hvj_0b4394,dialogue,Line: [color=royal_blue](No me acostumbro al sonido.),res://05_Dialogue/Medusa.dialogue:4
+cnxa6uwgl1hvj_233edf,dialogue,Line: [color=royal_blue](Tocará abrir.),res://05_Dialogue/Medusa.dialogue:5
+cnxa6uwgl1hvj_31b41c,dialogue,"Line: [color=purple]Al otro lado de la puerta, aparece una mujer de piel verde y pelo rosa.",res://05_Dialogue/Medusa.dialogue:9
+cnxa6uwgl1hvj_d4e105,dialogue,"Line: [color=purple]Al principio piensas que lleva rastas, pero enseguida te percatas de que los mechones tienen cabeza y ondean sin viento que los empuje.",res://05_Dialogue/Medusa.dialogue:10
+cnxa6uwgl1hvj_6c9ea5,dialogue,"Line: [color=purple]Y para acompañar, la portadora de la melena venenosa lleva gafas de sol en medio de la noche, supones que para no transformar en piedra a todo el que se le cruce.",res://05_Dialogue/Medusa.dialogue:11
+cnxa6uwgl1hvj_3a3049,dialogue,"Line: [color=purple]A su pose altiva, le acompañan joyas y accesorios dorados de categoría.",res://05_Dialogue/Medusa.dialogue:12
+cnxa6uwgl1hvj_677eb5,dialogue,"Character: Medusa
+Line: Truco o maltrato.",res://05_Dialogue/Medusa.dialogue:13
+cnxa6uwgl1hvj_efa8f2,dialogue,"Character: Tú
+Line: Em, ¿hola?",res://05_Dialogue/Medusa.dialogue:14
+cnxa6uwgl1hvj_4739e8,dialogue,"Character: Medusa
+Line: Ya. Mira, por si no te habías enterado, es Halloween.",res://05_Dialogue/Medusa.dialogue:15
+cnxa6uwgl1hvj_4effd4,dialogue,"Character: Medusa
+Line: Yo pico a la puerta, tú abres, yo digo ""truco o maltrato"" y tú me traes algo bonito, ¿sí?",res://05_Dialogue/Medusa.dialogue:16
+cnxa6uwgl1hvj_d60c64,dialogue,"Character: Medusa
+Line: Así que deja de arrastrar los pies y ponte a buscar.",res://05_Dialogue/Medusa.dialogue:17
+cnxa6uwgl1hvj_431b06,dialogue,"Character: Medusa
+Line: ¿Ya has terminado de perder el tiempo?",res://05_Dialogue/Medusa.dialogue:22
+cnxa6uwgl1hvj_e96020,dialogue,"Character: Tú
+Line: Toma",res://05_Dialogue/Medusa.dialogue:25
+cnxa6uwgl1hvj_cb45ce,dialogue,Line: Sí,res://05_Dialogue/Medusa.dialogue:23
+cnxa6uwgl1hvj_64c42c,dialogue,"Character: Tú
+Line: Ahora voy, dame un momento.",res://05_Dialogue/Medusa.dialogue:28
+cnxa6uwgl1hvj_032714,dialogue,Line: No,res://05_Dialogue/Medusa.dialogue:27
+cnxa6uwgl1hvj_69eba7,dialogue,"Character: Medusa
+Line: ¡Qué ven mis ojos! ¡Si hasta combina con mi bolso! Te lo has ganado, has acertado de pleno.",res://05_Dialogue/Medusa.dialogue:36
+cnxa6uwgl1hvj_b334d1,dialogue,"Character: Tú
+Line: Vaya, gracias... No esperaba que[next=auto]",res://05_Dialogue/Medusa.dialogue:37
+cnxa6uwgl1hvj_2f5433,dialogue,"Character: Medusa
+Line: Me la regalas, ¿verdad? Estupendo.",res://05_Dialogue/Medusa.dialogue:38
+cnxa6uwgl1hvj_f30dfe,dialogue,"Character: Tú
+Line: P-p-pero... espera...  yo...  pero...[next=auto]",res://05_Dialogue/Medusa.dialogue:39
+cnxa6uwgl1hvj_612ead,dialogue,"Character: Medusa
+Line: ¡Gracias! ¡Hasta el año que viene! Bye Bye!",res://05_Dialogue/Medusa.dialogue:40
+cnxa6uwgl1hvj_0cfe75,dialogue,Line: [color=royal_blue](Pero.... mi lámpara...),res://05_Dialogue/Medusa.dialogue:44
+cnxa6uwgl1hvj_57d797,dialogue,"Character: Medusa
+Line: ¡Puaj! ¿¡Pero qué es esto!?",res://05_Dialogue/Medusa.dialogue:48
+cnxa6uwgl1hvj_665aac,dialogue,"Character: Tú
+Line: Son ancas de rana. Las serpientes comen ranas.",res://05_Dialogue/Medusa.dialogue:49
+cnxa6uwgl1hvj_88f8ba,dialogue,"Character: Medusa
+Line: ¿Ah, sí? Si tanto sabes, listillo, ¿por qué me las traes congeladas?",res://05_Dialogue/Medusa.dialogue:50
+cnxa6uwgl1hvj_f56c41,dialogue,"Character: Medusa
+Line: ¡Las serpientes somos de sangre fría! ¡Y estamos en otoño!",res://05_Dialogue/Medusa.dialogue:51
+cnxa6uwgl1hvj_4b0b25,dialogue,"Character: Tú
+Line: L-l-lo siento, t-t-te traeré otra cosa.",res://05_Dialogue/Medusa.dialogue:52
+cnxa6uwgl1hvj_0f82db,dialogue,Line: [color=purple]Te sujeta firmemente con ambos brazos.,res://05_Dialogue/Medusa.dialogue:54
+cnxa6uwgl1hvj_63d894,dialogue,"Line: [color=purple]Intentas zafarte y protestar, pero su fuerza es monstruosa.",res://05_Dialogue/Medusa.dialogue:55
+cnxa6uwgl1hvj_8880c8,dialogue,Line: [color=purple]Su pelo serpentino se crespa y saca los colmillos. Escuchas los silbidos amenazadores de su cabellera zumbar con agresividad.,res://05_Dialogue/Medusa.dialogue:56
+cnxa6uwgl1hvj_c93f53,dialogue,"Character: Medusa
+Line: ¡Ah, no, y un jamón! ¡Tú no te vas a ningún lado!",res://05_Dialogue/Medusa.dialogue:57
+cnxa6uwgl1hvj_1d3f35,dialogue,"Character: Medusa
+Line: Traerme a MÍ, una reina de alta clase, unas asquerosas ranas mugrientas y frías, como si fuera cualquier víbora de tres al cuarto.",res://05_Dialogue/Medusa.dialogue:58
+cnxa6uwgl1hvj_e39e6f,dialogue,"Character: Medusa
+Line: Valgo mucho más que eso. Y, ¿sabes qué, enano? ¡Te lo haré pagar con tu peso en oro!",res://05_Dialogue/Medusa.dialogue:59
+cnxa6uwgl1hvj_a81904,dialogue,Line: [color=purple]Un rayo de luz rosado te ciega por completo.,res://05_Dialogue/Medusa.dialogue:62
+cnxa6uwgl1hvj_373e0d,dialogue,"Line: [color=purple]Ella te suelta, pero no puedes mover ni los párpados para pestañear.",res://05_Dialogue/Medusa.dialogue:63
+cnxa6uwgl1hvj_b1868b,dialogue,"Line: [color=purple]Sientes como pierdes sentido en los brazos y piernas, que son lentamente transformados en una piedra preciosa, dorada y centelleante, que se extiende por todo tu cuerpo hasta dejarte sin aire.",res://05_Dialogue/Medusa.dialogue:64
+cnxa6uwgl1hvj_f596b6,dialogue,"Character: Medusa
+Line: Espero que me estés ofreciendo la cesta. Porque si no más vale que vuelvas ahí dentro.",res://05_Dialogue/Medusa.dialogue:68
+cnxa6uwgl1hvj_f05a8a,dialogue,"Character: Medusa
+Line: ¿Y esto? Ugh, bueno... supongo que me sirve.",res://05_Dialogue/Medusa.dialogue:72
+cnxa6uwgl1hvj_4693b6,dialogue,"Character: Medusa
+Line: Espero que te pongas las pilas y dejes de ser pobre. Venga, adiós, buenas noches.",res://05_Dialogue/Medusa.dialogue:73
+cnxa6uwgl1hvj_5471ef,dialogue,"Character: Tú
+Line: Buenas noch[next=auto]",res://05_Dialogue/Medusa.dialogue:74
+cnxa6uwgl1hvj_726e69,dialogue,Line: [color=royal_blue](Se ha marchado...),res://05_Dialogue/Medusa.dialogue:78
+Nathan,dialogue,Character name,res://05_Dialogue/end_demo.dialogue
+"[[Hi|Hello|Howdy]], this is some dialogue.",dialogue,Character: Nathan,res://05_Dialogue/end_demo.dialogue:1
+Here are some choices.,dialogue,Character: Nathan,res://05_Dialogue/end_demo.dialogue:2
+You picked the first one.,dialogue,Character: Nathan,res://05_Dialogue/end_demo.dialogue:4
+First one,dialogue,,res://05_Dialogue/end_demo.dialogue:3
+You picked the second one.,dialogue,Character: Nathan,res://05_Dialogue/end_demo.dialogue:6
+Second one,dialogue,,res://05_Dialogue/end_demo.dialogue:5
+Start again,dialogue,,res://05_Dialogue/end_demo.dialogue:7
+End the conversation,dialogue,,res://05_Dialogue/end_demo.dialogue:8
+For more information see the online documentation.,dialogue,Character: Nathan,res://05_Dialogue/end_demo.dialogue:9
+Trick_or_Mistreat,,,

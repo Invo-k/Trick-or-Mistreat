@@ -2,8 +2,10 @@ extends OptionButton
 class_name CarouselOptionButton
 
 @export var wrap_around := true
+##Tiempo que tarda en hacer el slide
 @export var slide_time := 0.25
-@export_range(0.1, 1.0) var slide_distance := 0.6   # fracción del ancho que se desplaza
+##Fracción del ancho que se desplaza
+@export_range(0.1, 1.0) var slide_distance := 0.6  
 @export_group("Flechas")
 @export var arrow_left: Control    
 @export var arrow_right: Control
@@ -45,9 +47,9 @@ func _ready() -> void:
 	_current = _make_label(text)
 	_last_index = selected
 
-	# Desactiva el dibujo de la flecha del tema
+	#Desactiva el dibujo de la flecha del tema
 	add_theme_constant_override("arrow_margin", 0)
-	# Le asigna un icono vacío para que no muestre nada
+	#Le asigna un icono vacío para que no muestre nada
 	add_theme_icon_override("arrow", ImageTexture.new())
 	
 	for a in [arrow_left, arrow_right]:
@@ -77,14 +79,20 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_TRANSLATION_CHANGED and _current:
 		_current.text = text
 
-# --- Input -------------------------------------------------------------
+#region Input
 
 func _gui_input(event: InputEvent) -> void:
+	if event.is_action("ui_accept", true):
+		accept_event()
+		return
+		
 	if not has_focus() or item_count == 0:
 		return
+		
 	if event.is_action_pressed("ui_left", true):
 		_step(-1)
 		accept_event()
+		
 	elif event.is_action_pressed("ui_right", true):
 		_step(1)
 		accept_event()
@@ -105,7 +113,9 @@ func _step(direction: int) -> void:
 	select(new_index)
 	item_selected.emit(new_index)
 
-# --- Animación ---------------------------------------------------------
+#endregion
+
+#region Animación
 
 func _on_item_selected(index: int) -> void:
 	var dir := _pending_dir if _pending_dir != 0 else (1 if index >= _last_index else -1)
@@ -114,7 +124,7 @@ func _on_item_selected(index: int) -> void:
 	_animate_to(get_item_text(index), dir)
 
 func _animate_to(new_text: String, direction: int) -> void:
-	# Si el usuario pulsa rápido, cortamos la animación anterior
+	#Si el usuario pulsa rápido, cortamos la animación anterior
 	if _tween:
 		_tween.kill()
 	if _outgoing:
@@ -143,7 +153,7 @@ func _on_tween_finished() -> void:
 func _make_label(t: String) -> Label:
 	var l := Label.new()
 	l.text = t
-	l.mouse_filter = Control.MOUSE_FILTER_IGNORE   # los clics pasan al botón
+	l.mouse_filter = Control.MOUSE_FILTER_IGNORE   #los clics pasan al botón
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	l.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	l.add_theme_font_override("font", _font)
@@ -153,13 +163,13 @@ func _make_label(t: String) -> Label:
 	l.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	return l
 
-# El contenedor acaba de colocar las flechas: esa es su posición real
+#El contenedor acaba de colocar las flechas: esa es su posición real
 func _capture_arrow_bases() -> void:
 	if arrow_left:
 		_left_base = arrow_left.position.x
 	if arrow_right:
 		_right_base = arrow_right.position.x
-	_apply_arrow_offset(_arrow_offset)   # reaplica el desplazamiento en curso
+	_apply_arrow_offset(_arrow_offset)   #reaplica el desplazamiento en curso
 
 func _apply_arrow_offset(o: float) -> void:
 	_arrow_offset = o
@@ -184,7 +194,7 @@ func _show_arrows() -> void:
 		_arrow_tween.kill()
 	_fade_arrows(1.0)
 
-	# Vaivén lineal: hacia afuera y de vuelta, en bucle
+	#Vaivén lineal: hacia afuera y de vuelta, en bucle
 	_arrow_tween = create_tween().set_loops()
 	_arrow_tween.set_trans(Tween.TRANS_SPRING)
 	_arrow_tween.tween_method(_apply_arrow_offset, _arrow_offset, arrow_move_distance, arrow_move_time)
@@ -197,6 +207,8 @@ func _hide_arrows() -> void:
 		_arrow_tween.kill()
 	_fade_arrows(0.0)
 
-	# Vuelven a su sitio mientras se desvanecen
+	#Vuelven a su sitio mientras se desvanecen
 	_arrow_tween = create_tween()
 	_arrow_tween.tween_method(_apply_arrow_offset, _arrow_offset, 0.0, arrow_fade_time)
+
+#endregion

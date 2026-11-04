@@ -1,56 +1,56 @@
 ~ start
 set ConfigManager.item_save = ""
-Espero que no venga ningún monstruo...
+Espero que no venga ningún monstruo... [ID:bwy2o8pvo8c2n_593c4f]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock3.wav")
 do AudioManager.await_for_sfx()
-Tú: Bueno... Vamos a ver quién es.
+Tú: Bueno... Vamos a ver quién es. [ID:bwy2o8pvo8c2n_c3e9cc]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_franky")
 do AudioManager.await_for_sfx()
-Frankenstein: ¿Truuuco ooo Maaltraaatoooo?
-[color=royal_blue](Vale, definitivamente no parece una persona normal.)
-Tú: Hola... Me encanta tu... ¿disfraz?
-Frankenstein: ¿Diisfraaaz?
-[color=royal_blue](Vale, definitivamente no lo es.)
-[color=royal_blue](A ver... El chico de antes me comentó que intentase darles algo que les guste.)
-Tú: Bueno... ¿Hay algo que te gustaría?
-Frankenstein: ¿Truuuco ooo Maaltraaatooo?
-Tú: Sí, ahora voy...
-[color=royal_blue](Vale... ¿Qué demonios le doy yo a algo que se parece a Frankenstein?)
+Frankenstein: ¿Truuuco ooo Maaltraaatoooo? [ID:bwy2o8pvo8c2n_d0fe50]
+[color=royal_blue](Vale, definitivamente no parece una persona normal.) [ID:bwy2o8pvo8c2n_a3a24a]
+Tú: Hola... Me encanta tu... ¿disfraz? [ID:bwy2o8pvo8c2n_97263d]
+Frankenstein: ¿Diisfraaaz? [ID:bwy2o8pvo8c2n_419052]
+[color=royal_blue](Vale, definitivamente no lo es.) [ID:bwy2o8pvo8c2n_d96457]
+[color=royal_blue](A ver... El chico de antes me comentó que intentase darles algo que les guste.) [ID:bwy2o8pvo8c2n_0228d7]
+Tú: Bueno... ¿Hay algo que te gustaría? [ID:bwy2o8pvo8c2n_6ccd47]
+Frankenstein: ¿Truuuco ooo Maaltraaatooo? [ID:bwy2o8pvo8c2n_6313e4]
+Tú: Sí, ahora voy... [ID:bwy2o8pvo8c2n_9d1dc2]
+[color=royal_blue](Vale... ¿Qué demonios le doy yo a algo que se parece a Frankenstein?) [ID:bwy2o8pvo8c2n_250300]
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-Frankenstein: ¿Truuuco ooo Maaltraaatooo?
-- Sí
+Frankenstein: ¿Truuuco ooo Maaltraaatooo? [ID:bwy2o8pvo8c2n_e89cb1]
+- Sí [ID:bwy2o8pvo8c2n_31c6ff]
 	do GameValues.candy_time_animation.emit()
-	Tú: Ahí tienes.
+	Tú: Ahí tienes. [ID:bwy2o8pvo8c2n_dfe482]
 	=> candy_time
-- No
-	Tú: Ahora voy, dame un momento.
+- No [ID:bwy2o8pvo8c2n_5dddaf]
+	Tú: Ahora voy, dame un momento. [ID:bwy2o8pvo8c2n_517696]
 	=> END
 => END
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	Frankenstein: Boolsa... ¿Vacííía?
-	Frankenstein: Eso nooouur.
+	Frankenstein: Boolsa... ¿Vacííía? [ID:bwy2o8pvo8c2n_a01736]
+	Frankenstein: Eso nooouur. [ID:bwy2o8pvo8c2n_baad7d]
 	do GameValues.candy_time_animation.emit()
 	=> END
 elif ConfigManager.item_save == "Calabaza con Vela":
 	do animator.play("franky_jumpscare")
-	Frankenstein: NOOOOO!
-	Frankenstein: FUEEGOO NO GUSTAAAAA!
-	Frankenstein: TU NO SEER BUEEENO!
+	Frankenstein: NOOOOO! [ID:bwy2o8pvo8c2n_38365a]
+	Frankenstein: FUEEGOO NO GUSTAAAAA! [ID:bwy2o8pvo8c2n_bd6d55]
+	Frankenstein: TU NO SEER BUEEENO! [ID:bwy2o8pvo8c2n_a57bc9]
 	do GameValues.change_scene_dialogue()
 	=> END
 
 else:
-	Frankenstein: Graaziaaas.
+	Frankenstein: Graaziaaas. [ID:bwy2o8pvo8c2n_b17d0f]
 
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 do animator.play_backwards("door_open_franky")
 do AudioManager.await_for_sfx()
-[color=royal_blue](Uf... Parece que le ha gustado...)
+[color=royal_blue](Uf... Parece que le ha gustado...) [ID:bwy2o8pvo8c2n_ab02d3]
 do GameValues.next_dialogue.emit()
 => END

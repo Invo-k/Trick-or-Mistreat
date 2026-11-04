@@ -3,70 +3,70 @@ set ConfigManager.item_save = ""
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_cookie")
 do AudioManager.await_for_sfx()
-[color=royal_blue](Uy.)
-[color=royal_blue](Parece que esta chica se ha pegado un atracón de dulces.)
-[color=royal_blue](Pero hay algo en ella que me da mala espina.)
-MonstruoDeLasGalletas: …
-Tú: …
-[color=royal_blue](Bueno, si no dice "Truco o Maltrato" será mejor cerrar la puerta...)
+[color=royal_blue](Uy.) [ID:bq3rhlk0us88h_d3d9b0]
+[color=royal_blue](Parece que esta chica se ha pegado un atracón de dulces.) [ID:bq3rhlk0us88h_84758d]
+[color=royal_blue](Pero hay algo en ella que me da mala espina.) [ID:bq3rhlk0us88h_b50fe2]
+MonstruoDeLasGalletas: … [ID:bq3rhlk0us88h_d1b262]
+Tú: … [ID:bq3rhlk0us88h_118579]
+[color=royal_blue](Bueno, si no dice "Truco o Maltrato" será mejor cerrar la puerta...) [ID:bq3rhlk0us88h_aeb69d]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 do animator.play_backwards("door_open_cookie")
 do AudioManager.await_for_sfx()
-[color=royal_blue](¿Mmm?)
+[color=royal_blue](¿Mmm?) [ID:bq3rhlk0us88h_85133d]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_cookie")
 do AudioManager.await_for_sfx()
-[color=royal_blue](¡Ha bloqueado la puerta con el pie para evitar que cierre!)
-MonstruoDeLasGalletas: Grrr...
-[color=royal_blue](Nunca he escuchado un estómago gruñir tanto.)
-[color=royal_blue](Algo en la forma en la que me mira...)
-[color=royal_blue](Aunque no haya hecho "Truco o Maltrato", más vale que le pille algo de comer.)
+[color=royal_blue](¡Ha bloqueado la puerta con el pie para evitar que cierre!) [ID:bq3rhlk0us88h_071ad7]
+MonstruoDeLasGalletas: Grrr... [ID:bq3rhlk0us88h_a285f3]
+[color=royal_blue](Nunca he escuchado un estómago gruñir tanto.) [ID:bq3rhlk0us88h_083d9b]
+[color=royal_blue](Algo en la forma en la que me mira...) [ID:bq3rhlk0us88h_830d39]
+[color=royal_blue](Aunque no haya hecho "Truco o Maltrato", más vale que le pille algo de comer.) [ID:bq3rhlk0us88h_b836b3]
 do GameValues.candy_time_animation.emit()
 => END
 ~ negociation
-[color=purple]¿Darle la cesta?
-- Sí
+[color=purple]¿Darle la cesta? [ID:bq3rhlk0us88h_42d5a9]
+- Sí [ID:bq3rhlk0us88h_79ebbb]
 	do GameValues.candy_time_animation.emit()
-	Tú: Toma.
+	Tú: Toma. [ID:bq3rhlk0us88h_4da88e]
 	if ConfigManager.item_save == "":
-		[color=purple]Le das la bolsa vacía, pero al ver que no tiene nada dentro te la devuelve.
+		[color=purple]Le das la bolsa vacía, pero al ver que no tiene nada dentro te la devuelve. [ID:bq3rhlk0us88h_bbde0c]
 		do GameValues.candy_time_animation.emit()
 	elif ConfigManager.item_save == "Tornillos" or ConfigManager.item_save == "Lámpara de Araña" or ConfigManager.item_save == "Biblia" or ConfigManager.item_save == "Café" or ConfigManager.item_save == "Copa de Vino":
 		=> jumpscare
 	else:
 		=> candy_time
-- Aun no
-	MonstruoDeLasGalletas: …
+- Aun no [ID:bq3rhlk0us88h_e4ad96]
+	MonstruoDeLasGalletas: … [ID:bq3rhlk0us88h_dc26a4]
 => END
 
 ~ candy_time
-[color=purple]Su boca se desencaja de forma inhumana mostrando un túnel en su garganta con hileras e hileras de dientes que no parecen terminar.
-[color=purple]Engulle tu ofrenda de un solo bocado, provocando que su cuello se expanda temporalmente por el volumen.
-[color=purple]Tras unas cuantas contracciones, logra al fin tragar la comida.
-[color=purple]Se relame los dientes y los dedos de forma casi compulsiva.
-[color=purple]Su expresión comunica satisfacción.
-[color=purple]Se sacude las migas de la sudadera, y sin mediar palabra se dirige a la casa vecina.
+[color=purple]Su boca se desencaja de forma inhumana mostrando un túnel en su garganta con hileras e hileras de dientes que no parecen terminar. [ID:bq3rhlk0us88h_60adb1]
+[color=purple]Engulle tu ofrenda de un solo bocado, provocando que su cuello se expanda temporalmente por el volumen. [ID:bq3rhlk0us88h_2c35ae]
+[color=purple]Tras unas cuantas contracciones, logra al fin tragar la comida. [ID:bq3rhlk0us88h_71f759]
+[color=purple]Se relame los dientes y los dedos de forma casi compulsiva. [ID:bq3rhlk0us88h_93d4dc]
+[color=purple]Su expresión comunica satisfacción. [ID:bq3rhlk0us88h_b84306]
+[color=purple]Se sacude las migas de la sudadera, y sin mediar palabra se dirige a la casa vecina. [ID:bq3rhlk0us88h_70c57c]
 
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 do animator.play_backwards("door_open_r")
 do AudioManager.await_for_sfx()
 
-[color=royal_blue](¡Pero qué rayos era esa cosa!)
+[color=royal_blue](¡Pero qué rayos era esa cosa!) [ID:bq3rhlk0us88h_0ca32b]
 do GameValues.next_dialogue.emit()
 => END
 
 ~ jumpscare
-Tú: ¿Toma?
-[color=purple]Ella examina brevemente lo que le has dado.
-[color=purple]Lo huele y le da una lengüetada.
-[color=purple]Lo deja en el suelo, con desinterés.
-[color=purple]Ya erguida, vuelve a mirarte inquieta.
-[color=purple]Sus tripas gruñen tan sonoramente que sientes el impulso de taparte los oídos.
-[color=purple]Ella se estruja la barriga y saliva profusamente.
-[color=purple]Sus ojos parecen desorbitados y huele el aire como si hubiera algo cocinándose.
-[color=purple]Oh no.
-[color=purple]Te está mirando como si fueras el último trozo de tortilla.
+Tú: ¿Toma? [ID:bq3rhlk0us88h_ae7f16]
+[color=purple]Ella examina brevemente lo que le has dado. [ID:bq3rhlk0us88h_5332c1]
+[color=purple]Lo huele y le da una lengüetada. [ID:bq3rhlk0us88h_334066]
+[color=purple]Lo deja en el suelo, con desinterés. [ID:bq3rhlk0us88h_24e793]
+[color=purple]Ya erguida, vuelve a mirarte inquieta. [ID:bq3rhlk0us88h_c68610]
+[color=purple]Sus tripas gruñen tan sonoramente que sientes el impulso de taparte los oídos. [ID:bq3rhlk0us88h_59373f]
+[color=purple]Ella se estruja la barriga y saliva profusamente. [ID:bq3rhlk0us88h_6e4ff7]
+[color=purple]Sus ojos parecen desorbitados y huele el aire como si hubiera algo cocinándose. [ID:bq3rhlk0us88h_06edd7]
+[color=purple]Oh no. [ID:bq3rhlk0us88h_212ab2]
+[color=purple]Te está mirando como si fueras el último trozo de tortilla. [ID:bq3rhlk0us88h_bbc284]
 do animator.play("cookie_jumpscare")
-[color=purple]Corres a cerrar la puerta pero antes de que puedas hacerlo, su boca se abre monstruosamente, dejando ver un túnel interminable de hileras de dientes afilados.
-[color=purple]Antes de que puedas gritar, se lanza sobre ti.
+[color=purple]Corres a cerrar la puerta pero antes de que puedas hacerlo, su boca se abre monstruosamente, dejando ver un túnel interminable de hileras de dientes afilados. [ID:bq3rhlk0us88h_7d85db]
+[color=purple]Antes de que puedas gritar, se lanza sobre ti. [ID:bq3rhlk0us88h_39221e]
 do GameValues.change_scene_dialogue()

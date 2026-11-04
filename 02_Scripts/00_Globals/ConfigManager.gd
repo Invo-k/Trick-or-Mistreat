@@ -96,12 +96,15 @@ func load_config():
 
 	if screen_mode == "FULLSCREEN":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
-	if screen_mode == "BORDER":
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS,true)
-	if screen_mode == "WINDOW":
+		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS,false)
+	if screen_mode == "1280x720":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS,false)
+		DisplayServer.window_set_size(Vector2i(1280, 720))
+	if screen_mode == "960x540":
+		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS,false)
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		DisplayServer.window_set_size(Vector2i(960.0, 540.0))
 	
 	TranslationServer.set_locale(languaje)
 

@@ -2,34 +2,34 @@
 set ConfigManager.item_save = ""
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock3.wav")
 do AudioManager.await_for_sfx()
-[color=royal_blue](¿Eh?)
-[color=royal_blue](¿Han vuelto a llamar a la puerta?)
+[color=royal_blue](¿Eh?) [ID:caiy5yv1huk1_6942e8]
+[color=royal_blue](¿Han vuelto a llamar a la puerta?) [ID:caiy5yv1huk1_59353b]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock3.wav")
 do AudioManager.await_for_sfx()
-[color=royal_blue](Por favor... que esta vez sea alguien normal...)
+[color=royal_blue](Por favor... que esta vez sea alguien normal...) [ID:caiy5yv1huk1_949619]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_science")
 do AudioManager.await_for_sfx()
-?: ...
-[color=royal_blue](Vale... este parece... ¿normal?)
-Científico?: Huh.....
-[color=royal_blue](Y parece algo cansado y desorientado...)
-[color=royal_blue](Espera...)
-[color=royal_blue](Me está empezando a mirar con ojos de cachorrito mientras me saca una pequeña tarjeta donde pone "¿Truco o Maltrato?")
-[color=royal_blue](Ahora me da pena...)
-[color=royal_blue](¿Quizá tenga algo para animarlo?)
+?: ... [ID:caiy5yv1huk1_891e7c]
+[color=royal_blue](Vale... este parece... ¿normal?) [ID:caiy5yv1huk1_fd5d22]
+Científico?: Huh..... [ID:caiy5yv1huk1_001c65]
+[color=royal_blue](Y parece algo cansado y desorientado...) [ID:caiy5yv1huk1_46bdda]
+[color=royal_blue](Espera...) [ID:caiy5yv1huk1_5a5c0e]
+[color=royal_blue](Me está empezando a mirar con ojos de cachorrito mientras me saca una pequeña tarjeta donde pone "¿Truco o Maltrato?") [ID:caiy5yv1huk1_4b21aa]
+[color=royal_blue](Ahora me da pena...) [ID:caiy5yv1huk1_d4c012]
+[color=royal_blue](¿Quizá tenga algo para animarlo?) [ID:caiy5yv1huk1_73949b]
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-Científico?: ...?
+Científico?: ...? [ID:caiy5yv1huk1_2df6e9]
 
-- Toma
+- Toma [ID:caiy5yv1huk1_57c4f5]
 	do GameValues.candy_time_animation.emit()
-	Tú: Ahí... ¿tienes?
+	Tú: Ahí... ¿tienes? [ID:caiy5yv1huk1_dabcd3]
 	=> candy_time
-- Dame un momento
-	Tú: Disculpa... dame un momentito.
+- Dame un momento [ID:caiy5yv1huk1_f39235]
+	Tú: Disculpa... dame un momentito. [ID:caiy5yv1huk1_113b11]
 	=> END
 => END
 
@@ -37,48 +37,48 @@ Científico?: ...?
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	Científico?: ......
+	Científico?: ...... [ID:caiy5yv1huk1_8dfbb3]
 	do GameValues.candy_time_animation.emit()
 	=> END
 elif ConfigManager.item_save == "Café":
-	[color=purple]Al ver el contenido de la cesta su expresión cambia por completo en cuestión de segundos.
-	[color=purple]Acto seguido, saca de sus bolsillos lo que parece ser una probeta de laboratorio triangular y comienza a vertir dentro el contenido de la cafetera.
-	Tú: Oye... cuidado, eso tiene muchísima...
-	[color=royal_blue](¿Se lo acaba de beber de una sola sentada?)
-	[color=royal_blue](Si mal no recuerdo, eso estaba cargadísimo de cafeína y azúcar...)
-	Científico?: ....
-	Científico?: ....
+	[color=purple]Al ver el contenido de la cesta su expresión cambia por completo en cuestión de segundos. [ID:caiy5yv1huk1_2d2d77]
+	[color=purple]Acto seguido, saca de sus bolsillos lo que parece ser una probeta de laboratorio triangular y comienza a vertir dentro el contenido de la cafetera. [ID:caiy5yv1huk1_ffaf46]
+	Tú: Oye... cuidado, eso tiene muchísima... [ID:caiy5yv1huk1_d1537b]
+	[color=royal_blue](¿Se lo acaba de beber de una sola sentada?) [ID:caiy5yv1huk1_ef9d54]
+	[color=royal_blue](Si mal no recuerdo, eso estaba cargadísimo de cafeína y azúcar...) [ID:caiy5yv1huk1_584f6b]
+	Científico?: .... [ID:caiy5yv1huk1_f2f34a]
+	Científico?: .... [ID:caiy5yv1huk1_be5ded]
 	do animator.play("door_open_pure_science")
-	Científico?: ¡Ohhhh yeahhhh!
-	Científico Loco?: ¡Esto sí que es material del bueno, chaval!
-	Científico Loco?: ¡Definitivamente incorporaré esta máquina salvavidas a mi laboratorio!
-	Tú: Solo es una cafetera...
-	Científico Loco?: No, no, no, chaval.
-	Científico Loco?: Ahora es mi [wave amp=25 freq=5]9º maravilla del mundo[/wave].
-	[color=royal_blue](Quizá tiene demasiadas maravillas...)
-	Científico Loco?: En fin, gracias por el café. 
-	Científico Loco?: ¡Nos vemos, chaval!
+	Científico?: ¡Ohhhh yeahhhh! [ID:caiy5yv1huk1_8db93f]
+	Científico Loco?: ¡Esto sí que es material del bueno, chaval! [ID:caiy5yv1huk1_6a4b2f]
+	Científico Loco?: ¡Definitivamente incorporaré esta máquina salvavidas a mi laboratorio! [ID:caiy5yv1huk1_8c9bbc]
+	Tú: Solo es una cafetera... [ID:caiy5yv1huk1_8417e2]
+	Científico Loco?: No, no, no, chaval. [ID:caiy5yv1huk1_8241a0]
+	Científico Loco?: Ahora es mi [wave amp=25 freq=5]9º maravilla del mundo[/wave]. [ID:caiy5yv1huk1_cb852b]
+	[color=royal_blue](Quizá tiene demasiadas maravillas...) [ID:caiy5yv1huk1_187d10]
+	Científico Loco?: En fin, gracias por el café. [ID:caiy5yv1huk1_ec15e5] 
+	Científico Loco?: ¡Nos vemos, chaval! [ID:caiy5yv1huk1_502f1a]
 	do animator.play_backwards("door_open_science")
 	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 	do AudioManager.await_for_sfx()
-	[color=royal_blue](Y ahí se va el que seguramente será el visitante más normal de toda la noche.)
+	[color=royal_blue](Y ahí se va el que seguramente será el visitante más normal de toda la noche.) [ID:caiy5yv1huk1_c05833]
 	do GameValues.next_dialogue.emit()
 	
 elif ConfigManager.item_save == "La Biblia":
-	Científico?: ....
-	Científico?: ... ¿en serio?
-	Científico?: ¿Una biblia?
+	Científico?: .... [ID:caiy5yv1huk1_3573ca]
+	Científico?: ... ¿en serio? [ID:caiy5yv1huk1_15c448]
+	Científico?: ¿Una biblia? [ID:caiy5yv1huk1_ebbb11]
 	do animator.play("science_jumpscare")
-	Pirado: ¿Te crees gracioso, chaval?
-	Pirado: No me he pasado 53 horas semanales de mi vida trabajando en un laboratorio para que ahora listillos como tu me restrieguen teorias sin fundamento por la cara.
-	Pirado: Aun así... Dejaa que te agradezca el detalle con una muestra gratis de mi última formula... 
-	Pirado: Serás el conejillo de indias perfecto :)
+	Pirado: ¿Te crees gracioso, chaval? [ID:caiy5yv1huk1_0ffed6]
+	Pirado: No me he pasado 53 horas semanales de mi vida trabajando en un laboratorio para que ahora listillos como tu me restrieguen teorias sin fundamento por la cara. [ID:caiy5yv1huk1_850ad8]
+	Pirado: Aun así... Dejaa que te agradezca el detalle con una muestra gratis de mi última formula... [ID:caiy5yv1huk1_746dec] 
+	Pirado: Serás el conejillo de indias perfecto :) [ID:caiy5yv1huk1_a1a42d]
 	do GameValues.change_scene_dialogue()
 	
 else:
-	Científico?: ....
-	[color=royal_blue](No parece haberle gustado, pero tampoco le molesta del todo)
-	[color=royal_blue](Quizá esperaba otra cosa...)
+	Científico?: .... [ID:caiy5yv1huk1_56b082]
+	[color=royal_blue](No parece haberle gustado, pero tampoco le molesta del todo) [ID:caiy5yv1huk1_dda440]
+	[color=royal_blue](Quizá esperaba otra cosa...) [ID:caiy5yv1huk1_94ad07]
 	do animator.play_backwards("door_open_science")
 	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 	do AudioManager.await_for_sfx()

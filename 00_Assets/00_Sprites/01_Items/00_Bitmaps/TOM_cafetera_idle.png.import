@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b6vkc82xxw7w1"
+path="res://.godot/imported/TOM_cafetera_idle.png-f0ecfccd89652824a5e4ab9aa32cb163.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/01_Items/00_Bitmaps/TOM_cafetera_idle.png"
+dest_files=["res://.godot/imported/TOM_cafetera_idle.png-f0ecfccd89652824a5e4ab9aa32cb163.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

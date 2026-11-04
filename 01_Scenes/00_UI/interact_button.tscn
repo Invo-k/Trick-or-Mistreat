@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://dqxvud256dy8f" path="res://01_Scenes/00_UI/interact_button.gd" id="1_7pmr3"]
 [ext_resource type="Texture2D" uid="uid://de3le03kryt08" path="res://00_Assets/00_Sprites/04_UI/arrow_down.png" id="2_7pmr3"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k737v"]
+
 [sub_resource type="Animation" id="Animation_7pmr3"]
 length = 0.001
 tracks/0/type = "value"
@@ -69,6 +71,11 @@ offset_right = 9.0
 offset_bottom = 8.0
 focus_next = NodePath(".")
 focus_previous = NodePath(".")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_k737v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_k737v")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k737v")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_k737v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k737v")
 flat = true
 icon_alignment = 1
 expand_icon = true

@@ -1,11 +1,25 @@
 [gd_scene format=3 uid="uid://c4jetd63rblw8"]
 
+[ext_resource type="Script" uid="uid://dxtagb44uicf6" path="res://01_Scenes/00_UI/credits_menu.gd" id="1_prb8l"]
 [ext_resource type="Texture2D" uid="uid://b7b3cine75vtb" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_CreditsMenu_Layout.png" id="2_a8tbi"]
+[ext_resource type="PackedScene" uid="uid://c0hd8m2e5hsja" path="res://01_Scenes/00_UI/interact_button.tscn" id="4_abpov"]
+[ext_resource type="Script" uid="uid://b1au8xu3v2744" path="res://02_Scripts/01_UI/button_menu.gd" id="5_a8tbi"]
 [ext_resource type="Texture2D" uid="uid://segytgcwc1bt" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_idle.png" id="6_4pk36"]
+[ext_resource type="Theme" uid="uid://dgwdbf4br0yxc" path="res://00_Assets/06_Themes/UI_Theme.tres" id="6_k737v"]
 [ext_resource type="Texture2D" uid="uid://t6alu8no8u0b" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_hover.png" id="7_0wep1"]
 
 [node name="CreditsMenu" type="CanvasLayer" unique_id=2014169054]
 layer = 999
+script = ExtResource("1_prb8l")
+Potion_K_porfolio = "https://store.steampowered.com/curator/46442981?"
+Invo_porfolio = "https://www.youtube.com/@Invokah"
+Shura_porfolio = "https://princesatarantula.artstation.com"
+Checherex_porfolio = "https://youtube.com/@checherex?si=0JWwkp0hs3r2tgA7"
+Potion_K_Credits_Left = "GAMEBY"
+Potion_K_Credits_Right = "[color=purple]POTION K"
+Invo_Credits = "INVOCRED"
+Shura_Credits = "SHURACRED"
+Checherex_Credits = "CHECHEREXCRED"
 
 [node name="Control" type="Control" parent="." unique_id=1762709683]
 layout_mode = 3
@@ -26,7 +40,7 @@ texture = ExtResource("2_a8tbi")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="Back" type="TextureButton" parent="Control" unique_id=1044795510]
+[node name="Back" type="TextureButton" parent="Control" unique_id=844544493]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 0
@@ -39,12 +53,108 @@ scale = Vector2(0.59999907, 0.55555534)
 size_flags_horizontal = 4
 size_flags_vertical = 6
 focus_neighbor_left = NodePath(".")
-focus_neighbor_right = NodePath(".")
+focus_neighbor_top = NodePath("../Shura_Button")
+focus_neighbor_right = NodePath("../Shura_Button")
+focus_neighbor_bottom = NodePath(".")
 focus_next = NodePath(".")
 focus_previous = NodePath(".")
 texture_normal = ExtResource("6_4pk36")
 texture_pressed = ExtResource("7_0wep1")
 texture_hover = ExtResource("7_0wep1")
 texture_focused = ExtResource("7_0wep1")
+stretch_mode = 5
+script = ExtResource("5_a8tbi")
+animation_scale = Vector2(0.65, 0.6)
+metadata/_custom_type_script = "uid://b1au8xu3v2744"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1790943848]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 300
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 300
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer" unique_id=877142492]
+layout_mode = 2
+theme_override_constants/separation = 830
+
+[node name="INFO_LEFT" type="RichTextLabel" parent="Control/MarginContainer/HBoxContainer" unique_id=1540076380]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("6_k737v")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "INFO TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="INFO_RIGHT" type="RichTextLabel" parent="Control/MarginContainer/HBoxContainer" unique_id=185676036]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("6_k737v")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "INFO TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Shura_Button" parent="Control" unique_id=706125477 instance=ExtResource("4_abpov")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 560.0
+offset_top = 528.0
+offset_right = 972.0
+offset_bottom = 1000.0
+focus_neighbor_left = NodePath("../Invo_Button")
+focus_neighbor_top = NodePath("../Potion_K")
+focus_neighbor_right = NodePath("../Invo_Button")
+focus_neighbor_bottom = NodePath("../Back")
+
+[node name="Invo_Button" parent="Control" unique_id=685648348 instance=ExtResource("4_abpov")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 909.0
+offset_top = 491.0
+offset_right = 1310.0
+offset_bottom = 1000.0
+focus_neighbor_left = NodePath("../Shura_Button")
+focus_neighbor_top = NodePath("../Potion_K")
+focus_neighbor_right = NodePath("../Shura_Button")
+focus_neighbor_bottom = NodePath("../Back")
+
+[node name="Potion_K" parent="Control" unique_id=180357294 instance=ExtResource("4_abpov")]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 564.0
+offset_top = 160.0
+offset_right = 1209.0
+offset_bottom = 486.0
+focus_neighbor_left = NodePath("../Shura_Button")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath("../Invo_Button")
+focus_neighbor_bottom = NodePath("../Shura_Button")
 
 [connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]
+[connection signal="focus_entered" from="Control/Shura_Button" to="." method="_on_shura_button_focus_entered"]
+[connection signal="focus_exited" from="Control/Shura_Button" to="." method="_on_credits_button_focus_exited"]
+[connection signal="mouse_entered" from="Control/Shura_Button" to="." method="_on_shura_button_focus_entered"]
+[connection signal="mouse_exited" from="Control/Shura_Button" to="." method="_on_credits_button_focus_exited"]
+[connection signal="pressed" from="Control/Shura_Button" to="." method="_on_shura_button_pressed"]
+[connection signal="focus_entered" from="Control/Invo_Button" to="." method="_on_invo_button_focus_entered"]
+[connection signal="focus_exited" from="Control/Invo_Button" to="." method="_on_credits_button_focus_exited"]
+[connection signal="mouse_entered" from="Control/Invo_Button" to="." method="_on_invo_button_focus_entered"]
+[connection signal="mouse_exited" from="Control/Invo_Button" to="." method="_on_credits_button_focus_exited"]
+[connection signal="pressed" from="Control/Invo_Button" to="." method="_on_invo_button_pressed"]
+[connection signal="focus_entered" from="Control/Potion_K" to="." method="_on_potion_k_focus_entered"]
+[connection signal="focus_exited" from="Control/Potion_K" to="." method="_on_credits_button_focus_exited"]
+[connection signal="mouse_entered" from="Control/Potion_K" to="." method="_on_potion_k_focus_entered"]
+[connection signal="mouse_exited" from="Control/Potion_K" to="." method="_on_credits_button_focus_exited"]
+[connection signal="pressed" from="Control/Potion_K" to="." method="_on_potion_k_pressed"]

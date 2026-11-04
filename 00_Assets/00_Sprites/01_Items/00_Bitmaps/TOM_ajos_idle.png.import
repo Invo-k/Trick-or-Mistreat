@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cghilb1etf0wr"
+path="res://.godot/imported/TOM_ajos_idle.png-137122ff0102eb21aeaf319fc98a7600.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/01_Items/00_Bitmaps/TOM_ajos_idle.png"
+dest_files=["res://.godot/imported/TOM_ajos_idle.png-137122ff0102eb21aeaf319fc98a7600.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

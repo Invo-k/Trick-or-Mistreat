@@ -299,13 +299,13 @@ texture = SubResource("GradientTexture2D_1fncq")
 
 [node name="PointLight2D" type="PointLight2D" parent="CanvasModulate" unique_id=157998473]
 position = Vector2(1314, 120)
-energy = 2.64
+energy = 1.36
 texture = SubResource("GradientTexture2D_1afnw")
 
 [node name="PointLight2D4" type="PointLight2D" parent="CanvasModulate" unique_id=207021578]
 position = Vector2(1066, 871)
 scale = Vector2(0.6, 0.6)
-energy = 2.64
+energy = 1.36
 texture = SubResource("GradientTexture2D_1afnw")
 
 [node name="PointLight2D15" type="PointLight2D" parent="CanvasModulate" unique_id=1259661500]

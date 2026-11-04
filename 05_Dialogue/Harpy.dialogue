@@ -1,110 +1,110 @@
 ~ start
 set ConfigManager.item_save = ""
-[color=royal_blue](Necesito un respiro... Ojalá pase un tiempo hasta que venga el siguiente monstruo.)
+[color=royal_blue](Necesito un respiro... Ojalá pase un tiempo hasta que venga el siguiente monstruo.) [ID:ckh1kx4m1momw_17b3c4]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock1.wav")
 do AudioManager.await_for_sfx()
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock4.wav")
 do AudioManager.await_for_sfx()
-[color=royal_blue](¡OH, VENGA YA!)
-Tú: ¿Sí?
+[color=royal_blue](¡OH, VENGA YA!) [ID:ckh1kx4m1momw_af0b72]
+Tú: ¿Sí? [ID:ckh1kx4m1momw_aa67ef]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_harpy")
 do AudioManager.await_for_sfx()
-Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-Arpía: ¡YA ERA HORA, MULSITO DE POLLO! 
-Arpía: ¡CREÍ QUE ME DEJARÍAS AQUÍ TIRADA TODA LA NOCHE!
-[color=royal_blue](¡¿UN PÁJARO QUE HABLA?! Y espera... ¿Qué se supone que me ha llamado?)
-Tú: Disculpa... ¿Qué se te ofrece?
-Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-Arpía: CIERRA EL PICO UN MOMENTO, MUSLITO DE POLLO.
-Arpía: MIS PLUMAS NECESITAN UN POCO DE CUIDADO.
-Arpía: QUIERO PROTEÍNA PARA DARLES REFUERZO.
-Arpía: ASÍ QUE... ¿CÓMO SE DECÍA...?
-Arpía: ¿TRUCO O MALTRATO, RENACUAJO?
-Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-[color=royal_blue](Definitivamente debería darme prisa con esta...)
+Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_b674a7]
+Arpía: ¡YA ERA HORA, MULSITO DE POLLO! [ID:ckh1kx4m1momw_01d940] 
+Arpía: ¡CREÍ QUE ME DEJARÍAS AQUÍ TIRADA TODA LA NOCHE! [ID:ckh1kx4m1momw_6aba91]
+[color=royal_blue](¡¿UN PÁJARO QUE HABLA?! Y espera... ¿Qué se supone que me ha llamado?) [ID:ckh1kx4m1momw_27e738]
+Tú: Disculpa... ¿Qué se te ofrece? [ID:ckh1kx4m1momw_4e9814]
+Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_b3a111]
+Arpía: CIERRA EL PICO UN MOMENTO, MUSLITO DE POLLO. [ID:ckh1kx4m1momw_760410]
+Arpía: MIS PLUMAS NECESITAN UN POCO DE CUIDADO. [ID:ckh1kx4m1momw_c111ad]
+Arpía: QUIERO PROTEÍNA PARA DARLES REFUERZO. [ID:ckh1kx4m1momw_a36e1e]
+Arpía: ASÍ QUE... ¿CÓMO SE DECÍA...? [ID:ckh1kx4m1momw_edf310]
+Arpía: ¿TRUCO O MALTRATO, RENACUAJO? [ID:ckh1kx4m1momw_c46a0c]
+Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_97c388]
+[color=royal_blue](Definitivamente debería darme prisa con esta...) [ID:ckh1kx4m1momw_807fe1]
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-Arpía: ¿TIENES YA MI PROTEÍNA?
-- Sí
+Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_9f82e1]
+Arpía: ¿TIENES YA MI PROTEÍNA? [ID:ckh1kx4m1momw_cac4e8]
+- Sí [ID:ckh1kx4m1momw_74c1ff]
 	do GameValues.candy_time_animation.emit()
-	Tú: Espero que eso te sirva...
+	Tú: Espero que eso te sirva... [ID:ckh1kx4m1momw_df025f]
 	=> candy_time
-- No
-	Tú: Ahora mismo voy!
+- No [ID:ckh1kx4m1momw_b20026]
+	Tú: Ahora mismo voy! [ID:ckh1kx4m1momw_c793a0]
 	=> END
 => END
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	Arpía: EH? VACÍA?
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-	Arpía: ¿QUÉ SIGNIFICA ESTO?
-	[color=royal_blue](Oh no... Me he debido de confundir por las prisas...)
-	Arpía: OH... YA LO ENTIENDO...
-	[color=purple]El ave te mira de refilon y se relame.
-	Arpía: SI NO HAY TRATO...
+	Arpía: EH? VACÍA? [ID:ckh1kx4m1momw_091e8f]
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_14ee5f]
+	Arpía: ¿QUÉ SIGNIFICA ESTO? [ID:ckh1kx4m1momw_52c514]
+	[color=royal_blue](Oh no... Me he debido de confundir por las prisas...) [ID:ckh1kx4m1momw_0b2002]
+	Arpía: OH... YA LO ENTIENDO... [ID:ckh1kx4m1momw_c65fad]
+	[color=purple]El ave te mira de refilon y se relame. [ID:ckh1kx4m1momw_6c8ada]
+	Arpía: SI NO HAY TRATO... [ID:ckh1kx4m1momw_e81411]
 	do animator.play("harpy_jumpscare")
-	Arpía: ¡ES QUE TU ERES LA PROTEÍNA!
-	Tú: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake]
-	Tú: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake]
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
+	Arpía: ¡ES QUE TU ERES LA PROTEÍNA! [ID:ckh1kx4m1momw_1b1347]
+	Tú: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake] [ID:ckh1kx4m1momw_686f03]
+	Tú: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake] [ID:ckh1kx4m1momw_18cc5f]
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_48203f]
 	do GameValues.change_scene_dialogue()
 	
 elif ConfigManager.item_save == "Huevos":
-	Tú: Justo lo que me pediste, proteína pura y dura.
-	Arpía: .....
-	Tú: .....
-	Arpía: ......
-	[color=royal_blue](¿Porque demonios pensé que sería buena idea darle huevos a un pájaro...?)
+	Tú: Justo lo que me pediste, proteína pura y dura. [ID:ckh1kx4m1momw_bab01a]
+	Arpía: ..... [ID:ckh1kx4m1momw_2ef4f2]
+	Tú: ..... [ID:ckh1kx4m1momw_e9c2d5]
+	Arpía: ...... [ID:ckh1kx4m1momw_2bc9ae]
+	[color=royal_blue](¿Porque demonios pensé que sería buena idea darle huevos a un pájaro...?) [ID:ckh1kx4m1momw_fecc5d]
 	do animator.play("harpy_jumpscare")
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-	Arpía: ¿COMO TE ATREVES A OFRECERME A MIS CRIAS COMO PROTEÍNA?
-	Arpía: ¡PAGARÁS CON TU CARNE POR ESTA OFENSA!
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_e701c9]
+	Arpía: ¿COMO TE ATREVES A OFRECERME A MIS CRIAS COMO PROTEÍNA? [ID:ckh1kx4m1momw_49f43d]
+	Arpía: ¡PAGARÁS CON TU CARNE POR ESTA OFENSA! [ID:ckh1kx4m1momw_978b59]
 
 elif ConfigManager.item_save == "Pan":
-	Tú: Se que no es proteína, pero... Pensé que te gustaría.
-	Arpía: PAN? EN SERIO?
-	Tú: Bueno... A las aves les suele gustar mucho...
-	Arpía: ¿CREES QUE SOLO POR TENER PLUMAS Y PICO ME DEBE GUSTAR EL PAN? 
-	Tú: Sí...?
-	Arpía: .....
-	[color=royal_blue](Definitivamente no se que estaba pensando... Me está mirando fatal)
-	Arpía: TIENES SUERTE DE QUE ESTA SEMANA MI DIETA SE BASE EN CARBOHIDRATOS, MUSLITO DE POLLO...
-	Arpía: TE ACEPTARÉ ESTO.
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
+	Tú: Se que no es proteína, pero... Pensé que te gustaría. [ID:ckh1kx4m1momw_38a676]
+	Arpía: PAN? EN SERIO? [ID:ckh1kx4m1momw_5ad3e4]
+	Tú: Bueno... A las aves les suele gustar mucho... [ID:ckh1kx4m1momw_5b9cf6]
+	Arpía: ¿CREES QUE SOLO POR TENER PLUMAS Y PICO ME DEBE GUSTAR EL PAN? [ID:ckh1kx4m1momw_b8c02d] 
+	Tú: Sí...? [ID:ckh1kx4m1momw_420aff]
+	Arpía: ..... [ID:ckh1kx4m1momw_83117b]
+	[color=royal_blue](Definitivamente no se que estaba pensando... Me está mirando fatal) [ID:ckh1kx4m1momw_3398bb]
+	Arpía: TIENES SUERTE DE QUE ESTA SEMANA MI DIETA SE BASE EN CARBOHIDRATOS, MUSLITO DE POLLO... [ID:ckh1kx4m1momw_06d0e7]
+	Arpía: TE ACEPTARÉ ESTO. [ID:ckh1kx4m1momw_ad594b]
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_83e242]
 	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 	do animator.play_backwards("door_open_harpy")
 	do AudioManager.await_for_sfx()
-	[color=purple]La arpía se vá dejando plumas y migas alrededor de la puerta.
-	[color=royal_blue](Ufff, esto ha sido horrible.)
+	[color=purple]La arpía se vá dejando plumas y migas alrededor de la puerta. [ID:ckh1kx4m1momw_771ebf]
+	[color=royal_blue](Ufff, esto ha sido horrible.) [ID:ckh1kx4m1momw_0e4007]
 	do GameValues.next_dialogue.emit()
 	
 elif ConfigManager.item_save == "Ancas de Rana Congeladas":
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-	Arpía: ¡ES PERFECTO! ¡JUSTO LO QUE NECESITABA PARA EJERCITAR MIS PLUMAS!
-	Arpía: GRACIAS, MUSLITO DE POLLO.
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_3459dc]
+	Arpía: ¡ES PERFECTO! ¡JUSTO LO QUE NECESITABA PARA EJERCITAR MIS PLUMAS! [ID:ckh1kx4m1momw_ca7ae5]
+	Arpía: GRACIAS, MUSLITO DE POLLO. [ID:ckh1kx4m1momw_6c1b31]
 	do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 	do animator.play_backwards("door_open_harpy")
 	do AudioManager.await_for_sfx()
-	[color=royal_blue](Por favor... no vuelvas.)
+	[color=royal_blue](Por favor... no vuelvas.) [ID:ckh1kx4m1momw_a1d4ff]
 	do GameValues.next_dialogue.emit()
 	
 else:
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
-	Arpía: ¿QUÉ SIGNIFICA ESTO?
-	[color=royal_blue](Oh no... Me he debido de confundir por las prisas...)
-	Arpía: OH... YA LO ENTIENDO...
-	[color=purple]El ave te mira de refilon y se relame.
-	Arpía: SI NO HAY COMIDA...
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_1aac41]
+	Arpía: ¿QUÉ SIGNIFICA ESTO? [ID:ckh1kx4m1momw_68552a]
+	[color=royal_blue](Oh no... Me he debido de confundir por las prisas...) [ID:ckh1kx4m1momw_6429dc]
+	Arpía: OH... YA LO ENTIENDO... [ID:ckh1kx4m1momw_f6d18b]
+	[color=purple]El ave te mira de refilon y se relame. [ID:ckh1kx4m1momw_7894ed]
+	Arpía: SI NO HAY COMIDA... [ID:ckh1kx4m1momw_46cc97]
 	do animator.play("harpy_jumpscare")
-	Arpía: ¡ES QUE TU ERES LA PROTEÍNA!
-	Tú: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake]
-	Tú: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake]
-	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake]
+	Arpía: ¡ES QUE TU ERES LA PROTEÍNA! [ID:ckh1kx4m1momw_72f8c4]
+	Tú: [font_size=70][shake rate=20 level=10]¿¡QUE!? ¿NOOOO![/shake] [ID:ckh1kx4m1momw_e8fe46]
+	Tú: [font_size=70][shake rate=20 level=10]¡AAAAAAAAAAAAAAAAAA![/shake] [ID:ckh1kx4m1momw_1f9968]
+	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_364f5a]
 	do GameValues.change_scene_dialogue()
 
 => END

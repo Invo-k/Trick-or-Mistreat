@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dsxsjhiw34rx6"
+path="res://.godot/imported/TOM_pan_idle.png-0974bbd356d65f38745d6dd7104f31a5.res"
+
+[deps]
+
+source_file="res://00_Assets/00_Sprites/01_Items/00_Bitmaps/TOM_pan_idle.png"
+dest_files=["res://.godot/imported/TOM_pan_idle.png-0974bbd356d65f38745d6dd7104f31a5.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

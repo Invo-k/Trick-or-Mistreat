@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cjtews0p8abfp"
+
+[deps]
+
+files=["res://09_Translation/TOM_Traduct.xlsx.es.translation", "res://09_Translation/TOM_Traduct.xlsx.en.translation"]
+
+source_file="res://09_Translation/TOM_Traduct.xlsx.csv"
+dest_files=["res://09_Translation/TOM_Traduct.xlsx.es.translation", "res://09_Translation/TOM_Traduct.xlsx.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

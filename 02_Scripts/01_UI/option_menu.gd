@@ -10,6 +10,7 @@ extends CanvasLayer
 @onready var sfx_text: RichTextLabel = %SFX_Text
 @onready var languaje_text: RichTextLabel = %Languaje_Text
 @onready var languaje_value: CarouselOptionButton = %Languaje_Value
+@onready var animator_options: AnimationPlayer = %animator_options
 
 @export_category("OPTIONS_TEXTS")
 @export var wave_effect : String = "[wave amp=25 freq=5]"
@@ -23,6 +24,7 @@ var menu_changes : bool = false
 
 func _ready() -> void:
 	cargar_opciones()
+	animator_options.play("cubano_mode")
 	TransitionManager.transition_animator.play_backwards("menu_open")
 	option_screen.grab_focus()
 	await TransitionManager.transition_animator.animation_finished
@@ -61,7 +63,7 @@ func centrar_ventana() -> void:
 func _on_option_screen_item_selected(index: int) -> void:
 	match index:
 		0:
-			ConfigManager.screen_mode = "Pantalla Completa"
+			ConfigManager.screen_mode = "FULLSCREEN"
 			DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS,false)
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 
@@ -109,8 +111,9 @@ func _on_languaje_value_item_selected(index: int) -> void:
 			ConfigManager.languaje = "en"
 	
 	TranslationServer.set_locale(ConfigManager.languaje)
+	languaje_text.text = shake_effect + tr(Languaje_Text) + "[/shake]"
 	print("SE HA CAMBIADO EL IDIOMA A: " + ConfigManager.languaje)
-		
+	
 	menu_changes = true
 
 
@@ -132,28 +135,28 @@ func save_menu_data():
 		print("AJUSTES GUARDADOS.")
 
 func _on_option_focus_entered() -> void:
-	screen_text.text = shake_effect + Screen_Text + "[/shake]"
+	screen_text.text = shake_effect + tr(Screen_Text) + "[/shake]"
 
 func _on_option_focus_exited() -> void:
 	#screen_text.text = wave_effect + Screen_Text + "[/wave]"
 	screen_text.text = Screen_Text
 
 func _on_music_value_focus_entered() -> void:
-	music_text.text = shake_effect + Music_Text + "[/shake]"
+	music_text.text = shake_effect + tr(Music_Text) + "[/shake]"
 
 func _on_music_value_focus_exited() -> void:
 	#music_text.text = wave_effect + Music_Text + "[/wave]"
 	music_text.text = Music_Text
 
 func _on_sfx_value_focus_entered() -> void:
-	sfx_text.text = shake_effect + SFX_Text + "[/shake]"
+	sfx_text.text = shake_effect + tr(SFX_Text) + "[/shake]"
 
 func _on_sfx_value_focus_exited() -> void:
 	#sfx_text.text = wave_effect + SFX_Text + "[/wave]"
 	sfx_text.text = SFX_Text
 
 func _on_languaje_value_focus_entered() -> void:
-	languaje_text.text = shake_effect + Languaje_Text + "[/shake]"
+	languaje_text.text = shake_effect + tr(Languaje_Text) + "[/shake]"
 
 func _on_languaje_value_focus_exited() -> void:
 	#languaje_text.text = wave_effect + Languaje_Text + "[/wave]"

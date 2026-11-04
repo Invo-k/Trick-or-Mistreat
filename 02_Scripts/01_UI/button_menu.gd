@@ -2,8 +2,12 @@ extends TextureButton
 class_name Button_Menu
 var tween : Tween
 
+var initial_scale : Vector2
+@export var animation_scale : Vector2 = Vector2(1.05, 1.05)
+
 func _ready() -> void:
 	await get_tree().process_frame
+	initial_scale = scale
 	pivot_offset = size / 2.0
 	button_down.connect(_on_button_down)
 	button_up.connect(_on_button_up)
@@ -14,28 +18,28 @@ func _ready() -> void:
 
 func _on_button_down():
 	if tween: tween.kill()
-	scale = Vector2(0.95, 0.95)
+	scale = Vector2(initial_scale.x - 0.05, initial_scale.y - 0.05)
 	
 func _on_button_up():
 	if tween: tween.kill()
 	tween = create_tween()
 	tween.set_ease(Tween.EASE_OUT)
 	tween.set_trans(Tween.TRANS_EXPO)
-	tween.tween_property(self, "scale", Vector2(1, 1), 0.25)
+	tween.tween_property(self, "scale", initial_scale, 0.25)
 
 func _on_mouse_exited():
 	if tween: tween.kill()
 	tween = create_tween()
 	tween.set_ease(Tween.EASE_OUT)
 	tween.set_trans(Tween.TRANS_EXPO)
-	tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.25)
+	tween.tween_property(self, "scale", initial_scale, 0.25)
 
 func _on_mouse_entered():
 	if tween: tween.kill()
 	tween = create_tween()
 	tween.set_ease(Tween.EASE_OUT)
 	tween.set_trans(Tween.TRANS_EXPO)
-	tween.tween_property(self, "scale", Vector2(1.05, 1.05), 0.25)
+	tween.tween_property(self, "scale", animation_scale, 0.25)
 	grab_focus()
 
 

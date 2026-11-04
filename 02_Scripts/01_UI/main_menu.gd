@@ -9,13 +9,18 @@ const CREDITS_MENU = preload("res://01_Scenes/00_UI/credits_menu.tscn")
 @onready var animator_main_menu: AnimationPlayer = %animator_main_menu
 
 func _ready() -> void:
-	cargar_opciones_intro()
-	AudioManager.play_music(Scene_Music, 1.0)
-	GameValues.actual_character_level = 0
+	GameValues.first_dialogue = false
 	GameValues.is_candy_time = false
+	GameValues.actual_character_level = 0
+	GameValues.door_texture = GameValues.door_texture_initial
+	
+	cargar_opciones_intro()
+	
+	AudioManager.play_music(Scene_Music, 1.0)
 	TransitionManager.transition_animator.play("Fade_Out")
 	animator_main_menu.play("intro_candy")
 	await animator_main_menu.animation_finished
+	
 	start.grab_focus()
 	
 func _on_start_pressed() -> void:

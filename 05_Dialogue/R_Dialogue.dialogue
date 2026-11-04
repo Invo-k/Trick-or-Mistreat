@@ -1,65 +1,65 @@
 ~ start
 set ConfigManager.item_save = ""
-[color=royal_blue]Este es mi primer Halloween en mi nueva casa.
-[color=royal_blue]Creo que ya tengo todo preparado para que puedan empezar las visitas.
+[color=royal_blue]Este es mi primer Halloween en mi nueva casa. [ID:bu8yuyqbayuhm_ba993a]
+[color=royal_blue]Creo que ya tengo todo preparado para que puedan empezar las visitas. [ID:bu8yuyqbayuhm_8f050c]
 set ConfigManager.item_save = ""
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Knock1.wav")
 do AudioManager.await_for_sfx()
-Tú: Venga, vamos con la primera visita.
+Tú: Venga, vamos con la primera visita. [ID:bu8yuyqbayuhm_b6a950]
 do AudioManager.play_sfx("res://00_Assets/02_SFX/DoorOpen.wav")
 do animator.play("door_open_r")
 do AudioManager.await_for_sfx()
 #enseñar personaje
-?: Ey... ¿Truco o Maltrato?
-Tú: ¿[b]Maltrato[/b]? ¿Querrás decir "Truco o Trato", no?
-?: Vaya... Nuevo por aquí, ¿no?
-Tú: ¿Supongo? Me mude hace unas semanas. [br]¿Qué pasa con eso?
-?: Y aún encima seré yo quien te lo tiene que explicar, ¿eh?
-?: En fin... Mira, este pueblo es un poco peculiar. [br]¿Cuándo llega la noche de Halloween lo normal es que la gente se disfrace de monstruos para pedir dulces, no?
-?: Pues en este pueblo ocurre lo contrario... [br]Este día los monstruos invaden el pueblo y se disfrazan de humanos para pedir dulces.
-?: Y digamos que no tienen tan buen genio como los humanos.
-?: De ahí que cambiásemos nuestra costumbre a "Truco o Maltrato", porque es exactamente lo que ellos hacen.
-?: En fin, ahora que te he contado mi vida y "he salvado la tuya", [br]¿Me das ya mis dulces? Quiero ir a otras casas a pedir comida gratis.
-Tú: Pero... ¿Y qué hago si viene un monstruo? [br]Es la primera noticia que tengo de todo esto...
-?: Es muy fácil... Simplemente dales algo que creas que les pueda gustar y vía.
-?: [font_size=25]Y más te vale no darles algo que les pueda molestar.
-Tú: ¿Dijiste algo?
-?: Que me des mis dulces.
+?: Ey... ¿Truco o Maltrato? [ID:bu8yuyqbayuhm_401e9c]
+Tú: ¿[b]Maltrato[/b]? ¿Querrás decir "Truco o Trato", no? [ID:bu8yuyqbayuhm_7291d6]
+?: Vaya... Nuevo por aquí, ¿no? [ID:bu8yuyqbayuhm_31ac5d]
+Tú: ¿Supongo? Me mude hace unas semanas. [br]¿Qué pasa con eso? [ID:bu8yuyqbayuhm_5abbbe]
+?: Y aún encima seré yo quien te lo tiene que explicar, ¿eh? [ID:bu8yuyqbayuhm_34a064]
+?: En fin... Mira, este pueblo es un poco peculiar. [br]¿Cuándo llega la noche de Halloween lo normal es que la gente se disfrace de monstruos para pedir dulces, no? [ID:bu8yuyqbayuhm_e1b10e]
+?: Pues en este pueblo ocurre lo contrario... [br]Este día los monstruos invaden el pueblo y se disfrazan de humanos para pedir dulces. [ID:bu8yuyqbayuhm_1ff861]
+?: Y digamos que no tienen tan buen genio como los humanos. [ID:bu8yuyqbayuhm_5d6020]
+?: De ahí que cambiásemos nuestra costumbre a "Truco o Maltrato", porque es exactamente lo que ellos hacen. [ID:bu8yuyqbayuhm_b2a270]
+?: En fin, ahora que te he contado mi vida y "he salvado la tuya", [br]¿Me das ya mis dulces? Quiero ir a otras casas a pedir comida gratis. [ID:bu8yuyqbayuhm_05a093]
+Tú: Pero... ¿Y qué hago si viene un monstruo? [br]Es la primera noticia que tengo de todo esto... [ID:bu8yuyqbayuhm_578eb6]
+?: Es muy fácil... Simplemente dales algo que creas que les pueda gustar y vía. [ID:bu8yuyqbayuhm_dea160]
+?: [font_size=25]Y más te vale no darles algo que les pueda molestar. [ID:bu8yuyqbayuhm_e7268b]
+Tú: ¿Dijiste algo? [ID:bu8yuyqbayuhm_0e8fac]
+?: Que me des mis dulces. [ID:bu8yuyqbayuhm_e8c9cb]
 do GameValues.candy_time_animation.emit()
 => END
 
 ~ negociation
-?: ¿Has traído ya los dulces?
-- Sí
+?: ¿Has traído ya los dulces? [ID:bu8yuyqbayuhm_aa5c4c]
+- Sí [ID:bu8yuyqbayuhm_9212b5]
 	do GameValues.candy_time_animation.emit()
-	Tú: Ahí tienes.
+	Tú: Ahí tienes. [ID:bu8yuyqbayuhm_484201]
 	=> candy_time
-- No
-	Tú: Ahora voy, dame un momento.
+- No [ID:bu8yuyqbayuhm_438d8c]
+	Tú: Ahora voy, dame un momento. [ID:bu8yuyqbayuhm_e20f72]
 	=> END
 => END
 
 ~ candy_time
 if ConfigManager.item_save == "" or ConfigManager.item_save == null:
-	?: ¿Eh? ¿No me vas a dar nada?
-	?: Pues vas tu bien si quieres sobrevivir esta noche.
+	?: ¿Eh? ¿No me vas a dar nada? [ID:bu8yuyqbayuhm_0cc2ac]
+	?: Pues vas tu bien si quieres sobrevivir esta noche. [ID:bu8yuyqbayuhm_b811d9]
 else:
-	?: ¿En serio...? [br]¿Me has traído esto?
-	?: La verdad es que me esperaba otra cosa...
-	?: En fin, suerte sobreviviendo esta noche.
+	?: ¿En serio...? [br]¿Me has traído esto? [ID:bu8yuyqbayuhm_492e02]
+	?: La verdad es que me esperaba otra cosa... [ID:bu8yuyqbayuhm_8182d3]
+	?: En fin, suerte sobreviviendo esta noche. [ID:bu8yuyqbayuhm_adbc1e]
 
 do AudioManager.play_sfx("res://00_Assets/02_SFX/Close_Door.wav")
 do animator.play_backwards("door_open_r")
 do AudioManager.await_for_sfx()
 
-[color=royal_blue]Bueno... Eso ha sido raro...
+[color=royal_blue]Bueno... Eso ha sido raro... [ID:bu8yuyqbayuhm_178c65]
 do GameValues.next_dialogue.emit()
 
 => END
 
 ~ candy
-[color=royal_blue]Mi cesta para guardar chucherias.
+[color=royal_blue]Mi cesta para guardar chucherias. [ID:bu8yuyqbayuhm_4ecbc8]
 if ConfigManager.item_save == null or ConfigManager.item_save == "":
-	[color=royal_blue]Ahora mismo no tiene nada dentro.
+	[color=royal_blue]Ahora mismo no tiene nada dentro. [ID:bu8yuyqbayuhm_cd5c31]
 else:
-	[color=royal_blue]Ahora mismo tiene dentro {{ConfigManager.item_save}}.
+	[color=royal_blue]Ahora mismo tiene dentro {{ConfigManager.item_save}}. [ID:bu8yuyqbayuhm_36b109]
