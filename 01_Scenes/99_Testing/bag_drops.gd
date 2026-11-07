@@ -16,7 +16,7 @@ func add_item_to_mouse() -> void:
 	var center := global_position + size / 2.0
 	var new_item = item_drop.instantiate()
 	new_item.initialPos = center
-	new_item.offset = get_global_mouse_position() - center
+	new_item.offset = Vector2.ZERO
 	new_item.draggable = true
 	ConfigManager.is_dragging = true
 	new_item.item_texture = item_type.item_sprite

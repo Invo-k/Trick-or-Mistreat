@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://c4jetd63rblw8"]
 
 [ext_resource type="Script" uid="uid://dxtagb44uicf6" path="res://01_Scenes/00_UI/credits_menu.gd" id="1_prb8l"]
-[ext_resource type="Texture2D" uid="uid://b7b3cine75vtb" path="res://00_Assets/00_Sprites/00_Backgrounds/TOM_CreditsMenu_Layout.png" id="2_a8tbi"]
+[ext_resource type="Texture2D" uid="uid://cinqjvyga7frl" path="res://00_Assets/00_Sprites/04_UI/Credits/DTK_Credits_fondoColorSolo.png" id="2_nvrrm"]
+[ext_resource type="Texture2D" uid="uid://ugchfirkqxj2" path="res://00_Assets/00_Sprites/04_UI/Credits/TOM_PotionK_logoNooutline.png" id="3_nvrrm"]
 [ext_resource type="PackedScene" uid="uid://c0hd8m2e5hsja" path="res://01_Scenes/00_UI/interact_button.tscn" id="4_abpov"]
+[ext_resource type="Texture2D" uid="uid://bglm8wu7bu0e8" path="res://00_Assets/00_Sprites/04_UI/Credits/DTK_Credits_CoupleChibi.png" id="4_cmfeo"]
 [ext_resource type="Script" uid="uid://b1au8xu3v2744" path="res://02_Scripts/01_UI/button_menu.gd" id="5_a8tbi"]
 [ext_resource type="Texture2D" uid="uid://segytgcwc1bt" path="res://00_Assets/00_Sprites/04_UI/TOM_R_OpReturn_idle.png" id="6_4pk36"]
 [ext_resource type="Theme" uid="uid://dgwdbf4br0yxc" path="res://00_Assets/06_Themes/UI_Theme.tres" id="6_k737v"]
@@ -36,9 +38,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_a8tbi")
+texture = ExtResource("2_nvrrm")
 expand_mode = 3
 stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="Control/Background" unique_id=94135638]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 25.0
+offset_right = 1277.0
+offset_bottom = 724.0
+texture = ExtResource("3_nvrrm")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/Background" unique_id=306307441]
+layout_mode = 0
+offset_left = 581.0
+offset_top = 323.0
+offset_right = 1337.0
+offset_bottom = 1010.0
+texture = ExtResource("4_cmfeo")
 
 [node name="Back" type="TextureButton" parent="Control" unique_id=844544493]
 unique_name_in_owner = true
@@ -109,10 +127,10 @@ vertical_alignment = 1
 [node name="Shura_Button" parent="Control" unique_id=706125477 instance=ExtResource("4_abpov")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 560.0
-offset_top = 528.0
-offset_right = 972.0
-offset_bottom = 1000.0
+offset_left = 586.0
+offset_top = 524.0
+offset_right = 998.0
+offset_bottom = 996.0
 focus_neighbor_left = NodePath("../Invo_Button")
 focus_neighbor_top = NodePath("../Potion_K")
 focus_neighbor_right = NodePath("../Invo_Button")
@@ -121,10 +139,10 @@ focus_neighbor_bottom = NodePath("../Back")
 [node name="Invo_Button" parent="Control" unique_id=685648348 instance=ExtResource("4_abpov")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 909.0
-offset_top = 491.0
-offset_right = 1310.0
-offset_bottom = 1000.0
+offset_left = 949.0
+offset_top = 477.0
+offset_right = 1350.0
+offset_bottom = 998.0
 focus_neighbor_left = NodePath("../Shura_Button")
 focus_neighbor_top = NodePath("../Potion_K")
 focus_neighbor_right = NodePath("../Shura_Button")
@@ -133,10 +151,10 @@ focus_neighbor_bottom = NodePath("../Back")
 [node name="Potion_K" parent="Control" unique_id=180357294 instance=ExtResource("4_abpov")]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 564.0
-offset_top = 160.0
-offset_right = 1209.0
-offset_bottom = 486.0
+offset_left = 663.0
+offset_top = 148.0
+offset_right = 1308.0
+offset_bottom = 474.0
 focus_neighbor_left = NodePath("../Shura_Button")
 focus_neighbor_top = NodePath(".")
 focus_neighbor_right = NodePath("../Invo_Button")

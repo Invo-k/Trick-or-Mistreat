@@ -62,4 +62,4 @@ do GameValues.next_dialogue.emit()
 if ConfigManager.item_save == null or ConfigManager.item_save == "":
 	[color=royal_blue]Ahora mismo no tiene nada dentro. [ID:bu8yuyqbayuhm_cd5c31]
 else:
-	[color=royal_blue]Ahora mismo tiene dentro {{ConfigManager.item_save}}. [ID:bu8yuyqbayuhm_36b109]
+	[color=royal_blue]Ahora mismo tiene dentro [color=yellow]{{ConfigManager.item_save}}[/color]. [ID:bu8yuyqbayuhm_36b109]

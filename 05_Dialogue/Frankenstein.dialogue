@@ -41,7 +41,7 @@ elif ConfigManager.item_save == "Calabaza con Vela":
 	do animator.play("franky_jumpscare")
 	Frankenstein: NOOOOO! [ID:bwy2o8pvo8c2n_38365a]
 	Frankenstein: FUEEGOO NO GUSTAAAAA! [ID:bwy2o8pvo8c2n_bd6d55]
-	Frankenstein: TU NO SEER BUEEENO! [ID:bwy2o8pvo8c2n_a57bc9]
+	Frankenstein: TÚ NO SEER BUEEENO! [ID:bwy2o8pvo8c2n_a57bc9]
 	do GameValues.change_scene_dialogue()
 	=> END
 

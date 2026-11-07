@@ -10,10 +10,11 @@ var initialPos : Vector2
 @onready var item_area: Area2D = %Item_Area
 @onready var item_sprite: Sprite2D = %item_sprite
 @export var item_id : String
-@export var item_texture : AtlasTexture
+@export var item_texture : Texture2D
 
 func _ready() -> void:
 	item_sprite.texture = item_texture
+	global_position = get_global_mouse_position() - offset
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

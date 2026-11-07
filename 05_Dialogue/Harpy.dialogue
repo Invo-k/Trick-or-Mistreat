@@ -64,6 +64,7 @@ elif ConfigManager.item_save == "Huevos":
 	Arpía: [font_size=70][shake rate=20 level=10]Kaw! Kaw![/shake] [ID:ckh1kx4m1momw_e701c9]
 	Arpía: ¿COMO TE ATREVES A OFRECERME A MIS CRIAS COMO PROTEÍNA? [ID:ckh1kx4m1momw_49f43d]
 	Arpía: ¡PAGARÁS CON TU CARNE POR ESTA OFENSA! [ID:ckh1kx4m1momw_978b59]
+	do GameValues.change_scene_dialogue()
 
 elif ConfigManager.item_save == "Pan":
 	Tú: Se que no es proteína, pero... Pensé que te gustaría. [ID:ckh1kx4m1momw_38a676]

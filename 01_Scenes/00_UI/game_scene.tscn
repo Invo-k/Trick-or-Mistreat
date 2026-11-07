@@ -286,7 +286,10 @@ texture_normal = ExtResource("38_j71sr")
 texture_click_mask = ExtResource("39_kuka5")
 stretch_mode = 5
 
-[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer" unique_id=1191753028]
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=53479639]
+layer = 10
+
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer2" unique_id=1191753028]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -298,7 +301,7 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 500
 theme_override_constants/margin_bottom = 946
 
-[node name="ItemNameDescription" type="RichTextLabel" parent="CanvasLayer/MarginContainer3" unique_id=976067402]
+[node name="ItemNameDescription" type="RichTextLabel" parent="CanvasLayer2/MarginContainer3" unique_id=976067402]
 unique_name_in_owner = true
 z_index = 10
 layout_mode = 2
@@ -313,9 +316,6 @@ fit_content = true
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=53479639]
-layer = 10
 
 [node name="Efecto" type="ColorRect" parent="CanvasLayer2" unique_id=1946161897]
 material = SubResource("ShaderMaterial_j71sr")

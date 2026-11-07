@@ -12,7 +12,7 @@
 [ext_resource type="BitMap" uid="uid://j65tm5wcar6m" path="res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/TOM_OptionsIdle_bitmap.png" id="9_1afnw"]
 [ext_resource type="Texture2D" uid="uid://dn3o1g16oqejm" path="res://00_Assets/00_Sprites/03_Buttons/TOM_CreditsIdle.png" id="9_4gdqs"]
 [ext_resource type="Texture2D" uid="uid://crjtneati3p3n" path="res://00_Assets/00_Sprites/03_Buttons/TOM_CreditsHover.png" id="10_1afnw"]
-[ext_resource type="Texture2D" uid="uid://pelmvvtqtsld" path="res://00_Assets/00_Sprites/03_Buttons/TOM_QuitIdle.png" id="11_r1dcs"]
+[ext_resource type="Texture2D" uid="uid://g55p3onrxphr" path="res://00_Assets/00_Sprites/03_Buttons/TOM_QuitIdle.png" id="11_r1dcs"]
 [ext_resource type="Texture2D" uid="uid://chbecuatq5awp" path="res://00_Assets/00_Sprites/03_Buttons/TOM_QuitHover.png" id="12_1fncq"]
 [ext_resource type="BitMap" uid="uid://cckjhbfb71fel" path="res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/TOM_QuitIdle_bitmap.png" id="15_1afnw"]
 

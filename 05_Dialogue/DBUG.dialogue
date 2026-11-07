@@ -64,13 +64,13 @@ elif ConfigManager.item_save == "Café":
 	[color=royal_blue](Y ahí se va el que seguramente será el visitante más normal de toda la noche.) [ID:caiy5yv1huk1_c05833]
 	do GameValues.next_dialogue.emit()
 	
-elif ConfigManager.item_save == "La Biblia":
+elif ConfigManager.item_save == "Biblia":
 	Científico?: .... [ID:caiy5yv1huk1_3573ca]
 	Científico?: ... ¿en serio? [ID:caiy5yv1huk1_15c448]
 	Científico?: ¿Una biblia? [ID:caiy5yv1huk1_ebbb11]
 	do animator.play("science_jumpscare")
 	Pirado: ¿Te crees gracioso, chaval? [ID:caiy5yv1huk1_0ffed6]
-	Pirado: No me he pasado 53 horas semanales de mi vida trabajando en un laboratorio para que ahora listillos como tu me restrieguen teorias sin fundamento por la cara. [ID:caiy5yv1huk1_850ad8]
+	Pirado: No me he pasado 53 horas semanales de mi vida trabajando en un laboratorio para que ahora listillos como tu me restrieguen teorías sin fundamento por la cara. [ID:caiy5yv1huk1_850ad8]
 	Pirado: Aun así... Dejaa que te agradezca el detalle con una muestra gratis de mi última formula... [ID:caiy5yv1huk1_746dec] 
 	Pirado: Serás el conejillo de indias perfecto :) [ID:caiy5yv1huk1_a1a42d]
 	do GameValues.change_scene_dialogue()
