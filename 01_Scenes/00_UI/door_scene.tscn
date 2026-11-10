@@ -563,7 +563,7 @@ Backgrounds_Array = Array[Texture2D]([ExtResource("2_4pcbm")])
 CHARACTER_NAME = Array[String](["?", "Frankenstein", "Monstruo de las Galletas", "Científico", "Arpía", "Medusa", "?"])
 Hands_Description = "Recipiente de Caramelos"
 Dialogue_Stages = Array[ExtResource("2_c0ni1")]([ExtResource("6_86k45"), ExtResource("7_e1in1"), ExtResource("8_2jwpl"), ExtResource("7_2qju8"), ExtResource("8_s5n6k"), ExtResource("9_k1gnt"), ExtResource("10_k1gnt")])
-Scene_Music = "res://00_Assets/03_Ost/The-Witchs-House-Snap.wav"
+Scene_Music = "res://00_Assets/03_Ost/TrickorMistreat.wav"
 
 [node name="Background" type="TextureRect" parent="." unique_id=917642958]
 unique_name_in_owner = true

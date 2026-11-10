@@ -13,7 +13,7 @@ config_version=5
 config/name="Trick_or_Mistreat"
 run/main_scene="uid://dmi8jbt43sl7x"
 config/use_custom_user_dir=true
-config/custom_user_dir_name="TrickOrMistreat"
+config/custom_user_dir_name="TrickOrMistreat_Demo"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
@@ -59,6 +59,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://add
 folder_colors={
 "res://00_Assets/00_Sprites/00_Backgrounds/01_Jumpscares/": "red",
 "res://00_Assets/00_Sprites/03_Buttons/00_Bitmaps/": "pink",
+"res://00_Assets/03_Ost/": "blue",
 "res://02_Scripts/": "green"
 }
 
@@ -123,7 +124,7 @@ environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 
 [steam]
 
-initialization/app_id=5469220
-initialization/embed_callbacks=false
+initialization/app_id=5481680
 multiplayer_peer/max_channels=4
-initialization/initialize_on_startup=false
+initialization/initialize_on_startup=true
+initialization/embed_callbacks=true
