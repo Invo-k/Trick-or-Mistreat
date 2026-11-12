@@ -3,6 +3,7 @@ extends Node2D
 var draggable : bool
 var is_inside: bool
 var body_ref : StaticBody2D
+var original_scale : Vector2 = scale
 
 var tween : Tween
 var offset:  Vector2
@@ -26,6 +27,8 @@ func _process(delta: float) -> void:
 	elif Input.is_action_just_released("left_click"):
 		ConfigManager.is_dragging = false
 		draggable = false
+		item_area.input_pickable = false 
+		scale = original_scale
 		if tween: tween.kill()
 		if is_inside:
 			ConfigManager.item_save = item_id

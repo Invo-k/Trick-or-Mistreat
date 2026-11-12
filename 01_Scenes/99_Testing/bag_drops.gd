@@ -13,7 +13,7 @@ func _on_button_down() -> void:
 	add_item_to_mouse()
 
 func add_item_to_mouse() -> void:
-	var center := global_position + size / 2.0
+	var center := get_global_transform() * (size / 2.0)
 	var new_item = item_drop.instantiate()
 	new_item.initialPos = center
 	new_item.offset = Vector2.ZERO
